@@ -1,7 +1,7 @@
 # currents-jest-github-actions-example
 
-- **Framework:** `jest`
-- **Use case:** `ci/github-actions`
+- **Framework:** `generic-reporter`
+- **Use case:** `jest`
 - **Source repository:** https://github.com/currents-dev/currents-jest-github-actions-example
 
 ## What this example does

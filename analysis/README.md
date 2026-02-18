@@ -18,8 +18,8 @@ Organized by **framework** and then **use case**. Each example folder includes:
 | `currents-netlify-example` | `cypress` | `ci/netlify` | [`README.md`](cypress/ci/netlify/currents-netlify-example/README.md) | 1 |
 | `currents-cypress-cucumber-example` | `cypress` | `features/cucumber` | [`README.md`](cypress/features/cucumber/currents-cypress-cucumber-example/README.md) | 1 |
 | `currents-nx-example` | `cypress` | `workspace/nx` | [`README.md`](cypress/workspace/nx/currents-nx-example/README.md) | 1 |
-| `currents-junit-xml-example` | `generic` | `reporting/junit-xml` | [`README.md`](generic/reporting/junit-xml/currents-junit-xml-example/README.md) | 7 |
-| `currents-jest-github-actions-example` | `jest` | `ci/github-actions` | [`README.md`](jest/ci/github-actions/currents-jest-github-actions-example/README.md) | 1 |
+| `currents-junit-xml-example` | `generic-reporter` | `junit` | [`README.md`](generic-reporter/junit/currents-junit-xml-example/README.md) | 7 |
+| `currents-jest-github-actions-example` | `generic-reporter` | `jest` | [`README.md`](generic-reporter/jest/currents-jest-github-actions-example/README.md) | 1 |
 | `currents-nodejs-github-actions-example` | `nodejs` | `ci/github-actions` | [`README.md`](nodejs/ci/github-actions/currents-nodejs-github-actions-example/README.md) | 1 |
 | `playwright-aws-codebuild-example` | `playwright` | `ci/aws-codebuild` | [`README.md`](playwright/ci/aws-codebuild/playwright-aws-codebuild-example/README.md) | 1 |
 | `playwright-azure-devops-example` | `playwright` | `ci/azure-devops` | [`README.md`](playwright/ci/azure-devops/playwright-azure-devops-example/README.md) | 3 |

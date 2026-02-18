@@ -1,7 +1,7 @@
 # currents-junit-xml-example
 
-- **Framework:** `generic`
-- **Use case:** `reporting/junit-xml`
+- **Framework:** `generic-reporter`
+- **Use case:** `junit`
 - **Source repository:** https://github.com/currents-dev/currents-junit-xml-example
 
 ## What this example does
