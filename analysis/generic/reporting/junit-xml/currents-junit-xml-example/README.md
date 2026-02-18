@@ -34,10 +34,10 @@ Root README links to these examples (each under `packages/`):
 
 ## How to implement this in your own project
 
-1. Start from the upstream markdown docs copied in this folder (`upstream/`) and identify the exact config files/scripts used.
+1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
 2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the upstream docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the upstream docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
+3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
+4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
 5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
 
 ### Implementation notes from the audit
@@ -57,12 +57,12 @@ Root README links to these examples (each under `packages/`):
 7. **Add `.env.example`**
    - Provide `CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`, optional `CURRENTS_CI_BUILD_ID`, plus a note that `currents upload` can take args or env vars (show one consistent approach).
 
-## Upstream markdown copied into this folder
+## Source markdown copied into this folder
 
-- [`upstream/README.md`](upstream/README.md)
-- [`upstream/packages/nodejs-test-runner/README.md`](upstream/packages/nodejs-test-runner/README.md)
-- [`upstream/packages/postman/README.md`](upstream/packages/postman/README.md)
-- [`upstream/packages/vitest-sharded/README.md`](upstream/packages/vitest-sharded/README.md)
-- [`upstream/packages/vitest/README.md`](upstream/packages/vitest/README.md)
-- [`upstream/packages/wdio/README.md`](upstream/packages/wdio/README.md)
-- [`upstream/scripts/README.md`](upstream/scripts/README.md)
+- [`source__packages__nodejs-test-runner__README.md`](source__packages__nodejs-test-runner__README.md)
+- [`source__packages__postman__README.md`](source__packages__postman__README.md)
+- [`source__packages__vitest-sharded__README.md`](source__packages__vitest-sharded__README.md)
+- [`source__packages__vitest__README.md`](source__packages__vitest__README.md)
+- [`source__packages__wdio__README.md`](source__packages__wdio__README.md)
+- [`source__README.md`](source__README.md)
+- [`source__scripts__README.md`](source__scripts__README.md)

@@ -29,10 +29,10 @@ A minimal example repo demonstrating **Currents + Playwright + pnpm**: install d
 
 ## How to implement this in your own project
 
-1. Start from the upstream markdown docs copied in this folder (`upstream/`) and identify the exact config files/scripts used.
+1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
 2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the upstream docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the upstream docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
+3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
+4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
 5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
 
 ### Implementation notes from the audit
@@ -50,6 +50,6 @@ A minimal example repo demonstrating **Currents + Playwright + pnpm**: install d
 6. **Add `.env.example`**
    - Provide a copy/paste template: `CURRENTS_RECORD_KEY=...` and `CURRENTS_PROJECT_ID=...`, and mention dotenv usage if you want local `.env` support.
 
-## Upstream markdown copied into this folder
+## Source markdown copied into this folder
 
-- [`upstream/README.md`](upstream/README.md)
+- [`source__README.md`](source__README.md)

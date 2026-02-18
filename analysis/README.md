@@ -1,14 +1,14 @@
 # Currents Analysis Examples
 
-Organized by **framework** and then **use case**. Each example folder now includes:
+Organized by **framework** and then **use case**. Each example folder includes:
 
 - `README.md`: detailed explanation (what it does, how it is used, and how to implement it).
-- `upstream/`: markdown files copied from the original source repository.
-- `analysis.md`: original local audit notes preserved for reference.
+- `source__*.md`: markdown files copied from the original source repository, flattened directly in the example root folder.
+- `analysis.md`: local audit notes preserved for reference.
 
 ## Organization for review
 
-| Repository | Framework | Use case | Example folder README | Upstream `.md` files copied |
+| Repository | Framework | Use case | Example folder README | Source `.md` files copied |
 | --- | --- | --- | --- | ---: |
 | `aws-codebuild-example` | `cypress` | `ci/aws-codebuild` | [`README.md`](cypress/ci/aws-codebuild/aws-codebuild-example/README.md) | 1 |
 | `azure-devops-example` | `cypress` | `ci/azure-devops` | [`README.md`](cypress/ci/azure-devops/azure-devops-example/README.md) | 1 |
