@@ -20,7 +20,7 @@ Organized by **framework** and then **use case**. Each example folder includes:
 | `currents-nx-example` | `cypress` | `workspace/nx` | [`README.md`](cypress/workspace/nx/currents-nx-example/README.md) | 1 |
 | `currents-junit-xml-example` | `generic-reporter` | `junit` | [`README.md`](generic-reporter/junit/currents-junit-xml-example/README.md) | 7 |
 | `currents-jest-github-actions-example` | `generic-reporter` | `jest` | [`README.md`](generic-reporter/jest/currents-jest-github-actions-example/README.md) | 1 |
-| `currents-nodejs-github-actions-example` | `nodejs` | `ci/github-actions` | [`README.md`](nodejs/ci/github-actions/currents-nodejs-github-actions-example/README.md) | 1 |
+| `currents-nodejs-github-actions-example` | `generic-reporter` | `junit` | [`README.md`](generic-reporter/junit/currents-nodejs-github-actions-example/README.md) | 1 |
 | `playwright-aws-codebuild-example` | `playwright` | `ci/aws-codebuild` | [`README.md`](playwright/ci/aws-codebuild/playwright-aws-codebuild-example/README.md) | 1 |
 | `playwright-azure-devops-example` | `playwright` | `ci/azure-devops` | [`README.md`](playwright/ci/azure-devops/playwright-azure-devops-example/README.md) | 3 |
 | `circleci-pw-example` | `playwright` | `ci/circleci` | [`README.md`](playwright/ci/circleci/circleci-pw-example/README.md) | 1 |

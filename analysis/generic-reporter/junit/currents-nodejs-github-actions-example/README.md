@@ -1,7 +1,7 @@
 # currents-nodejs-github-actions-example
 
-- **Framework:** `nodejs`
-- **Use case:** `ci/github-actions`
+- **Framework:** `generic-reporter`
+- **Use case:** `junit`
 - **Source repository:** https://github.com/currents-dev/currents-nodejs-github-actions-example
 
 ## What this example does
