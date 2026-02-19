@@ -1,0 +1,16 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "e2e-02",
+  "projectType": "application",
+  "sourceRoot": "apps/e2e-02/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "skipInstall": true,
+        "output": "{workspaceRoot}/playwright-report/{projectName}",
+        "config": "{projectRoot}/playwright.config.ts"
+      }
+    }
+  }
+}

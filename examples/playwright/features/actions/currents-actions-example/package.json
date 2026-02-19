@@ -1,0 +1,23 @@
+{
+  "name": "currents-playwright-rules-example",
+  "version": "1.0.0",
+  "description": "An example repository on how to setup Currents Rules with Playwright Fixtures",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test -c playwright.config.reporter.ts",
+    "test:pwc": "pwc",
+    "test:pwp": "pwc-p",
+    "lint": "eslint ./basic"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@currents/playwright": "^1.9.0-beta.2",
+    "@eslint/js": "^9.16.0",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "eslint": "^8.57.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}

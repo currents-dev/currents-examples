@@ -1,0 +1,16 @@
+[
+  {
+    "url": "http://localhost:5173/styles.css",
+    "text": ".hidden { display: none; }\n.error { color: red; }",
+    "ranges": [
+      {
+        "start": 0,
+        "end": 26
+      },
+      {
+        "start": 27,
+        "end": 49
+      }
+    ]
+  }
+]

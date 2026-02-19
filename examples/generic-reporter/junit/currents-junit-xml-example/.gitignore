@@ -1,0 +1,8 @@
+node_modules
+*/instances
+*/fullTestSuite.json
+upload.marker.json
+.currents
+.env
+.turbo
+**/.currents

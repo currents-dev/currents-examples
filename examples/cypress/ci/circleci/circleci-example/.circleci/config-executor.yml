@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+executors:
+  currents-executor:
+    docker:
+      - image: currentsdev/cypress-included:12.17.4
+
+jobs:
+  cypress-install:
+    executor: currents-executor
+    steps:
+      - cypress/install
+      - persist_to_workspace:
+          root: ~/
+
+  cypress-run:
+    executor: currents-executor
+    parallelism: 3
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  build:
+    jobs:
+      - cypress-install
+      - cypress-run:
+          context: currents
+          requires:
+            - cypress-install

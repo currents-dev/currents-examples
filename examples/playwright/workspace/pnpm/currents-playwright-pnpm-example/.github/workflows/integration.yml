@@ -1,0 +1,103 @@
+on:
+  push:
+  pull_request:
+
+jobs:
+  playwright:
+    name: 🐰 Run E2E Tests
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      # https://github.com/actions/runner-images/issues/6775
+      - run: |
+          echo "$GITHUB_WORKSPACE"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --prefer-offline
+
+      # 🟢 Playwright Browser Caching
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', 'playwright.config.ts') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+      - name: Install Playwright browsers (if not cached)
+        run: pnpm exec playwright install chromium --with-deps
+
+      - name: Run Orchestrated tests
+        continue-on-error: true
+        env:
+          CI: 1
+          CURRENTS_PROJECT_ID: mdXsz8
+          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
+          CURRENTS_CI_BUILD_ID: reporter-${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
+          COMMIT_INFO_MESSAGE: "pwc-p: ${{ github.event.head_commit.message }}"
+          PWTEST_BLOB_DO_NOT_REMOVE: 1 # Add the env variable to not remove test blobs
+          # Add the blob reporter in the execution command
+        run: |
+          pnpm exec pwc-p --reporter blob
+      # Generate a report based on the blob with the merge-report command
+      - name: Generate HTML report from blob
+        run: |
+          mkdir -p ./blob-report
+          pnpm exec playwright merge-reports --reporter=html ./blob-report
+      - name: Upload playwright test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          # Chromatic automatically defaults to the test-results directory.
+          # Replace with the path to your custom directory and adjust the CHROMATIC_ARCHIVE_LOCATION environment variable accordingly.
+          name: playwright-report-${{ matrix.shard }}_${{ strategy.job-total }}
+          path: ./test-results/chromatic-archives
+          retention-days: 30
+
+  chromatic:
+    name: Run Chromatic
+    needs: playwright
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --prefer-offline
+
+      - name: Download Playwright test results
+        uses: actions/download-artifact@v4
+        with:
+          path: ./test-results/chromatic-archives
+          pattern: playwright-report-*
+          merge-multiple: true
+
+      - name: Run Chromatic tests
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          playwright: true

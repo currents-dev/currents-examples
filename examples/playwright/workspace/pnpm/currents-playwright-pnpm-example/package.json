@@ -1,0 +1,18 @@
+{
+  "name": "currents-playwright-pnpm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chromatic-com/playwright": "^0.12.0",
+    "@currents/playwright": "^1.11.3",
+    "@playwright/test": "^1.51.0",
+    "chromatic": "^11.27.0"
+  }
+}

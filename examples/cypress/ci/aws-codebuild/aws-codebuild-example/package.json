@@ -1,0 +1,17 @@
+{
+  "name": "aws-codebuild-example",
+  "version": "1.0.0",
+  "description": "This is an example repository that showcases using [Currents.dev](https://currents.dev) for running cypress tests on AWS CodeBuild",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.8.1",
+    "cypress-cloud": "^1.5.6",
+    "typescript": "^5.0.2"
+  }
+}

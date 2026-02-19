@@ -1,0 +1,13 @@
+{
+  "name": "currents-pnpm",
+  "version": "1.0.0",
+  "description": "Example repo for using currents and playwright with pnpm",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@currents/playwright": "^1.6.2",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}

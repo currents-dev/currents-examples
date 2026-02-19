@@ -1,0 +1,13 @@
+{
+  "name": "@currents-junit-xml-example/postman",
+  "version": "1.0.0",
+  "description": "Integrate Postman with Currents",
+  "main": "index.js",
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "@currents/cmd": "^1.6.9",
+    "newman": "^6.2.1",
+    "xml2js": "^0.6.2"
+  }
+}

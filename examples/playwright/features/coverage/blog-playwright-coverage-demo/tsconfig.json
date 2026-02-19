@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "ES2020",
+      "moduleResolution": "Node",
+      "strict": true,
+      "types": ["@playwright/test"]
+    }
+  }

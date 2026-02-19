@@ -1,0 +1,104 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+executors:
+  currents-executor:
+    docker:
+      - image: currentsdev/cypress-included:12.17.4
+
+jobs:
+  # Use pre-built image with alternative Cypress binary
+  noorbs currents-image:
+    parallelism: 3
+    docker:
+      - image: currentsdev/cypress-included:12.17.4
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm ci
+      - run:
+          name: Run tests
+          command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+  # Explicitly download Cypress binary
+  noorbs explicit-download:
+    parallelism: 3
+    docker:
+      - image: cypress/base:18.16.1
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - run:
+          name: Install Cypress
+          command: CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force
+      - run:
+          name: Run tests
+          command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+  # Use cypress/default executor example
+  default-executor cypress-install:
+    executor: cypress/default
+    steps:
+      - cypress/install:
+          post-install: CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - .cache/Cypress
+            - project
+
+  default-executor cypress-run:
+    executor: cypress/default
+    parallelism: 3
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+  # Use currentsdev executor with pre-installed Cypress App binary
+  custom-executor cypress-install:
+    executor: currents-executor
+    steps:
+      - cypress/install
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  custom-executor cypress-run:
+    executor: currents-executor
+    parallelism: 3
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  noorbs:
+    jobs:
+      - noorbs currents-image:
+          context: currents
+      - noorbs explicit-download:
+          context: currents
+  with-orbs default-executor:
+    jobs:
+      - default-executor cypress-install
+      - default-executor cypress-run:
+          context: currents
+          requires:
+            - default-executor cypress-install
+
+  with-orbs custom-executor:
+    jobs:
+      - custom-executor cypress-install
+      - custom-executor cypress-run:
+          context: currents
+          requires:
+            - custom-executor cypress-install
