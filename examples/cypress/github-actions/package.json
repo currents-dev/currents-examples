@@ -13,6 +13,7 @@
   "dependencies": {
     "cypress": "12.17.4",
     "cypress-cloud": "^1.9.6",
+    "@currents/cli": "^4.0.0",
     "typescript": "^5.0.2"
   }
 }

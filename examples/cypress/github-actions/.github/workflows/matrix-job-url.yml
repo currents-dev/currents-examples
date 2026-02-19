@@ -30,6 +30,6 @@ jobs:
           echo "MATRIX_JOB_URL=${{ steps.jobs.outputs.html_url }}" >> $GITHUB_ENV
 
       - name: Run Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v6
         with:
-          command: yarn currents run --record --parallel --key ${{ secrets.CURRENTS_RECORD_KEY }}
+          command: npx currents run --record --parallel --key ${{ secrets.CURRENTS_RECORD_KEY }} --config-file cypress.matrix.config.js
