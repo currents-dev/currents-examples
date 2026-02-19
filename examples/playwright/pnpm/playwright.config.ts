@@ -1,29 +1,30 @@
 import { currentsReporter } from "@currents/playwright";
-import { PlaywrightTestConfig } from "@playwright/test";
+import { devices, PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  timeout: 10 * 1000,
+  testDir: "tests",
+  retries: 0,
+  workers: 3,
+
+  timeout: 15000,
+  fullyParallel: true,
 
   expect: {
-    timeout: 2000,
+    timeout: 500,
   },
-
-  reporter: [currentsReporter()],
-
-  fullyParallel: false,
-  retries: 0,
-  workers: 1,
-
+  reporter: [["blob"], currentsReporter()],
   use: {
-    actionTimeout: 0,
-    trace: "on",
     screenshot: "on",
     video: "on",
+    trace: "on",
   },
 
   projects: [
     {
       name: "chromium",
+      use: {
+        ...devices["Desktop Chrome"],
+      },
     },
   ],
 

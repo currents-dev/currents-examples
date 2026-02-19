@@ -1,4 +1,4 @@
-import { expect, test } from "./base";
+import { expect, test } from "../../base";
 
 test("basic D", async ({ page }) => {
   await page.goto("https://playwright.dev/");

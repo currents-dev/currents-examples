@@ -1,10 +1,13 @@
 {
-  "name": "currents-playwright-pnpm-example",
+  "name": "currents-pnpm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example repo for using currents and playwright with pnpm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "test:basic": "npx playwright test tests/basic",
+    "test:chromatic": "npx playwright test tests/chromatic",
+    "pwc-p": "pwc-p"
   },
   "keywords": [],
   "author": "",
