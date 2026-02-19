@@ -64,3 +64,9 @@ An example repo showing how to run **Playwright tests with Currents + Chromatic*
 ## Source markdown copied into this folder
 
 - [`currents-playwright-pnpm-example__source__README.md`](currents-playwright-pnpm-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-playwright-pnpm-example`: **12**
+- Mapping file: [`currents-playwright-pnpm-example__content-map.md`](currents-playwright-pnpm-example__content-map.md)
+- All copied files use the prefix pattern `currents-playwright-pnpm-example__content__*`.

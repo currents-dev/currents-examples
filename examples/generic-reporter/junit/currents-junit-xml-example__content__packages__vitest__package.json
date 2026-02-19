@@ -1,0 +1,15 @@
+{
+  "name": "@currents-junit-xml-example/vitest",
+  "version": "1.0.0",
+  "description": "Integrate Vitest with Currents",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --outputFile.junit=./results.xml"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@currents/cmd": "^1.6.9",
+    "vitest": "^2.1.5"
+  }
+}

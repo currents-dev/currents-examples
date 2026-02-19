@@ -1,0 +1,52 @@
+# if you want to configure triggers for Azure CI see
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#tags
+
+jobs:
+  - job: Cypress_e2e_tests
+    pool:
+      vmImage: "ubuntu-latest"
+    strategy:
+      parallel: 3
+    variables:
+      - group: Currents
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+          displayName: "Install Node.js"
+
+      # Speed up the execution by caching the dependecies
+      # https://docs.microsoft.com/en-us/azure/devops/pipelines/caching/?view=azure-devops
+      # use "/home/vsts" as a home dir: https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops
+      - task: CacheBeta@1
+        inputs:
+          key: npm | $(Agent.OS) | package-lock.json
+          path: /home/vsts/.npm
+          restoreKeys: npm | $(Agent.OS) | package-lock.json
+        displayName: Cache NPM packages
+
+      # cypress binary is installed at a different location
+      - task: CacheBeta@1
+        inputs:
+          key: cypress | $(Agent.OS) | package-lock.json
+          path: /home/vsts/.cache/Cypress
+          restoreKeys: cypress | $(Agent.OS) | package-lock.json
+        displayName: Cache Cypress binary
+
+      # Install Node dependencies
+      - script: npm ci
+        displayName: "Install NPM dependencies"
+
+      # The next command starts the server and runs Cypress tests
+      # using Currents as a remote orchestration service.
+      #
+      # Read more about CI Build ID: https://currents.dev/readme/guides/cypress-ci-build-id
+
+      # Note the use of `currents` command
+      - script: |
+          npx currents run --record --parallel --key $CURRENTS_RECORD_KEY --ci-build-id $BUILD_BUILDNUMBER
+        displayName: "Run Currents tests"
+        env:
+          CURRENTS_RECORD_KEY: $(CURRENTS_SECRET)
+          # mute terminal warnings
+          TERM: xterm

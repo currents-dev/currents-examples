@@ -55,3 +55,9 @@ A GitHub Actions + Cypress example that demonstrates how to **capture the curren
 ## Source markdown copied into this folder
 
 - [`gh-matrix-job-url-example__source__README.md`](gh-matrix-job-url-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `gh-matrix-job-url-example`: **54**
+- Mapping file: [`gh-matrix-job-url-example__content-map.md`](gh-matrix-job-url-example__content-map.md)
+- All copied files use the prefix pattern `gh-matrix-job-url-example__content__*`.

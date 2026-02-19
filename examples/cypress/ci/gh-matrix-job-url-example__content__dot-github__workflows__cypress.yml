@@ -1,0 +1,35 @@
+name: End-to-end tests
+on: [push]
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: read
+      actions: read
+    strategy:
+      fail-fast: false
+      matrix:
+        # run 3 copies of the current job in parallel
+        containers: [1, 2, 3]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Get Current Job Log URL
+        uses: Tiryoh/gha-jobid-action@v0
+        id: jobs
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          job_name: cypress-tests (${{ matrix.containers }}) # job name filter
+          per_page: 30 # increase if you have many jobs
+
+      - name: Output and Save Current Job Log URL
+        run: |
+          echo ${{ steps.jobs.outputs.html_url }}
+          echo "MATRIX_JOB_URL=${{ steps.jobs.outputs.html_url }}" >> $GITHUB_ENV
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v2
+        with:
+          command: yarn currents run --record --parallel --key ${{ secrets.CURRENTS_RECORD_KEY }}

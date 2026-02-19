@@ -53,3 +53,9 @@ An example Nx workspace showing how to use the **`@currents/nx` executor** to ru
 ## Source markdown copied into this folder
 
 - [`currents-nx-example__source__README.md`](currents-nx-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-nx-example`: **49**
+- Mapping file: [`currents-nx-example__content-map.md`](currents-nx-example__content-map.md)
+- All copied files use the prefix pattern `currents-nx-example__content__*`.

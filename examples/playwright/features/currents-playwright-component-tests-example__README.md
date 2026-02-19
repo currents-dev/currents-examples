@@ -59,3 +59,9 @@ A minimal example showing **Playwright Component Testing (React)** reported to *
 ## Source markdown copied into this folder
 
 - [`currents-playwright-component-tests-example__source__README.md`](currents-playwright-component-tests-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-playwright-component-tests-example`: **22**
+- Mapping file: [`currents-playwright-component-tests-example__content-map.md`](currents-playwright-component-tests-example__content-map.md)
+- All copied files use the prefix pattern `currents-playwright-component-tests-example__content__*`.

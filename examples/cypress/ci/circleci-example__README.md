@@ -57,3 +57,9 @@ An example repo showing how to run **Cypress tests on CircleCI** and record/para
 ## Source markdown copied into this folder
 
 - [`circleci-example__source__README.md`](circleci-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `circleci-example`: **24**
+- Mapping file: [`circleci-example__content-map.md`](circleci-example__content-map.md)
+- All copied files use the prefix pattern `circleci-example__content__*`.

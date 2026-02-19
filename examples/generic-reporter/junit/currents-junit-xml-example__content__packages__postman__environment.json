@@ -1,0 +1,15 @@
+{
+	"id": "a452db80-b375-460d-9ad3-99c61c2788b2",
+	"name": "Testing",
+	"values": [
+		{
+			"key": "prevCiBuildId",
+			"value": "reporter-PipelineTest-3-3",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-12-06T05:22:31.134Z",
+	"_postman_exported_using": "Postman/11.21.0"
+}

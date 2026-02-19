@@ -1,0 +1,21 @@
+{
+  "name": "currents-junit-xml-example",
+  "version": "1.0.0",
+  "description": "A collection of examples that demonstrate how to integrate Currents with various testing frameworks that support JUnit XML output",
+  "author": {
+    "name": "Currents Software Inc",
+    "email": "hello@currents.dev"
+  },
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "@currents/cmd": "^1.6.9"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.3"
+  }
+}

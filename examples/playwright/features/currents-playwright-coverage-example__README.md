@@ -63,3 +63,9 @@ A Next.js + Playwright example that demonstrates **collecting code coverage** (i
 ## Source markdown copied into this folder
 
 - [`currents-playwright-coverage-example__source__README.md`](currents-playwright-coverage-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-playwright-coverage-example`: **55**
+- Mapping file: [`currents-playwright-coverage-example__content-map.md`](currents-playwright-coverage-example__content-map.md)
+- All copied files use the prefix pattern `currents-playwright-coverage-example__content__*`.

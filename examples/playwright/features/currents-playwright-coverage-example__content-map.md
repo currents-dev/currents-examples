@@ -1,0 +1,61 @@
+# currents-playwright-coverage-example copied repository content map
+
+- Total tracked files copied: **55**
+
+| Source path | Copied file |
+| --- | --- |
+| `.gitignore` | `currents-playwright-coverage-example__content__dot-gitignore` |
+| `LICENSE` | `currents-playwright-coverage-example__content__LICENSE` |
+| `README.md` | `currents-playwright-coverage-example__content__README.md` |
+| `app/blog/[slug]/page.tsx` | `currents-playwright-coverage-example__content__app__blog__[slug]__page.tsx` |
+| `app/blog/page.tsx` | `currents-playwright-coverage-example__content__app__blog__page.tsx` |
+| `app/components/caption.tsx` | `currents-playwright-coverage-example__content__app__components__caption.tsx` |
+| `app/components/footer.tsx` | `currents-playwright-coverage-example__content__app__components__footer.tsx` |
+| `app/components/image-grid.tsx` | `currents-playwright-coverage-example__content__app__components__image-grid.tsx` |
+| `app/components/mdx.tsx` | `currents-playwright-coverage-example__content__app__components__mdx.tsx` |
+| `app/components/nav.tsx` | `currents-playwright-coverage-example__content__app__components__nav.tsx` |
+| `app/components/theme-switch.tsx` | `currents-playwright-coverage-example__content__app__components__theme-switch.tsx` |
+| `app/components/tweet.css` | `currents-playwright-coverage-example__content__app__components__tweet.css` |
+| `app/components/tweet.tsx` | `currents-playwright-coverage-example__content__app__components__tweet.tsx` |
+| `app/components/youtube.tsx` | `currents-playwright-coverage-example__content__app__components__youtube.tsx` |
+| `app/config.ts` | `currents-playwright-coverage-example__content__app__config.ts` |
+| `app/error.tsx` | `currents-playwright-coverage-example__content__app__error.tsx` |
+| `app/feed/[format]/route.ts` | `currents-playwright-coverage-example__content__app__feed__[format]__route.ts` |
+| `app/global.css` | `currents-playwright-coverage-example__content__app__global.css` |
+| `app/layout.tsx` | `currents-playwright-coverage-example__content__app__layout.tsx` |
+| `app/lib/posts.ts` | `currents-playwright-coverage-example__content__app__lib__posts.ts` |
+| `app/not-found.tsx` | `currents-playwright-coverage-example__content__app__not-found.tsx` |
+| `app/og/route.tsx` | `currents-playwright-coverage-example__content__app__og__route.tsx` |
+| `app/page.tsx` | `currents-playwright-coverage-example__content__app__page.tsx` |
+| `app/photos/page.tsx` | `currents-playwright-coverage-example__content__app__photos__page.tsx` |
+| `app/projects/page.tsx` | `currents-playwright-coverage-example__content__app__projects__page.tsx` |
+| `app/projects/project-data.tsx` | `currents-playwright-coverage-example__content__app__projects__project-data.tsx` |
+| `app/robots.ts` | `currents-playwright-coverage-example__content__app__robots.ts` |
+| `app/sitemap.ts` | `currents-playwright-coverage-example__content__app__sitemap.ts` |
+| `babel.config.js` | `currents-playwright-coverage-example__content__babel.config.js` |
+| `content/custom-mdx-examples.mdx` | `currents-playwright-coverage-example__content__content__custom-mdx-examples.mdx` |
+| `content/getting-started.mdx` | `currents-playwright-coverage-example__content__content__getting-started.mdx` |
+| `next.config.js` | `currents-playwright-coverage-example__content__next.config.js` |
+| `nyc.config.js` | `currents-playwright-coverage-example__content__nyc.config.js` |
+| `package-lock.json` | `currents-playwright-coverage-example__content__package-lock.json` |
+| `package.json` | `currents-playwright-coverage-example__content__package.json` |
+| `playwright.config.ts` | `currents-playwright-coverage-example__content__playwright.config.ts` |
+| `postcss.config.js` | `currents-playwright-coverage-example__content__postcss.config.js` |
+| `public/dark-mode-demo.png` | `currents-playwright-coverage-example__content__public__dark-mode-demo.png` |
+| `public/favicon.ico` | `currents-playwright-coverage-example__content__public__favicon.ico` |
+| `public/light-mode-demo.png` | `currents-playwright-coverage-example__content__public__light-mode-demo.png` |
+| `public/logo.png` | `currents-playwright-coverage-example__content__public__logo.png` |
+| `public/opengraph-image.png` | `currents-playwright-coverage-example__content__public__opengraph-image.png` |
+| `public/photos/photo1.jpg` | `currents-playwright-coverage-example__content__public__photos__photo1.jpg` |
+| `public/photos/photo2.jpg` | `currents-playwright-coverage-example__content__public__photos__photo2.jpg` |
+| `public/photos/photo3.jpg` | `currents-playwright-coverage-example__content__public__photos__photo3.jpg` |
+| `public/photos/photo4.jpg` | `currents-playwright-coverage-example__content__public__photos__photo4.jpg` |
+| `public/photos/photo5.jpg` | `currents-playwright-coverage-example__content__public__photos__photo5.jpg` |
+| `public/photos/photo6.jpg` | `currents-playwright-coverage-example__content__public__photos__photo6.jpg` |
+| `public/profile.png` | `currents-playwright-coverage-example__content__public__profile.png` |
+| `tailwind.config.js` | `currents-playwright-coverage-example__content__tailwind.config.js` |
+| `tests/e2e/empty-coverage.spec.ts` | `currents-playwright-coverage-example__content__tests__e2e__empty-coverage.spec.ts` |
+| `tests/e2e/home.spec.ts` | `currents-playwright-coverage-example__content__tests__e2e__home.spec.ts` |
+| `tests/e2e/projects.spec.ts` | `currents-playwright-coverage-example__content__tests__e2e__projects.spec.ts` |
+| `tests/e2e/test.ts` | `currents-playwright-coverage-example__content__tests__e2e__test.ts` |
+| `tsconfig.json` | `currents-playwright-coverage-example__content__tsconfig.json` |

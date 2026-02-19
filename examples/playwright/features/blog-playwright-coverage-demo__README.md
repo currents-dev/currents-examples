@@ -58,3 +58,9 @@ A tiny demo project that accompanies the Currents blog post **“How To Measure 
 ## Source markdown copied into this folder
 
 - No source markdown files were found for this repository.
+
+## Repository content copied into this folder
+
+- Total files copied from `blog-playwright-coverage-demo`: **17**
+- Mapping file: [`blog-playwright-coverage-demo__content-map.md`](blog-playwright-coverage-demo__content-map.md)
+- All copied files use the prefix pattern `blog-playwright-coverage-demo__content__*`.

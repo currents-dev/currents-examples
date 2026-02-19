@@ -51,3 +51,9 @@ An example Netlify-deployed Astro site template that includes a **Netlify Build 
 ## Source markdown copied into this folder
 
 - [`currents-netlify-example__source__README.md`](currents-netlify-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-netlify-example`: **17**
+- Mapping file: [`currents-netlify-example__content-map.md`](currents-netlify-example__content-map.md)
+- All copied files use the prefix pattern `currents-netlify-example__content__*`.

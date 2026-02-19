@@ -53,3 +53,9 @@ A minimal example showing how to report **Node.js test results** (Node’s built
 ## Source markdown copied into this folder
 
 - [`currents-nodejs-github-actions-example__source__README.md`](currents-nodejs-github-actions-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-nodejs-github-actions-example`: **16**
+- Mapping file: [`currents-nodejs-github-actions-example__content-map.md`](currents-nodejs-github-actions-example__content-map.md)
+- All copied files use the prefix pattern `currents-nodejs-github-actions-example__content__*`.

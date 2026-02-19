@@ -70,3 +70,9 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
 ## Source markdown copied into this folder
 
 - [`jenkins-last-failed__source__README.md`](jenkins-last-failed__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `jenkins-last-failed`: **11**
+- Mapping file: [`jenkins-last-failed__content-map.md`](jenkins-last-failed__content-map.md)
+- All copied files use the prefix pattern `jenkins-last-failed__content__*`.

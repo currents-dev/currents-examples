@@ -52,3 +52,9 @@ An example showing how to run **Playwright tests on CircleCI using 3 parallel co
 ## Source markdown copied into this folder
 
 - [`circleci-pw-example__source__README.md`](circleci-pw-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `circleci-pw-example`: **12**
+- Mapping file: [`circleci-pw-example__content-map.md`](circleci-pw-example__content-map.md)
+- All copied files use the prefix pattern `circleci-pw-example__content__*`.

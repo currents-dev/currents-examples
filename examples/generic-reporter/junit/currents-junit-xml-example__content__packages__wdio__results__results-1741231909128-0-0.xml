@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="My Login application incorrect" timestamp="2025-03-05T22:31:51" time="7.377" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application incorrect"/>
+      <property name="capabilities" value="chrome.133_0_6943_142.mac"/>
+      <property name="file" value="file://./tests/signup.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.133_0_6943_142.mac.My_Login_application_incorrect" name="should not login with invalid credentials" time="7.374" file="file://./tests/signup.e2e.js">
+      <failure message="Expect  to have text&#xA;&#xA;Expected: StringContaining &quot;You logged into a secure area!&quot;&#xA;Received: &quot;Your password is invalid!&#xA;×&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.8AAF730B359299614FF4FB731EEB7752.e.2/clear - {}
+RESULT: {}
+COMMAND: POST /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.8AAF730B359299614FF4FB731EEB7752.e.2/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.8AAF730B359299614FF4FB731EEB7752.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.8AAF730B359299614FF4FB731EEB7752.e.4/value - {"text":"123"}
+RESULT: {"text":"123"}
+COMMAND: POST /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.8AAF730B359299614FF4FB731EEB7752.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: GET /session/01cfdf2e3a2ca3cc458f82379326705f/element/f.F729908618F805AF42FBC441B50FAD50.d.E9176113C5793FC599655876EA69383E.e.13/text - {}
+RESULT: {}
+COMMAND: DELETE /session/01cfdf2e3a2ca3cc458f82379326705f - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Expect  to have text
+
+Expected: StringContaining "You logged into a secure area!"
+Received: "Your password is invalid!
+×"
+    at Context.<anonymous> (/Users/miguelangarano/Documents/GitHub/currents-junit-xml-example/packages/wdio/tests/signup.e2e.js:11:41)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,12 @@
+.DS_Store
+.vscode
+.idea
+
+# npm
+node_modules
+npm-debug.log
+
+# tests
+test-results
+playwright-report
+**/.features-gen/**/*.spec.js

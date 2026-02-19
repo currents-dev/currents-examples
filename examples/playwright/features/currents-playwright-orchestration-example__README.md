@@ -62,3 +62,9 @@ An example repo that demonstrates how **Currents Orchestration** (batched orches
 ## Source markdown copied into this folder
 
 - [`currents-playwright-orchestration-example__source__README.md`](currents-playwright-orchestration-example__source__README.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `currents-playwright-orchestration-example`: **90**
+- Mapping file: [`currents-playwright-orchestration-example__content-map.md`](currents-playwright-orchestration-example__content-map.md)
+- All copied files use the prefix pattern `currents-playwright-orchestration-example__content__*`.

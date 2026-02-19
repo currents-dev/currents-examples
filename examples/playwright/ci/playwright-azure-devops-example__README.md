@@ -57,3 +57,9 @@ Example pipeline behavior (from Currents docs):
 - [`playwright-azure-devops-example__source__CODE_OF_CONDUCT.md`](playwright-azure-devops-example__source__CODE_OF_CONDUCT.md)
 - [`playwright-azure-devops-example__source__README.md`](playwright-azure-devops-example__source__README.md)
 - [`playwright-azure-devops-example__source__SECURITY.md`](playwright-azure-devops-example__source__SECURITY.md)
+
+## Repository content copied into this folder
+
+- Total files copied from `playwright-azure-devops-example`: **31**
+- Mapping file: [`playwright-azure-devops-example__content-map.md`](playwright-azure-devops-example__content-map.md)
+- All copied files use the prefix pattern `playwright-azure-devops-example__content__*`.
