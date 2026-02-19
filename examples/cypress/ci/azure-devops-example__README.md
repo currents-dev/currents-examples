@@ -58,9 +58,3 @@ An example of running **Cypress** tests on **Azure DevOps Pipelines** using **Cu
 ## Source markdown copied into this folder
 
 - [`azure-devops-example__source__README.md`](azure-devops-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `azure-devops-example`: **52**
-- Mapping file: [`azure-devops-example__content-map.md`](azure-devops-example__content-map.md)
-- All copied files use the prefix pattern `azure-devops-example__content__*`.

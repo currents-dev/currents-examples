@@ -71,9 +71,3 @@ From the README’s “Examples” section (each is a workflow file):
 
 - [`playwright-gh-actions-demo__source__dot-github__ISSUE_TEMPLATE__testing-scenario-idea-template.md`](playwright-gh-actions-demo__source__dot-github__ISSUE_TEMPLATE__testing-scenario-idea-template.md)
 - [`playwright-gh-actions-demo__source__README.md`](playwright-gh-actions-demo__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `playwright-gh-actions-demo`: **53**
-- Mapping file: [`playwright-gh-actions-demo__content-map.md`](playwright-gh-actions-demo__content-map.md)
-- All copied files use the prefix pattern `playwright-gh-actions-demo__content__*`.

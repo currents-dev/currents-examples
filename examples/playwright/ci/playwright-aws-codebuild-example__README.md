@@ -57,9 +57,3 @@ An example project showing how to run **Playwright tests** on **AWS CodeBuild** 
 ## Source markdown copied into this folder
 
 - [`playwright-aws-codebuild-example__source__README.md`](playwright-aws-codebuild-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `playwright-aws-codebuild-example`: **28**
-- Mapping file: [`playwright-aws-codebuild-example__content-map.md`](playwright-aws-codebuild-example__content-map.md)
-- All copied files use the prefix pattern `playwright-aws-codebuild-example__content__*`.

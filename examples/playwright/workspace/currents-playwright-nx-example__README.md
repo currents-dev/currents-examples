@@ -75,9 +75,3 @@ A GitHub Actions workflow example exists for running the `or8n` target across sh
 ## Source markdown copied into this folder
 
 - [`currents-playwright-nx-example__source__README.md`](currents-playwright-nx-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-playwright-nx-example`: **34**
-- Mapping file: [`currents-playwright-nx-example__content-map.md`](currents-playwright-nx-example__content-map.md)
-- All copied files use the prefix pattern `currents-playwright-nx-example__content__*`.

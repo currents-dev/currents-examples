@@ -47,9 +47,3 @@ An example repository showing how to run **Cypress tests on GitHub Actions** and
 ## Source markdown copied into this folder
 
 - [`gh-actions-example__source__README.md`](gh-actions-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `gh-actions-example`: **24**
-- Mapping file: [`gh-actions-example__content-map.md`](gh-actions-example__content-map.md)
-- All copied files use the prefix pattern `gh-actions-example__content__*`.

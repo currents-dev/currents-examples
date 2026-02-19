@@ -53,9 +53,3 @@ A minimal example repo demonstrating **Currents + Playwright + pnpm**: install d
 ## Source markdown copied into this folder
 
 - [`currents-pnpm__source__README.md`](currents-pnpm__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-pnpm`: **11**
-- Mapping file: [`currents-pnpm__content-map.md`](currents-pnpm__content-map.md)
-- All copied files use the prefix pattern `currents-pnpm__content__*`.

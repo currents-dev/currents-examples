@@ -66,9 +66,3 @@ Root README links to these examples (each under `packages/`):
 - [`currents-junit-xml-example__source__packages__wdio__README.md`](currents-junit-xml-example__source__packages__wdio__README.md)
 - [`currents-junit-xml-example__source__README.md`](currents-junit-xml-example__source__README.md)
 - [`currents-junit-xml-example__source__scripts__README.md`](currents-junit-xml-example__source__scripts__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-junit-xml-example`: **53**
-- Mapping file: [`currents-junit-xml-example__content-map.md`](currents-junit-xml-example__content-map.md)
-- All copied files use the prefix pattern `currents-junit-xml-example__content__*`.

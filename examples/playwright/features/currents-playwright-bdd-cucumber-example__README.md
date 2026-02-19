@@ -62,9 +62,3 @@ A working example of **Playwright + BDD (Gherkin/Cucumber-style)** using **playw
 ## Source markdown copied into this folder
 
 - [`currents-playwright-bdd-cucumber-example__source__README.md`](currents-playwright-bdd-cucumber-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-playwright-bdd-cucumber-example`: **16**
-- Mapping file: [`currents-playwright-bdd-cucumber-example__content-map.md`](currents-playwright-bdd-cucumber-example__content-map.md)
-- All copied files use the prefix pattern `currents-playwright-bdd-cucumber-example__content__*`.

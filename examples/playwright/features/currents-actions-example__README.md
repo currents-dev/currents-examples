@@ -54,9 +54,3 @@ Also, the repository layout shows:
 ## Source markdown copied into this folder
 
 - [`currents-actions-example__source__README.md`](currents-actions-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-actions-example`: **14**
-- Mapping file: [`currents-actions-example__content-map.md`](currents-actions-example__content-map.md)
-- All copied files use the prefix pattern `currents-actions-example__content__*`.

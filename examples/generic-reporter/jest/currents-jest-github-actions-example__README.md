@@ -53,9 +53,3 @@ A minimal example showing how to report **Jest** test results to **Currents** an
 ## Source markdown copied into this folder
 
 - [`currents-jest-github-actions-example__source__README.md`](currents-jest-github-actions-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-jest-github-actions-example`: **10**
-- Mapping file: [`currents-jest-github-actions-example__content-map.md`](currents-jest-github-actions-example__content-map.md)
-- All copied files use the prefix pattern `currents-jest-github-actions-example__content__*`.

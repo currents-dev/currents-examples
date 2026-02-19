@@ -62,9 +62,3 @@ Example of running **Cypress + `cypress-cucumber-preprocessor` (feature files / 
 ## Source markdown copied into this folder
 
 - [`currents-cypress-cucumber-example__source__README.md`](currents-cypress-cucumber-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `currents-cypress-cucumber-example`: **14**
-- Mapping file: [`currents-cypress-cucumber-example__content-map.md`](currents-cypress-cucumber-example__content-map.md)
-- All copied files use the prefix pattern `currents-cypress-cucumber-example__content__*`.

@@ -60,9 +60,3 @@ An example repo showing how to run **Cypress tests in parallel on AWS CodeBuild*
 ## Source markdown copied into this folder
 
 - [`aws-codebuild-example__source__README.md`](aws-codebuild-example__source__README.md)
-
-## Repository content copied into this folder
-
-- Total files copied from `aws-codebuild-example`: **25**
-- Mapping file: [`aws-codebuild-example__content-map.md`](aws-codebuild-example__content-map.md)
-- All copied files use the prefix pattern `aws-codebuild-example__content__*`.
