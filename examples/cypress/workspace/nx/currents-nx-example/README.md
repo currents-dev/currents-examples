@@ -53,3 +53,9 @@ An example Nx workspace showing how to use the **`@currents/nx` executor** to ru
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **49**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

@@ -1,0 +1,17 @@
+{
+  "name": "currents-jest-github-actions-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@currents/cmd": "^1.0.0",
+    "@currents/jest": "^1.0.0",
+    "jest": "^29.7.0"
+  }
+}

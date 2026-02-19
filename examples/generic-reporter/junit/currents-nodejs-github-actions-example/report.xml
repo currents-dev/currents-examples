@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="root">
+  <testsuite name="file:///tests/annotations.test.mjs" timestamp="2025-04-30T12:12:28.792Z" hostname="Yohays-MacBook-Pro.local" failures="0" skipped="4" time="0.0054340000000000005">
+    <testcase name="Math Operations &gt; Addition &gt; should return 4 when adding 2 + 2" time="0.000173"/>
+    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -2 + 2" time="0.000039">
+      <skipped/>
+    </testcase>
+    <testcase name="Math Operations &gt; Addition &gt; should handle floating point addition" time="0.000449">
+      <skipped type="todo"/>
+    </testcase>
+    <testcase name="Math Operations &gt; Subtraction" time="0.000034" testNumber="2">
+      <skipped/>
+    </testcase>
+    <testcase name="Math Operations &gt; Multiplication" time="0.00003" testNumber="3">
+      <skipped type="todo"/>
+    </testcase>
+    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 4 / 2" time="0.000053"/>
+    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000175"/>
+  </testsuite>
+  <testsuite name="tests/edge-cases.test.mjs" timestamp="2025-04-30T12:12:28.797Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.032008">
+    <testcase name="/Users/ynahmany/Documents/github/currents/currents-nodejs-github-actions-example/tests/edge-cases.test.mjs" time="0.032008">
+      <failure type="testCodeFailure" message="test failed
+{
+  &quot;failureType&quot;: &quot;testCodeFailure&quot;,
+  &quot;cause&quot;: &quot;test failed&quot;,
+  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;,
+  &quot;exitCode&quot;: 1,
+  &quot;signal&quot;: null
+}
+"><![CDATA[{
+  "failureType": "testCodeFailure",
+  "cause": "test failed",
+  "code": "ERR_TEST_FAILURE",
+  "exitCode": 1,
+  "signal": null
+}
+]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="file:///tests/nesting.test.mjs" timestamp="2025-04-30T12:12:28.799Z" hostname="Yohays-MacBook-Pro.local" failures="3" skipped="0" time="0.006468">
+    <testcase name="Math Operations &gt; Addition &gt; should return 5 when adding 2 and 3" time="0.00019"/>
+    <testcase name="Math Operations &gt; Addition &gt; should return 0 when adding -1 and 1" time="0.000378"/>
+    <testcase name="Math Operations &gt; Subtraction &gt; should return 1 when subtracting 3 from 4" time="0.000126"/>
+    <testcase name="Math Operations &gt; Subtraction &gt; should return -2 when subtracting 3 from 1" time="0.000034"/>
+    <testcase name="Math Operations &gt; Multiplication &gt; should return 6 when multiplying 2 and 3" time="0.000052"/>
+    <testcase name="Math Operations &gt; Multiplication &gt; should return 0 when multiplying any number by 0" time="0.000035"/>
+    <testcase name="Math Operations &gt; Division &gt; should return 2 when dividing 6 by 3" time="0.000048"/>
+    <testcase name="Math Operations &gt; Division &gt; should throw an error when dividing by 0" time="0.000405">
+      <failure type="testCodeFailure" message="Missing expected exception.
+{
+  &quot;failureType&quot;: &quot;testCodeFailure&quot;,
+  &quot;cause&quot;: {
+    &quot;generatedMessage&quot;: false,
+    &quot;code&quot;: &quot;ERR_ASSERTION&quot;,
+    &quot;expected&quot;: {},
+    &quot;operator&quot;: &quot;throws&quot;
+  },
+  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;
+}
+"><![CDATA[{
+  "failureType": "testCodeFailure",
+  "cause": {
+    "generatedMessage": false,
+    "code": "ERR_ASSERTION",
+    "expected": {},
+    "operator": "throws"
+  },
+  "code": "ERR_TEST_FAILURE"
+}
+]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="file:///tests/simple.test.mjs" timestamp="2025-04-30T12:12:28.800Z" hostname="Yohays-MacBook-Pro.local" failures="2" skipped="0" time="0.00261">
+    <testcase name="Math operations - addition" time="0.000539"/>
+    <testcase name="Math operations - subtraction" time="0.000046"/>
+    <testcase name="Math operations - multiplication" time="0.00004"/>
+    <testcase name="Math operations - division" time="0.000038"/>
+    <testcase name="Math operations - division by zero" time="0.000114"/>
+    <testcase name="Math operations - incorrect addition" time="0.001152">
+      <failure type="testCodeFailure" message="Expected values to be strictly equal:
+
+4 !== 5
+
+{
+  &quot;failureType&quot;: &quot;testCodeFailure&quot;,
+  &quot;cause&quot;: {
+    &quot;generatedMessage&quot;: true,
+    &quot;code&quot;: &quot;ERR_ASSERTION&quot;,
+    &quot;actual&quot;: 4,
+    &quot;expected&quot;: 5,
+    &quot;operator&quot;: &quot;strictEqual&quot;
+  },
+  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;
+}
+"><![CDATA[{
+  "failureType": "testCodeFailure",
+  "cause": {
+    "generatedMessage": true,
+    "code": "ERR_ASSERTION",
+    "actual": 4,
+    "expected": 5,
+    "operator": "strictEqual"
+  },
+  "code": "ERR_TEST_FAILURE"
+}
+]]></failure>
+    </testcase>
+    <testcase name="Math operations - incorrect addition &gt; should return 5" time="0.000681">
+      <failure type="testCodeFailure" message="Expected values to be strictly equal:
+
+4 !== 5
+
+{
+  &quot;failureType&quot;: &quot;testCodeFailure&quot;,
+  &quot;cause&quot;: {
+    &quot;generatedMessage&quot;: true,
+    &quot;code&quot;: &quot;ERR_ASSERTION&quot;,
+    &quot;actual&quot;: 4,
+    &quot;expected&quot;: 5,
+    &quot;operator&quot;: &quot;strictEqual&quot;
+  },
+  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;
+}
+"><![CDATA[{
+  "failureType": "testCodeFailure",
+  "cause": {
+    "generatedMessage": true,
+    "code": "ERR_ASSERTION",
+    "actual": 4,
+    "expected": 5,
+    "operator": "strictEqual"
+  },
+  "code": "ERR_TEST_FAILURE"
+}
+]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="file:///tests/timeout.test.mjs" timestamp="2025-04-30T12:12:28.800Z" hostname="Yohays-MacBook-Pro.local" failures="1" skipped="0" time="0.002001">
+    <testcase name="this will timeout" time="0.002001">
+      <failure type="cancelledByParent" message="Promise resolution is still pending but the event loop has already resolved
+{
+  &quot;failureType&quot;: &quot;cancelledByParent&quot;,
+  &quot;cause&quot;: &quot;Promise resolution is still pending but the event loop has already resolved&quot;,
+  &quot;code&quot;: &quot;ERR_TEST_FAILURE&quot;
+}
+"><![CDATA[{
+  "failureType": "cancelledByParent",
+  "cause": "Promise resolution is still pending but the event loop has already resolved",
+  "code": "ERR_TEST_FAILURE"
+}
+]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

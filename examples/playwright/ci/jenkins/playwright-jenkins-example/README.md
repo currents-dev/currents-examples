@@ -55,3 +55,9 @@ A minimal example of running **Playwright tests in Jenkins Pipeline** using the 
 ## Source markdown copied into this folder
 
 - No source markdown files were found for this repository.
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **4**
+- Source repository does not include a root `README.md`.
+- Path mapping: [`content-map.md`](content-map.md)

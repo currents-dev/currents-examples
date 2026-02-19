@@ -47,3 +47,9 @@ An example repository showing how to run **Cypress tests on GitHub Actions** and
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **24**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

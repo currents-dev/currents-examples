@@ -1,0 +1,52 @@
+name: failed-only-or8n
+
+on:
+  push:
+
+jobs:
+  test-or8n:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3]
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.49.0-noble
+    env:
+      CURRENTS_PROJECT_ID: bnsqNa
+      CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
+      CURRENTS_CI_BUILD_ID: ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
+      CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      # https://github.com/actions/runner-images/issues/6775
+      - run: |
+          echo "$GITHUB_WORKSPACE"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install chrome
+
+      - name: Playwright Last Failed action
+        id: last-failed-action
+        uses: currents-dev/playwright-last-failed@v1
+        with:
+          or8n: true
+          # debug: true
+          # previous-ci-build-id: default is ${{ github.repository }}-${{ github.run_id }}-<%= ${{ github.run_attempt }} - 1 %>
+          pw-output-dir: basic/test-results
+
+      - name: Playwright Tests
+        working-directory: ./basic
+        run: |
+          COMMAND="npx pwc-p ${{ steps.last-failed-action.outputs.extra-pw-flags }}"
+          echo "Running command: $COMMAND"
+          $COMMAND

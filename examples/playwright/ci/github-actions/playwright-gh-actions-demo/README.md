@@ -71,3 +71,9 @@ From the README’s “Examples” section (each is a workflow file):
 
 - [`source__dot-github__ISSUE_TEMPLATE__testing-scenario-idea-template.md`](source__dot-github__ISSUE_TEMPLATE__testing-scenario-idea-template.md)
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **53**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

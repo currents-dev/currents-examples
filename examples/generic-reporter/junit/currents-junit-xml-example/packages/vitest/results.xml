@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="12" failures="2" errors="0" time="0.204">
+    <testsuite name="tests/numberUtils.spec.js" timestamp="2025-02-12T23:45:14.925Z" hostname="Miguels-Laptop.local" tests="6" failures="0" errors="0" skipped="0" time="0.001945375">
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; calculates average of positive numbers" time="0.000765917">
+        </testcase>
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; handles array with single number" time="0.000145667">
+        </testcase>
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; handles empty array" time="0.0000645">
+        </testcase>
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; handles negative numbers" time="0.000065083">
+        </testcase>
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; handles decimal numbers" time="0.000165375">
+        </testcase>
+        <testcase classname="tests/numberUtils.spec.js" name="calculateAverage &gt; returns 0 for invalid input" time="0.000067417">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/stringUtils.spec.js" timestamp="2025-02-12T23:45:14.928Z" hostname="Miguels-Laptop.local" tests="6" failures="2" errors="0" skipped="0" time="0.006926833">
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; capitalizes first letter of each word" time="0.000788333">
+        </testcase>
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; handles already capitalized words" time="0.0002145">
+        </testcase>
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; handles empty string" time="0.000067667">
+        </testcase>
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; handles single word" time="0.00006425">
+        </testcase>
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; handles mixed case input" time="0.00415575">
+            <failure message="expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality
+
+Expected: &quot;Hello World!&quot;
+Received: &quot;Hello World&quot;
+
+ ❯ tests/stringUtils.spec.js:22:44
+            </failure>
+            <failure message="expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality
+
+Expected: &quot;Hello World!&quot;
+Received: &quot;Hello World&quot;
+
+ ❯ tests/stringUtils.spec.js:22:44
+            </failure>
+            <failure message="expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality
+
+Expected: &quot;Hello World!&quot;
+Received: &quot;Hello World&quot;
+
+ ❯ tests/stringUtils.spec.js:22:44
+            </failure>
+            <failure message="expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;Hello World&apos; to be &apos;Hello World!&apos; // Object.is equality
+
+Expected: &quot;Hello World!&quot;
+Received: &quot;Hello World&quot;
+
+ ❯ tests/stringUtils.spec.js:22:44
+            </failure>
+        </testcase>
+        <testcase classname="tests/stringUtils.spec.js" name="capitalizeWords &gt; errors on number received" time="0.000967833">
+            <failure message="str.split is not a function" type="TypeError">
+TypeError: str.split is not a function
+ ❯ Module.capitalizeWords stringUtils.js:4:6
+ ❯ tests/stringUtils.spec.js:26:12
+            </failure>
+            <failure message="str.split is not a function" type="TypeError">
+TypeError: str.split is not a function
+ ❯ Module.capitalizeWords stringUtils.js:4:6
+ ❯ tests/stringUtils.spec.js:26:12
+            </failure>
+            <failure message="str.split is not a function" type="TypeError">
+TypeError: str.split is not a function
+ ❯ Module.capitalizeWords stringUtils.js:4:6
+ ❯ tests/stringUtils.spec.js:26:12
+            </failure>
+            <failure message="str.split is not a function" type="TypeError">
+TypeError: str.split is not a function
+ ❯ Module.capitalizeWords stringUtils.js:4:6
+ ❯ tests/stringUtils.spec.js:26:12
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

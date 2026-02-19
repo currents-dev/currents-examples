@@ -63,3 +63,9 @@ A Next.js + Playwright example that demonstrates **collecting code coverage** (i
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **55**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

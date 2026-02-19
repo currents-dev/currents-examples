@@ -1,0 +1,12 @@
+{
+  "name": "@currents-junit-xml-example/vitest-shards",
+  "version": "1.0.0",
+  "description": "Integrate Vitest with Currents and run tests in parallel using shards",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vitest": "^2.1.5"
+  }
+}

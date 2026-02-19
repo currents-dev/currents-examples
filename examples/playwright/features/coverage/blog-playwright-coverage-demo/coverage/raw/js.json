@@ -1,0 +1,186 @@
+[
+  {
+    "url": "http://localhost:5173/src/app.js",
+    "scriptId": "4",
+    "source": "import { calculateTotal } from \"./utils/math.js\";\nimport { validateInputs } from \"./ui/validate.js\";\nimport { fetchItems } from \"./services/api.js\";\n\nconst qtyEl = document.getElementById(\"qty\");\nconst priceEl = document.getElementById(\"price\");\nconst calcBtn = document.getElementById(\"calc\");\nconst totalEl = document.getElementById(\"total\");\nconst errEl = document.getElementById(\"error\");\n\ncalcBtn.addEventListener(\"click\", () => {\n  const qty = Number(qtyEl.value);\n  const price = Number(priceEl.value);\n  const { ok } = validateInputs(qty, price);\n  if (!ok) {\n    errEl.classList.remove(\"hidden\");\n    errEl.classList.add(\"error\");\n    return;\n  }\n  errEl.classList.add(\"hidden\");\n  const total = calculateTotal(qty, price);\n  totalEl.textContent = String(total);\n});\n\ndocument.getElementById(\"load-items\").addEventListener(\"click\", async () => {\n  const list = document.getElementById(\"items\");\n  list.innerHTML = \"\";\n  const items = await fetchItems();\n  for (const item of items) {\n    const li = document.createElement(\"li\");\n    li.textContent = item.name;\n    list.appendChild(li);\n  }\n});\n",
+    "functions": [
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 0,
+            "endOffset": 1104,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 428,
+            "endOffset": 773,
+            "count": 1
+          },
+          {
+            "startOffset": 566,
+            "endOffset": 655,
+            "count": 0
+          }
+        ]
+      },
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 841,
+            "endOffset": 1101,
+            "count": 1
+          },
+          {
+            "startOffset": 991,
+            "endOffset": 1099,
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:5173/src/utils/math.js",
+    "scriptId": "5",
+    "source": "export function calculateTotal(qty, price) {\n  if (qty < 0 || price < 0) return 0; // simple guard\n  if (qty === 0) return 0; // edge case we will NOT cover\n  return qty * price;\n}\n// Unused on purpose to show uncovered code\nexport function legacyDiscount(total) {\n  return total * 0.9;\n}\n",
+    "functions": [
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 0,
+            "endOffset": 289,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "functionName": "calculateTotal",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 7,
+            "endOffset": 180,
+            "count": 1
+          },
+          {
+            "startOffset": 73,
+            "endOffset": 82,
+            "count": 0
+          },
+          {
+            "startOffset": 116,
+            "endOffset": 125,
+            "count": 0
+          }
+        ]
+      },
+      {
+        "functionName": "legacyDiscount",
+        "isBlockCoverage": false,
+        "ranges": [
+          {
+            "startOffset": 232,
+            "endOffset": 288,
+            "count": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:5173/src/ui/validate.js",
+    "scriptId": "6",
+    "source": "export function isValidNumber(n) {\n  return typeof n === \"number\" && Number.isFinite(n);\n}\nexport function validateInputs(qty, price) {\n  if (!isValidNumber(qty) || !isValidNumber(price)) {\n    return { ok: false, reason: \"NaN\" };\n  }\n  if (qty < 0 || price < 0) {\n    return { ok: false, reason: \"negative\" };\n  }\n  return { ok: true };\n}\n",
+    "functions": [
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 0,
+            "endOffset": 340,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "functionName": "isValidNumber",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 7,
+            "endOffset": 90,
+            "count": 2
+          }
+        ]
+      },
+      {
+        "functionName": "validateInputs",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 98,
+            "endOffset": 339,
+            "count": 1
+          },
+          {
+            "startOffset": 188,
+            "endOffset": 234,
+            "count": 0
+          },
+          {
+            "startOffset": 263,
+            "endOffset": 314,
+            "count": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:5173/src/services/api.js",
+    "scriptId": "7",
+    "source": "export async function fetchItems() {\n  const res = await fetch(\"/api/items\");\n  if (!res.ok) throw new Error(\"Network error\");\n  return res.json();\n}\n",
+    "functions": [
+      {
+        "functionName": "",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 0,
+            "endOffset": 150,
+            "count": 1
+          }
+        ]
+      },
+      {
+        "functionName": "fetchItems",
+        "isBlockCoverage": true,
+        "ranges": [
+          {
+            "startOffset": 7,
+            "endOffset": 149,
+            "count": 1
+          },
+          {
+            "startOffset": 93,
+            "endOffset": 126,
+            "count": 0
+          }
+        ]
+      }
+    ]
+  }
+]

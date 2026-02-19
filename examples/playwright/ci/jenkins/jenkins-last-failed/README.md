@@ -70,3 +70,9 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **11**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

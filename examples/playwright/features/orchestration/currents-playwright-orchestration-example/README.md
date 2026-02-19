@@ -62,3 +62,9 @@ An example repo that demonstrates how **Currents Orchestration** (batched orches
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **90**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

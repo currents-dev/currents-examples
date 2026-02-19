@@ -66,3 +66,9 @@ Root README links to these examples (each under `packages/`):
 - [`source__packages__wdio__README.md`](source__packages__wdio__README.md)
 - [`source__README.md`](source__README.md)
 - [`source__scripts__README.md`](source__scripts__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **53**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

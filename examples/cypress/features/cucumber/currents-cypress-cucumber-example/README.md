@@ -62,3 +62,9 @@ Example of running **Cypress + `cypress-cucumber-preprocessor` (feature files / 
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **14**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

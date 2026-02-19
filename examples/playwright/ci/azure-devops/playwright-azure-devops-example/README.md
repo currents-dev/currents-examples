@@ -57,3 +57,9 @@ Example pipeline behavior (from Currents docs):
 - [`source__CODE_OF_CONDUCT.md`](source__CODE_OF_CONDUCT.md)
 - [`source__README.md`](source__README.md)
 - [`source__SECURITY.md`](source__SECURITY.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **31**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

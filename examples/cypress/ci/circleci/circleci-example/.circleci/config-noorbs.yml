@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+  noorbs-test-currents-image:
+    parallelism: 3
+    docker:
+      - image: currents/cypress-included:12.17.4
+    steps:
+      - checkout
+      - run: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+  noorbs-test-explicit-download:
+    parallelism: 3
+    docker:
+      - image: cypress/base:18
+    steps:
+      - checkout
+      - run:
+          name: Install Cypress
+          command: CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force
+      - run: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  cypress:
+    jobs:
+      - noorbs-test-currents-image:
+          context: currents
+      - noorbs-test-explicit-download:
+          context: currents

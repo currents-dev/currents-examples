@@ -1,0 +1,19 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "e2e-03",
+  "projectType": "application",
+  "sourceRoot": "apps/e2e-03/src",
+  "targets": {
+    "or8n": {
+      "executor": "nx:run-commands",
+      "options": {
+        "config": "apps/e2e-03/playwright.config.ts",
+        "commands": [
+          {
+            "command": "npx pwc-p"
+          }
+        ]
+      }
+    }
+  }
+}

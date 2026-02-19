@@ -58,3 +58,9 @@ An example of running **Cypress** tests on **Azure DevOps Pipelines** using **Cu
 ## Source markdown copied into this folder
 
 - [`source__README.md`](source__README.md)
+
+## Repository content copied into this folder
+
+- Total tracked files copied: **52**
+- Source `README.md` is saved as `README.upstream.md`.
+- Path mapping: [`content-map.md`](content-map.md)

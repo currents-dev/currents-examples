@@ -1,0 +1,11 @@
+{
+  "name": "circleci-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "12.17.4",
+    "cypress-cloud": "^1.9.6",
+    "typescript": "^5.0.2"
+  }
+}

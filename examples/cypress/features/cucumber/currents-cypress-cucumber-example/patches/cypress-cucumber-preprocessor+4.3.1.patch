@@ -1,0 +1,21 @@
+diff --git a/node_modules/cypress-cucumber-preprocessor/cypress-tags.js b/node_modules/cypress-cucumber-preprocessor/cypress-tags.js
+index e432b84..d63747e 100755
+--- a/node_modules/cypress-cucumber-preprocessor/cypress-tags.js
++++ b/node_modules/cypress-cucumber-preprocessor/cypress-tags.js
+@@ -71,6 +71,7 @@ const paths = glob
+   })
+   .filter((pathName) => pathName.endsWith(".feature"));
+ 
++
+ const featuresToRun = paths.filter((featurePath) => {
+   const spec = `${fs.readFileSync(featurePath)}`;
+   const { feature } = new Parser().parse(spec);
+@@ -104,7 +105,7 @@ function getOsSpecificExecutable(command) {
+ }
+ 
+ function getCypressExecutable() {
+-  const command = getOsSpecificExecutable(`${__dirname}/../.bin/cypress`);
++  const command = getOsSpecificExecutable(`${__dirname}/../.bin/currents`);
+   // fallback to the globally installed cypress instead
+   return fs.existsSync(command) ? command : getOsSpecificExecutable("cypress");
+ }
