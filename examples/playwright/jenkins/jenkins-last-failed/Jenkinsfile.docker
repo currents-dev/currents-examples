@@ -1,0 +1,41 @@
+pipeline {
+    agent {
+        docker {
+            // Ensure this version matches the Playwright version in package.json
+            image 'mcr.microsoft.com/playwright:v1.48.0-jammy'
+        }
+    }
+
+    environment {
+        // Ensure these credentials are configured in Jenkins
+        CURRENTS_PROJECT_ID = credentials('CURRENTS_PROJECT_ID')
+        CURRENTS_RECORD_KEY = credentials('CURRENTS_RECORD_KEY')
+        CURRENTS_CI_BUILD_ID = "docker-${JOB_NAME}-${BUILD_ID}"
+    }
+
+    stages {
+        stage('Install Dependencies') {
+            steps {
+                // Use npm ci for reliable installs based on package-lock.json
+                sh 'npm ci'
+            }
+        }
+
+        stage('Playwright Tests') {
+            parallel {
+                stage('Shard 1/2') {
+                    steps {
+                        // Run shard 1 of 2
+                        sh 'npx pwc --key $CURRENTS_RECORD_KEY --project-id $CURRENTS_PROJECT_ID --ci-build-id $CURRENTS_CI_BUILD_ID --shard 1/2 --output test-results/shard-1'
+                    }
+                }
+                stage('Shard 2/2') {
+                    steps {
+                        // Run shard 2 of 2
+                        sh 'npx pwc --key $CURRENTS_RECORD_KEY --project-id $CURRENTS_PROJECT_ID --ci-build-id $CURRENTS_CI_BUILD_ID --shard 2/2 --output test-results/shard-2'
+                    }
+                }
+            }
+        }
+    }
+}

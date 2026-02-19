@@ -7,8 +7,9 @@
 ## What this example does
 
 An example repo showing how to run **Playwright on Jenkins** and use Currents’ **`--last-failed`** capability (rerun only previously failed tests), supporting both:
-- **native shards** (`pwc --shard=...`)
-- **Currents orchestration** (`pwc-p`)
+- native shards (`pwc --shard=...`)
+- Currents orchestration (`pwc-p`)
+- Docker-based execution (via `Jenkinsfile.docker`)
 
 ## How this example is used
 
@@ -17,6 +18,10 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
 - The `Jenkinsfile` defines parameters:
   - `CI_BUILD_ID` (if set, it reruns last-failed for that run)
   - `IS_ORCHESTRATION` (choose orchestration vs shards).
+- The `Jenkinsfile.docker` provides a simpler, containerized example:
+  - Uses `mcr.microsoft.com/playwright` image
+  - Runs 2 parallel shards
+  - Demonstrates basic Currents integration in Docker
 - If `CI_BUILD_ID != 'none'`, it first generates a `.last-run.json` file by calling:
   - `npx currents api get-run --api-key ... --project-id ... --ci-build-id ... --pw-last-run --output .last-run.json`
   This matches Currents docs: `--last-failed` needs an API key and uses `@currents/cmd` to generate `.last-run.json` for the target CI build id.
