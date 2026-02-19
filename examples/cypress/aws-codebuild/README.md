@@ -1,4 +1,4 @@
-# aws-codebuild-example
+# Cypress reporting on AWS CodeBuild
 
 - **Framework:** `cypress`
 - **Use case:** `ci/aws-codebuild`

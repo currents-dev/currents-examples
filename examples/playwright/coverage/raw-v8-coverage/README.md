@@ -1,4 +1,4 @@
-# blog-playwright-coverage-demo
+# Playwright Raw V8 Coverage
 
 - **Framework:** `playwright`
 - **Use case:** `features/coverage`

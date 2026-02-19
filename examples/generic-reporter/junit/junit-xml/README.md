@@ -1,4 +1,4 @@
-# currents-junit-xml-example
+# Generic JUnit XML Reporting
 
 - **Framework:** `generic-reporter`
 - **Use case:** `junit`

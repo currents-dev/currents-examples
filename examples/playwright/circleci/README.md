@@ -1,4 +1,4 @@
-# circleci-pw-example
+# Playwright on CircleCI
 
 - **Framework:** `playwright`
 - **Use case:** `ci/circleci`

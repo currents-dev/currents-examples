@@ -1,4 +1,4 @@
-# currents-cypress-cucumber-example
+# Cypress with Cucumber
 
 - **Framework:** `cypress`
 - **Use case:** `features/cucumber`

@@ -1,4 +1,4 @@
-# playwright-gh-actions-demo
+# Playwright on GitHub Actions
 
 - **Framework:** `playwright`
 - **Use case:** `ci/github-actions`

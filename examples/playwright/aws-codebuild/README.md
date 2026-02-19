@@ -1,4 +1,4 @@
-# playwright-aws-codebuild-example
+# Playwright on AWS CodeBuild
 
 - **Framework:** `playwright`
 - **Use case:** `ci/aws-codebuild`

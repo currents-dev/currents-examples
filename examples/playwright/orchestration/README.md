@@ -1,4 +1,4 @@
-# currents-playwright-orchestration-example
+# Playwright Orchestration
 
 - **Framework:** `playwright`
 - **Use case:** `features/orchestration`

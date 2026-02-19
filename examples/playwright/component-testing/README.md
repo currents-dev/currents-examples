@@ -1,4 +1,4 @@
-# currents-playwright-component-tests-example
+# Playwright Component Testing
 
 - **Framework:** `playwright`
 - **Use case:** `features/component-testing`

@@ -1,4 +1,4 @@
-# azure-devops-example
+# Cypress on Azure DevOps
 
 - **Framework:** `cypress`
 - **Use case:** `ci/azure-devops`

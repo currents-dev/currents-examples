@@ -1,4 +1,4 @@
-# playwright-azure-devops-example
+# Playwright on Azure DevOps
 
 - **Framework:** `playwright`
 - **Use case:** `ci/azure-devops`

@@ -1,4 +1,4 @@
-# currents-pnpm
+# Playwright with pnpm
 
 - **Framework:** `playwright`
 - **Use case:** `workspace/pnpm`

@@ -1,4 +1,4 @@
-# currents-nodejs-github-actions-example
+# Node.js JUnit Reporting on GitHub Actions
 
 - **Framework:** `generic-reporter`
 - **Use case:** `junit`

@@ -1,4 +1,4 @@
-# currents-playwright-coverage-example
+# Playwright Instrumented Coverage
 
 - **Framework:** `playwright`
 - **Use case:** `features/coverage`

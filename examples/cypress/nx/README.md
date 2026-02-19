@@ -1,4 +1,4 @@
-# currents-nx-example
+# Cypress in Nx Monorepo
 
 - **Framework:** `cypress`
 - **Use case:** `workspace/nx`

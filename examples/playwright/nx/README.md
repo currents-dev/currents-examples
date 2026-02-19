@@ -1,4 +1,4 @@
-# currents-playwright-nx-example
+# Playwright in Nx Monorepo
 
 - **Framework:** `playwright`
 - **Use case:** `workspace/nx`

@@ -1,4 +1,4 @@
-# currents-jest-github-actions-example
+# Jest Reporting on GitHub Actions
 
 - **Framework:** `generic-reporter`
 - **Use case:** `jest`

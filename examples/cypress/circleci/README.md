@@ -1,4 +1,4 @@
-# circleci-example
+# Cypress on CircleCI
 
 - **Framework:** `cypress`
 - **Use case:** `ci/circleci`

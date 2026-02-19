@@ -1,4 +1,4 @@
-# currents-playwright-bdd-cucumber-example
+# Playwright with BDD / Cucumber
 
 - **Framework:** `playwright`
 - **Use case:** `features/bdd-cucumber`

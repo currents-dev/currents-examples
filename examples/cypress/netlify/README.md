@@ -1,4 +1,4 @@
-# currents-netlify-example
+# Cypress on Netlify
 
 - **Framework:** `cypress`
 - **Use case:** `ci/netlify`
