@@ -22,7 +22,6 @@ Organized by **framework** and then **use case**. Each example is in its own fol
 | `circleci-pw-example` | `playwright` | `circleci` | [`README.md`](playwright/circleci/circleci-pw-example/README.md) | 1 | 12 |
 | `playwright-gh-actions-demo` | `playwright` | `github-actions` | [`README.md`](playwright/github-actions/playwright-gh-actions-demo/README.md) | 2 | 53 |
 | `jenkins-last-failed` | `playwright` | `jenkins` | [`README.md`](playwright/jenkins/jenkins-last-failed/README.md) | 1 | 11 |
-| `playwright-jenkins-example` | `playwright` | `jenkins` | [`README.md`](playwright/jenkins/playwright-jenkins-example/README.md) | 0 | 4 |
 | `currents-actions-example` | `playwright` | `actions` | [`README.md`](playwright/actions/currents-actions-example/README.md) | 1 | 14 |
 | `currents-playwright-bdd-cucumber-example` | `playwright` | `bdd-cucumber` | [`README.md`](playwright/bdd-cucumber/currents-playwright-bdd-cucumber-example/README.md) | 1 | 16 |
 | `currents-playwright-component-tests-example` | `playwright` | `component-testing` | [`README.md`](playwright/component-testing/currents-playwright-component-tests-example/README.md) | 1 | 22 |
