@@ -1,4 +1,4 @@
-# Currents Analysis Examples
+# Currents Examples
 
 Organized by **framework** and then **use case**. Each example folder includes:
 
