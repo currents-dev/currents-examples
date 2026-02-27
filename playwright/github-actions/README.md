@@ -1,5 +1,9 @@
 # Playwright on GitHub Actions
 
+<p align="center">
+  <img width="830" src="https://static.currents.dev/currents-playwright-banner-gh.png" />
+</p>
+
 Examples demonstrating how to run Playwright tests on GitHub Actions with Currents.
 
 ## Examples
@@ -24,3 +28,41 @@ Examples demonstrating how to run Playwright tests on GitHub Actions with Curren
 - `orchestration/`: Configuration for orchestration.
 - `rerun-failed/`: Documentation for rerun workflows.
 - `argos/`: Dedicated test suite for visual testing.
+
+## Results
+
+The results are being reported to Currents for more efficient troubleshooting, and monitoring test suite flakiness and performance.
+
+Currents will collect the following information:
+
+- console output
+- screenshots
+- videos
+- trace files
+- timing
+- outcomes
+- flaky tests
+- error details
+- tags for more convenient management of the tests
+
+### Currents Dashboard Results
+
+Here's how the results are being displayed in Currents dashboard.
+
+https://github.com/currents-dev/playwright-gh-actions-demo/assets/1637928/3a95c8d5-a4c1-44a6-be59-24fefb79b354
+
+### PR Comment and Git Commit Status
+
+Currents will add inline information to GitHub Pull Request.
+
+- a comment containing run results summary
+  ![gh-actions-comment](https://github.com/currents-dev/playwright-gh-actions-demo/assets/1637928/6e9c11d3-8f92-4e2c-a70d-391bc04d2d52)
+
+- git commit status check for each detected project
+  ![gh-actions-status](https://github.com/currents-dev/playwright-gh-actions-demo/assets/1637928/d2a54c2d-befa-42d6-ac0a-96cbd387fc53)
+
+## Additional Resources
+
+- [Playwright Features on Currents](https://currents.dev/playwright)
+- [Integration Documentation](https://currents.dev/readme/integration-with-playwright/currents-playwright)
+- [CI Build ID Guide](https://currents.dev/readme/guides/cypress-ci-build-id)
