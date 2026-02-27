@@ -42,11 +42,12 @@ jobs:
           or8n: true
           # debug: true
           # previous-ci-build-id: default is ${{ github.repository }}-${{ github.run_id }}-<%= ${{ github.run_attempt }} - 1 %>
-          pw-output-dir: basic/test-results
+          pw-output-dir: setup-ci/test-results
 
       - name: Playwright Tests
-        working-directory: ./basic
+        working-directory: ./setup-ci
         run: |
+          cp ../orchestration/currents.config.ts .
           COMMAND="npx pwc-p ${{ steps.last-failed-action.outputs.extra-pw-flags }}"
           echo "Running command: $COMMAND"
           $COMMAND

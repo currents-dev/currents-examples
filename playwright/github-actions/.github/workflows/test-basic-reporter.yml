@@ -36,9 +36,9 @@ jobs:
           npm ci
           npx playwright install chrome
 
-      - name: Run Basic Tests
+      - name: Playwright Tests
         continue-on-error: false
-        working-directory: ./basic
+        working-directory: ./setup-ci
         env:
           CURRENTS_PROJECT_ID: bnsqNa
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}

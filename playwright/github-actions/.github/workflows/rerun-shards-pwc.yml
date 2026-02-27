@@ -39,12 +39,12 @@ jobs:
         uses: currents-dev/playwright-last-failed@v1
         with:
           # debug: true
-          pw-output-dir: basic/test-results
+          pw-output-dir: setup-ci/test-results
           matrix-index: ${{ matrix.shard }}
           matrix-total: ${{ strategy.job-total }}
 
       - name: Playwright Tests
-        working-directory: ./basic
+        working-directory: ./setup-ci
         run: |
           COMMAND="npx pwc ${{ steps.last-failed-action.outputs.extra-pw-flags }}"
           echo "Running command: $COMMAND"

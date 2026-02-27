@@ -39,7 +39,7 @@ jobs:
 
       - name: Run Orchestrated tests
         continue-on-error: false
-        working-directory: ./basic
+        working-directory: ./setup-ci
         env:
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
           CURRENTS_PROJECT_ID: bnsqNa
@@ -49,6 +49,7 @@ jobs:
           PWTEST_BLOB_DO_NOT_REMOVE: 1 # Add the env variable to not remove test blobs
         # Add the blob reporter in the execution command
         run: |
+          cp ../orchestration/currents.config.ts .
           npx pwc-p --reporter blob
 
       # Generate a report based on the blob with the merge-report command

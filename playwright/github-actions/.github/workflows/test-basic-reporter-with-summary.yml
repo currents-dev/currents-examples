@@ -38,7 +38,7 @@ jobs:
 
       - name: Run Basic Tests
         continue-on-error: true
-        working-directory: ./basic
+        working-directory: ./setup-ci
         env:
           CURRENTS_PROJECT_ID: bnsqNa
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
