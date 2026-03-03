@@ -8,12 +8,12 @@ Examples demonstrating how to run Playwright tests on GitHub Actions with Curren
 
 ## Examples
 
-| Example | Description | Folder |
-| :--- | :--- | :--- |
-| [**Basic Setup**](setup-ci/README.md) | Standard CI setup with sharding and reporting | [`setup-ci/`](setup-ci/) |
-| [**Orchestration**](orchestration/README.md) | Optimized parallel execution with load balancing | [`orchestration/`](orchestration/) |
-| [**Rerun Failed**](rerun-failed/README.md) | Workflow to rerun only failed tests from previous build | [`rerun-failed/`](rerun-failed/) |
-| [**Visual Testing**](argos/README.md) | Integration with Argos for visual regression testing | [`argos/`](argos/) |
+| Example                                      | Description                                             | Folder                             |
+| :------------------------------------------- | :------------------------------------------------------ | :--------------------------------- |
+| [**Basic Setup**](setup-ci/README.md)        | Standard CI setup with sharding and reporting           | [`setup-ci/`](setup-ci/)           |
+| [**Orchestration**](orchestration/README.md) | Optimized parallel execution with load balancing        | [`orchestration/`](orchestration/) |
+| [**Rerun Failed**](rerun-failed/README.md)   | Workflow to rerun only failed tests from previous build | [`rerun-failed/`](rerun-failed/)   |
+| [**Visual Testing**](argos/README.md)        | Integration with Argos for visual regression testing    | [`argos/`](argos/)                 |
 
 ## Prerequisites
 
@@ -65,4 +65,4 @@ Currents will add inline information to GitHub Pull Request.
 
 - [Playwright Features on Currents](https://currents.dev/playwright)
 - [Integration Documentation](https://currents.dev/readme/integration-with-playwright/currents-playwright)
-- [CI Build ID Guide](https://currents.dev/readme/guides/cypress-ci-build-id)
+- [CI Build ID Guide](https://docs.currents.dev/guides/parallelization-guide/ci-build-id)
