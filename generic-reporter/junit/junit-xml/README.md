@@ -1,3 +1,5 @@
+<img width="1600" alt="junit-xml-reporter" src="https://github.com/user-attachments/assets/99e811df-9262-4ab7-baa1-e6432375f02b">
+
 # Generic JUnit XML Reporting
 
 - **Framework:** `generic-reporter`
