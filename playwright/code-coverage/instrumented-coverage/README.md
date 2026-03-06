@@ -69,3 +69,6 @@ A Next.js + Playwright example that demonstrates **collecting code coverage** (i
 - Total tracked files copied: **55**
 - Source `README.md` is saved as `README.upstream.md`.
 - Path mapping: [`content-map.md`](content-map.md)
+
+
+![currents-2024-11-21-16 21 20@2x](https://github.com/user-attachments/assets/2e2fb1da-31fa-43a7-b84e-670ce1b88c09)
