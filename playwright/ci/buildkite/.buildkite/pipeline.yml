@@ -1,6 +1,5 @@
 env:
   PACKAGE_NAME: "example-package"
-  AUTH_TOKEN: "package-auth-token"
   WORKDIR: "playwright/ci/buildkite"
 
 steps:
@@ -17,6 +16,8 @@ steps:
       - docker#v5.11.0:
           image: "mcr.microsoft.com/playwright:latest"
           propagate-environment: true
+          environment:
+            - CURRENTS_RECORD_KEY
 
 secrets:
   - CURRENTS_RECORD_KEY
