@@ -1,0 +1,23 @@
+{
+  "name": "playwright-buildkite-example",
+  "version": "1.0.0",
+  "description": "Running Playwright tests on Buildkite with Currents",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:pwc": "pwc",
+    "test:reporter": "playwright test --config playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "latest",
+    "@currents/playwright": "latest",
+    "@playwright/test": "latest"
+  }
+}

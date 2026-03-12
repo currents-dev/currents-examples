@@ -1,0 +1,19 @@
+env:
+  PACKAGE_NAME: "example-package"
+  AUTH_TOKEN: "package-auth-token"
+
+steps:
+  - label: "Install dependencies"
+    command: |
+      npm ci
+    plugins:
+      - docker#v5.11.0:
+          image: "mcr.microsoft.com/playwright:latest"
+  
+  - label: "Install Playwright"
+    command: |
+      npx playwright install --with-deps
+
+  - label: "Run Playwright Tests"
+    command: |
+      npx playwright test --config playwright.config.ts --shard=$$((BUILDKITE_PARALLEL_JOB + 1))/$$BUILDKITE_PARALLEL_JOB_COUNT
