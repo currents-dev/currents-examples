@@ -1,0 +1,3 @@
+steps:
+  - label: ":pipeline: Upload Playwright pipeline"
+    command: buildkite-agent pipeline upload playwright/ci/buildkite/.buildkite/pipeline.yml
