@@ -4,20 +4,12 @@ env:
   WORKDIR: "playwright/ci/buildkite"
 
 steps:
-  - label: "Install dependencies"
-    command: |
-      cd $$WORKDIR
-      npm ci
-    plugins:
-      - docker#v5.11.0:
-          image: "mcr.microsoft.com/playwright:latest"
-
-  - label: "Install Playwright"
-    command: |
-      cd $$WORKDIR
-      npx playwright install --with-deps
-
   - label: "Run Playwright Tests"
     command: |
       cd $$WORKDIR
+      npm ci
+      npx playwright install --with-deps
       npx playwright test --config playwright.config.ts --shard=$$((BUILDKITE_PARALLEL_JOB + 1))/$$BUILDKITE_PARALLEL_JOB_COUNT
+    plugins:
+      - docker#v5.11.0:
+          image: "mcr.microsoft.com/playwright:latest"
