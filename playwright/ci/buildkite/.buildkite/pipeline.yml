@@ -5,6 +5,7 @@ env:
 
 steps:
   - label: "Run Playwright Tests"
+    parallelism: 3
     command: |
       cd $$WORKDIR
       npm ci
