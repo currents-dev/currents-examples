@@ -9,8 +9,6 @@ steps:
       cd $$WORKDIR
       npm ci
       npx playwright install chromium --with-deps
-      echo "CURRENTS_RECORD_KEY: $$CURRENTS_RECORD_KEY"
-      echo $$CURRENTS_RECORD_KEY
       npx playwright test --config playwright.config.ts --shard=$$((BUILDKITE_PARALLEL_JOB + 1))/$$BUILDKITE_PARALLEL_JOB_COUNT
     plugins:
       - docker#v5.11.0:
@@ -19,5 +17,6 @@ steps:
           environment:
             - CURRENTS_RECORD_KEY
 
+# https://buildkite.com/docs/pipelines/security/secrets/buildkite-secrets
 secrets:
   - CURRENTS_RECORD_KEY
