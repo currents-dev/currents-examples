@@ -9,7 +9,8 @@ steps:
     command: |
       cd $$WORKDIR
       npm ci
-      npx playwright install --with-deps
+      npx playwright install chromium --with-deps
+      echo $$CURRENTS_RECORD_KEY
       npx playwright test --config playwright.config.ts --shard=$$((BUILDKITE_PARALLEL_JOB + 1))/$$BUILDKITE_PARALLEL_JOB_COUNT
     plugins:
       - docker#v5.11.0:

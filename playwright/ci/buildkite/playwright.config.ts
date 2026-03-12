@@ -30,14 +30,7 @@ export default defineConfig<CurrentsFixtures, CurrentsWorkerFixtures>({
 
   projects: [
     {
-      name: "Project A",
-      retries: 2,
-      use: {
-        ...devices["Desktop Chrome"],
-      },
-    },
-    {
-      name: "Project B",
+      name: "chromium",
       retries: 2,
       use: {
         ...devices["Desktop Chrome"],
