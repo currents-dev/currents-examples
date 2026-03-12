@@ -15,3 +15,6 @@ steps:
       - docker#v5.11.0:
           image: "mcr.microsoft.com/playwright:latest"
           propagate-environment: true
+
+secrets:
+  - CURRENTS_RECORD_KEY
