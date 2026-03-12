@@ -13,3 +13,5 @@ steps:
     plugins:
       - docker#v5.11.0:
           image: "mcr.microsoft.com/playwright:latest"
+          environment:
+            - "WORKDIR"
