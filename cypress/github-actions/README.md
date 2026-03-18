@@ -1,113 +1,44 @@
-# GitHub Actions Examples
+# Currents.dev - GitHub Actions Example
 
-This directory contains examples of running Cypress tests with Currents on GitHub Actions. It combines two different scenarios:
+This is an example repository that showcases using [Currents.dev](https://currents.dev) for running cypress tests on GitHub Actions.
 
-1.  **Basic GitHub Actions Setup**: Demonstrates how to run Cypress tests in parallel on GitHub Actions using `cypress-cloud`.
-2.  **Matrix Job URL Capture**: Demonstrates how to capture the GitHub Actions Job URL and expose it to Cypress tests for debugging purposes.
+The example [workflow config file](https://github.com/currents-dev/gh-actions-example/blob/main/.github/workflows/currents.yml):
 
-## Prerequisites
+- runs 3 containers with cypress tests in parallel
 
-Before running these examples, ensure you have:
+- install [block-free Cypress binaries](https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries)
 
--   A [Currents](https://currents.dev) account.
--   A Project ID from Currents.
--   A Record Key from Currents.
+- uses [Custom Test Command](https://github.com/cypress-io/github-action#custom-test-command) to run `cypress-cloud` for recording test results and parallelization with [Currents.dev](https://currents.dev)
 
-## 1. Basic GitHub Actions Setup
+- Note: get your record key from [Currents.dev](https://app.currents.dev) and set [GH secret](https://docs.github.com/en/actions/reference/encrypted-secrets) variable `CURRENTS_RECORD_KEY`
 
-This example shows a standard setup for running Cypress tests in parallel using GitHub Actions matrix strategy and `cypress-cloud` for orchestration and recording.
+- Note: set the `projectId` in `currents.config.js` - obtain the project id from [Currents.dev](https://app.currents.dev)
 
-### Key Features
+- Note: use CLI arguments to customize your cypress-cloud runs, e.g.: `npx cypress-cloud run --parallel --record --key <your currents.dev key> --group groupA`
 
--   **Parallelization**: Runs 3 parallel containers using GitHub Actions matrix strategy.
--   **Orchestration**: Uses `cypress-cloud` to distribute tests across containers.
--   **Browser**: Runs tests in Chrome.
--   **Cancellation**: Includes a step to cancel the run on Currents if the workflow is cancelled.
--   **Custom Build ID**: Generates a unique build ID based on the repository, run ID, and run attempt.
+Here's an example of how the demo workflow appears in Currents dashboard:
 
-### Configuration Files
+https://user-images.githubusercontent.com/1637928/227701237-db4d7a7f-b26b-46ac-ba6a-3806ede37671.mp4
 
--   **Workflow**: `.github/workflows/currents.yml`
--   **Cypress Config**: `cypress.config.ts`
--   **Test Files**: `cypress/e2e/*.spec.js`
+## Using Alternative Cypress Binaries
 
-### How it Works
+Following [aggressive blocking](https://github.com/cypress-io/cypress/issues/28269) by Cypress.io team we released alternative, block-free Cypress binaries that were compiled from the MIT-licensed Cypress source code.
 
-1.  The workflow triggers on `push`.
-2.  It defines a matrix strategy with `containers: [1, 2, 3]`.
-3.  It installs dependencies using `npx ci`.
-4.  It installs a "block-free" version of Cypress to avoid potential blocking issues.
-5.  It runs `cypress-cloud` with the `--parallel` flag.
-6.  `cypress-cloud` communicates with Currents to receive the list of specs to run for each container.
+The documentation is available at: https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries.
 
-### Running Locally
+The example in this repository uses [cypress-io/github-action@v6](https://github.com/cypress-io/github-action). `cypress-io/github-action` **caches and restores cypress binaries before running the tests** - you need to disable this behaviour to use the freshly installed non-blocking binaries:
 
-To run this example locally (without parallelization):
+```yml
+- name: Run Cypress on Currents.dev
+  env:
+    # enable verbose logging
+    DEBUG: \@cypress/github-action
+  uses: cypress-io/github-action@v6
+  continue-on-error: true
 
-```bash
-npx cypress-cloud run --record --key <YOUR_RECORD_KEY> --config-file cypress.config.ts
+  with:
+    # 🔥 Set to false to prevent restoring cached blocking Cypress binary
+    install: false
+    command: |
+      npx cypress-cloud --record --parallel --browser chrome --key ${{ secrets.CURRENTS_RECORD_KEY }} --ci-build-id "${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt}}"
 ```
-
-## 2. Matrix Job URL Capture
-
-This example demonstrates how to capture the specific URL of the GitHub Actions job running the tests and expose it as an environment variable (`MATRIX_JOB_URL`). This is useful for linking back to the CI logs from the Currents dashboard or for debugging failures.
-
-### Key Features
-
--   **Job URL Capture**: Uses `Tiryoh/gha-jobid-action` to fetch the current job's HTML URL.
--   **Environment Variable**: Sets `MATRIX_JOB_URL` for use in tests.
--   **Custom Config**: Uses a separate configuration file `cypress.matrix.config.js` to log the captured URL.
-
-### Configuration Files
-
--   **Workflow**: `.github/workflows/matrix-job-url.yml`
--   **Cypress Config**: `cypress.matrix.config.js`
--   **Test Files**: `cypress/integration/*.spec.js`
-
-### How it Works
-
-1.  The workflow triggers on `push`.
-2.  It defines a matrix strategy with `containers: [1, 2, 3]`.
-3.  It uses the `Tiryoh/gha-jobid-action` to get the job ID and constructs the URL.
-4.  It exports the URL as `MATRIX_JOB_URL`.
-5.  It runs `npx currents run` pointing to `cypress.matrix.config.js`.
-6.  The `cypress.matrix.config.js` file has a `before:spec` hook that logs the `MATRIX_JOB_URL` to the console.
-
-### Running Locally
-
-To run this example locally (without the job URL, as it's CI-specific):
-
-```bash
-npx currents run --record --key <YOUR_RECORD_KEY> --config-file cypress.matrix.config.js
-```
-
-## Setup & Usage
-
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
-
-2.  **Configure Secrets**:
-    Add the following secrets to your GitHub repository:
-    -   `CURRENTS_RECORD_KEY`: Your Currents Record Key.
-    -   `CURRENTS_API_KEY`: Your Currents API Key (required for the cancellation step in the basic example).
-
-3.  **Update Project ID**:
-    Update the `projectId` in `currents.config.js` (for the basic example) and `cypress.matrix.config.js` (for the matrix example) to match your Currents project ID.
-
-    **currents.config.js**:
-    ```javascript
-    module.exports = {
-      projectId: "YOUR_PROJECT_ID", // Update this
-    };
-    ```
-
-    **cypress.matrix.config.js**:
-    ```javascript
-    module.exports = defineConfig({
-      // ...
-      projectId: "YOUR_PROJECT_ID", // Update this
-      // ...
-    });
-    ```

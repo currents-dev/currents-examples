@@ -1,70 +1,30 @@
-# Playwright with pnpm
+# currents-playwright-pnpm-example
 
-- **Framework:** `playwright`
-- **Use case:** `workspace/pnpm`
-- **Source repository:** Consolidated from `currents-playwright-pnpm-example` and `currents-pnpm`
-
-## What this example does
-
-This example demonstrates how to use **Currents** with **Playwright** in a **pnpm** workspace. It includes two sets of tests:
-1.  **Basic Tests** (`tests/basic/`): Standard Playwright tests demonstrating basic usage and visual diffs (some tests are designed to fail for demonstration).
-2.  **Chromatic Integration** (`tests/chromatic/`): Tests demonstrating integration with **Chromatic** for visual testing alongside Currents.
-
-## Key Features
-
-- **Currents Orchestration**: Uses `pwc-p` for orchestrating tests.
-- **GitHub Actions Integration**: Includes a workflow `.github/workflows/integration.yml` for CI execution.
-- **Visual Testing**:
-    - Standard Playwright visual snapshots (in `tests/basic`).
-    - Chromatic visual testing (in `tests/chromatic`).
-- **Artifacts**: Configured to upload artifacts (screenshots, videos, traces).
-
-## Usage
+An example repository for setting up Currents + Chromatic and run Playwright tests on GitHub Actions
 
 ### Setup
-```bash
+
+```sh
 pnpm install
 ```
 
-### Run Tests Locally
+### Run tests locally
 
-**Run all tests:**
-```bash
-pnpm test
+Set your own `CURRENTS_RECORD_KEY` and `CURRENTS_PROJECT_ID`:
+
+```sh
+CURRENTS_RECORD_KEY=xxx CURRENTS_PROJECT_ID=yyy pnpm exec pwc-p
 ```
 
-**Run basic tests only:**
-```bash
-pnpm run test:basic
-```
+GitHub Actions:
 
-**Run Chromatic tests only:**
-```bash
-pnpm run test:chromatic
-```
+- Set `CURRENTS_RECORD_KEY` and `CHROMATIC_PROJECT_TOKEN` [repository secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
+- Set Currents project id in `currents.config.ts:config.projectId` in `currents.config.ts`
 
-**Run with Currents Orchestration:**
-```bash
-export CURRENTS_RECORD_KEY=<your_key>
-export CURRENTS_PROJECT_ID=<your_project_id>
-pnpm run pwc-p
-```
+Check out a GitHub Actions [example build](https://github.com/currents-dev/currents-playwright-pnpm-example/actions/runs/13893721273).
 
-### GitHub Actions
+### Configuration Notes
 
-The included workflow `.github/workflows/integration.yml` demonstrates:
-- Installing dependencies with pnpm.
-- Running tests with `pwc-p` and the blob reporter.
-- Merging blob reports into an HTML report.
-- Uploading artifacts.
-- Running Chromatic visual tests in a separate job.
-
-## Configuration
-
-- **playwright.config.ts**: Configured to look for tests in the `tests/` directory.
-- **currents.config.ts**: Configures Currents project ID and record key from environment variables.
-
-## Notes
-
-- The `tests/basic` directory contains tests that may fail intentionally (e.g., `failing test`) to demonstrate reporting capabilities.
-- The `tests/chromatic` directory requires Chromatic configuration if you want to use the visual testing features fully.
+- [Currents Reporter](https://docs.currents.dev/resources/reporters/currents-playwright) is configured in playwright.config.ts
+- pwc-p runs Playwright using [Currents Orchestration](https://docs.currents.dev/guides/parallelization-guide/pw-parallelization/playwright-orchestration)
+- Chromatic collects the visual testing artifacts as a [separate GHA job](https://github.com/currents-dev/currents-playwright-pnpm-example/blob/60499037a5674ea3fd6082e9664fb9968cc442f4/.github/workflows/integration.yml#L73)

@@ -1,83 +1,116 @@
-# Playwright in Nx Monorepo
+# Currents Playwright NX Example
 
-- **Framework:** `playwright`
-- **Use case:** `workspace/nx`
-- **Source repository:** https://github.com/currents-dev/currents-playwright-nx-example
+This repository shows how to use NX + Playwright with Currents.
 
-## What this example does
+## Setup
 
-An example Nx monorepo showing how to run **Playwright E2E tests in Nx** while reporting results to **Currents** using `@currents/playwright` as the Playwright reporter.
+```sh
+npm i -g nx@latest
+npm i
+```
 
-## How this example is used
+## Run
 
-### Standard Nx E2E (2 projects in parallel)
-Run Nx `run-many` for the `e2e` target across multiple projects, passing Currents env vars:
-- `CURRENTS_RECORD_KEY`
-- `CURRENTS_PROJECT_ID`
-- `CURRENTS_CI_BUILD_ID`
+The repo has two projects and each has its own tests.
 
-Command shown in README:
-- `nx run-many -t e2e --parallel=2 --verbose`
+```sh
+CURRENTS_RECORD_KEY=recordkey \
+CURRENTS_PROJECT_ID=projectid \
+CURRENTS_CI_BUILD_ID=`date +%s` \
+nx run-many -t e2e  --parallel=2 --verbose
 
-Each project’s `e2e` target uses the Nx Playwright executor and overrides the output directory:
-- executor: `@nx/playwright:playwright`
-- output: `{workspaceRoot}/playwright-report/{projectName}`
-- config: `{projectRoot}/playwright.config.ts`
+# ...
 
-### Single-project orchestration (pwc-p)
-There’s a third project (`e2e-03`) that uses a different Nx target (`or8n`) that runs `npx pwc-p` (Currents orchestration command) via `nx:run-commands`.
+ NX   Running target e2e for 2 projects
 
-README command:
-- `nx run-many -t or8n` (single project, no `--parallel` needed)
+   →  Executing 2/2 remaining tasks in parallel...
 
-A GitHub Actions workflow example exists for running the `or8n` target across shards.
+   ⠙  nx run e2e-01:e2e
+   ⠙  nx run e2e-02:e2e
 
-## What scenarios are included
+# ...
 
-- **Nx + Playwright + Currents reporter wiring**
-  - Root reporter: `currentsReporter(currents.config)` and exported `reporter`.
-  - Per-project Playwright configs use `nxE2EPreset(__filename)` and import the shared `reporter`.
-- **Multiple Nx Playwright projects**
-  - `apps/e2e-01` + `apps/e2e-02` with `e2e` target configured via `@nx/playwright:playwright`.
-  - `apps/e2e-03` with `or8n` target running `npx pwc-p`.
-- **Output directory pattern**
-  - Example output folder layout under `playwright-report/{projectName}` including `.last-run.json`.
-- **“Last failed” passthrough**
-  - Shows Nx passes unknown args to targets (e.g., `--last-failed`).
-- **GitHub Actions workflow for orchestration**
-  - `.github/workflows/or8n.yml` runs `nx run-many -t or8n` with a shard matrix.
+ NX   Ran target e2e for 2 projects (8s)
 
-## How to implement this in your own project
+   ✔  1/2 succeeded [0 read from cache]
 
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
+   ✖  1/2 targets failed, including the following:
 
-### Implementation notes from the audit
+      - nx run e2e-01:e2e
+```
 
-1. **Reformat the files for readability**
-   - Many files render as single-line (README, JSON, configs). Re-indent + add code fences so the repo is skimmable.
-2. **Make CI config “production-safe” by default**
-   - The workflow sets `CURRENTS_API_URL: https://cy-staging.currents.dev`. Make this optional (documented), default to production, or use a repo variable.
-3. **Add `.env.example` + a single “Quickstart” block**
-   - Explicitly list required env vars and provide copy/paste commands for:
-     - `nx run-many -t e2e ...`
-     - `nx run-many -t or8n ...`
-4. **Explain what `pwc-p` is and when to use it**
-   - README mentions it briefly; add a short “Why orchestration vs Nx/Playwright sharding” section and link to Currents Nx docs.
-5. **Add a second workflow for the “normal” e2e target**
-   - Right now the repo explicitly references `or8n.yml` for GitHub Actions; add a `e2e.yml` to show the standard `@nx/playwright:playwright` flow too.
-6. **Add minimal npm scripts**
-   - Even if Nx is the focus, scripts like `npm run e2e` / `npm run or8n` reduce friction for newcomers. (Current `package.json` has no scripts.)
+### Output directory
 
-## Source markdown copied into this folder
+Playwright output directory is set in `project.json` > `targets.e2e.options.output`, for example:
 
-- [`source__README.md`](source__README.md)
+```json
+ "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "options": {
+        "skipInstall": true,
+        "output": "{workspaceRoot}/playwright-report/{projectName}",
+        "config": "{projectRoot}/playwright.config.ts"
+      }
+    }
+  }
+```
 
-## Repository content copied into this folder
+After running the tests, results will appear as:
 
-- Total tracked files copied: **34**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+```plain
+playwright-report/
+├── e2e-01/
+│   └── .last-run.json
+└── e2e-02/
+    └── .last-run.json
+```
+
+ℹ️ `playwright.config.ts` for each project use `nxE2EPreset` - it sets a different `output` directory, but `project.json:output` overrides it.
+
+### Last Failed
+
+nx passes down unrecognized arguments to the target command, for example
+
+```sh
+nx run-many -t e2e  --parallel=2 --verbose --last-failed
+# ...
+
+ NX   Ran target e2e for 2 projects (7s)
+
+      With additional flags:
+        --last-failed=true
+# ...
+ NX   Ran target e2e for 2 projects (7s)
+
+      With additional flags:
+        --last-failed=true
+
+   ✔  1/2 succeeded [0 read from cache]
+
+   ✖  1/2 targets failed, including the following:
+
+      - nx run e2e-01:e2e
+```
+
+## Single project orchestration
+
+The project named `e2e-03` has a different target than the other two projects. The target is `or8n`
+This target project executes `pwc-p` command. When using it in multiple machines it will execute in parallel the tests of this project.
+
+```sh
+CURRENTS_RECORD_KEY=recordkey \
+CURRENTS_PROJECT_ID=projectid \
+CURRENTS_CI_BUILD_ID=`date +%s` \
+nx run-many -t or8n
+
+# ...
+
+ NX   Running target or8n for 1 project
+
+   ⠙  nx run e2e-03:or8n
+```
+
+The `parallel` flag is no longer needed as it is running a single nx project.
+
+The `or8n.yml` file has an example for running it in Github actions.

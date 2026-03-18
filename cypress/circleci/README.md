@@ -1,65 +1,180 @@
-# Cypress on CircleCI
+# Currents.dev - CircleCI Example
 
-- **Framework:** `cypress`
-- **Use case:** `ci/circleci`
-- **Source repository:** https://github.com/currents-dev/circleci-example
+This is an example repository that showcases using [CircleCI](https://circleci.com) with [Currents.dev](https://currents.dev).
 
-## What this example does
+We are hosting independent versions of the Cypress App and [docker images](https://hub.docker.com/r/currentsdev/cypress-included) with pre-installed binaries. Please refer to the [documentation](https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries) for the list of supported binaries and versions.
 
-An example repo showing how to run **Cypress tests on CircleCI** and record/parallelize them to **Currents.dev** using `cypress-cloud`, including guidance for **alternative Cypress binaries** (Currents-hosted binaries / prebuilt images).
+The example [config file](https://github.com/currents-dev/circleci-example/blob/master/.circleci/config.yml) installs the custom Cypress App and runs 3 containers with Cypress tests in parallel using various setup scenarios.
 
-## How this example is used
+## Prerequisites
 
-1. Create a Currents account, get **ProjectId** + **Record Key**.  
-2. In CircleCI, set `CURRENTS_RECORD_KEY` via a **Context** (recommended) or env var.  
-3. Create `currents.config.js` with your `projectId` (repo has a sample but it’s hardcoded).  
-4. Run CircleCI using one of the provided configurations (all run **3 parallel containers**) that call:
-   - `npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY`  
-5. Choose how Cypress is installed:
-   - **Use Currents prebuilt image** `currentsdev/cypress-included:12.17.4`  
-   - **Explicit download** via `CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force`  
-   - **Cypress Orb** (`cypress-io/cypress@3`) with either the default executor or a custom executor that uses the Currents image.
+- Create an account at https:/app.currents.dev.
+- Obtain **ProjectId** and **Record Key**.
+- Set `CURRENTS_RECORD_KEY`:
+  - create [CircleCI context](https://circleci.com/docs/contexts/) and set `CURRENTS_RECORD_KEY`.
+  - alternatively, set [Environment variable](https://circleci.com/docs/2.0/env-vars/) `CURRENTS_RECORD_KEY`
+- Follow the setup instructions at https://currents.dev/readme/integration-with-cypress/cypress-cloud to create `currents.config.js` set your `projectId`
 
-## What scenarios are included
+## Bare CircleCI configuration
 
-- **Bare CircleCI config (no orbs)**:
-  - Using the Currents Docker image with preinstalled Cypress (`currentsdev/cypress-included:12.17.4`)
-  - Using a base image and explicitly downloading the alternative Cypress binary (download mirror)
-- **Cypress Orb examples**:
-  - Orb install step with `post-install` to fetch the alternative Cypress binary, workspace persistence, then a parallel run job
-  - Custom executor (`currents-executor`) pointing at `currentsdev/cypress-included:12.17.4`
-- **Dependency baseline**:
-  - `cypress@12.17.4`, `cypress-cloud`, and `typescript` in `package.json`
-- **Currents config example**:
-  - `currents.config.js` with `projectId` + `batchSize: 3`
+Please refer to the setup scenario that fits your needs.
 
-## How to implement this in your own project
+### Use Docker image with pre-installed Cypress
 
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
+CircleCI configuration that uses Docker image with pre-installed cypress app.
+Refer to the [documentation](https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries) for the list of supported binaries and versions.
 
-### Implementation notes from the audit
+```yml
+version: 2.1
 
-1. **Remove hardcoded `projectId`**
-   - `currents.config.js` currently hardcodes `projectId: "Ij0RfK"`; switch to `process.env.CURRENTS_PROJECT_ID` and document it (and/or CircleCI Context vars).
-2. **Provide a `.env.example` + “Required variables” table**
-   - Explicitly list: `CURRENTS_RECORD_KEY` (secret), `CURRENTS_PROJECT_ID` (non-secret but should still be configurable), and optional `CURRENTS_CI_BUILD_ID` pattern (if you want consistent grouping).
-3. **Format the repo files**
-   - `.circleci/config.yml`, `package.json`, and `currents.config.js` are effectively one-liners; pretty-print them so users can copy/edit safely.
-4. **Add a quickstart that maps to the 3 scenarios**
-   - “Pick one: (A) prebuilt image, (B) explicit download, (C) Cypress Orb” with copy/paste snippets + where to set secrets in CircleCI.
-5. **Make “alternative binaries” intent obvious**
-   - README mentions Currents-hosted Cypress app/binaries and supported versions; add a short explanation of *why* you’d choose mirror vs image (speed, reliability, avoiding blocked downloads).
+jobs:
+  # Use pre-built image with alternative Cypress binary
+  noorbs currents-image:
+    parallelism: 3
+    docker:
+      - image: currentsdev/cypress-included:12.17.4
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm ci
+      - run:
+          name: Run tests
+          command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
 
-## Source markdown copied into this folder
+workflows:
+  noorbs:
+    jobs:
+      - noorbs currents-image:
+          context: currents
+```
 
-- [`source__README.md`](source__README.md)
+### Explicitly downloading alternative Cypress binary
 
-## Repository content copied into this folder
+CircleCI configuration that explicitly downloads alternative Cypress binary.
+Refer to the [documentation](https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries) for the list of supported binaries and versions.
 
-- Total tracked files copied: **24**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+```yml
+version: 2.1
+
+jobs:
+  # Explicitly download Cypress binary
+  noorbs explicit-download:
+    parallelism: 3
+    docker:
+      - image: cypress/base:18.16.1
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - run:
+          name: Download Alternative Cypress Binaries
+          command: CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force
+      - run:
+          name: Run tests
+          command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  noorbs:
+    jobs:
+      - noorbs explicit-download:
+          context: currents
+```
+
+## Using Cypress Orb with default executor
+
+[Cypress Orb](https://circleci.com/developer/orbs/orb/cypress-io/cypress) has pre-defined commands that facilitate creating CircleCI configuration. The examples below show how to integrate Cypress tests with Currents using Cypress Orb and various setup scenarios.
+
+The examples below use [Custom Test Command](https://github.com/currents-dev/circleci-example/blob/master/.circleci/config.yml#L9) to run `cypress-cloud` for recording test results and parallelization with [Currents.dev](https://currents.dev)
+
+### Using `cypress/default` executor example
+
+The configuration below uses the default `cypress/default` [CircleCI executor](https://circleci.com/docs/executor-intro/) and installs custom Cypress binary during `cypress/install` step:
+
+```yml
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+jobs:
+  # Use cypress/default executor example
+  default-executor cypress-install:
+    executor: cypress/default
+    steps:
+      - cypress/install:
+          post-install: CYPRESS_DOWNLOAD_MIRROR=https://cy-cdn.currents.dev npx cypress install --force
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - .cache/Cypress
+            - project
+
+  default-executor cypress-run:
+    executor: cypress/default
+    parallelism: 3
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  with-orbs default-executor:
+    jobs:
+      - default-executor cypress-install
+      - default-executor cypress-run:
+          context: currents
+          requires:
+            - default-executor cypress-install
+```
+
+### Using custom executor with pre-installed Cypress App
+
+The configuration below uses the [custom executor](https://circleci.com/docs/executor-intro/) with pre-installed Cypress App.
+
+```yml
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+executors:
+  # define custom executors
+  currents-executor:
+    docker:
+      - image: currentsdev/cypress-included:12.17.4
+
+jobs:
+  # Use currentsdev executor with pre-installed Cypress binary
+  custom-executor cypress-install:
+    executor: currents-executor
+    steps:
+      - cypress/install
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+  custom-executor cypress-run:
+    executor: currents-executor
+    parallelism: 3
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npx cypress-cloud run --parallel --record --key $CURRENTS_RECORD_KEY
+
+workflows:
+  with-orbs custom-executor:
+    jobs:
+      - custom-executor cypress-run:
+          context: currents
+```
+
+---
+
+Here's an example of the demo run in Currents.dev dashboard, note that 3 cypress agents were used as part of this run:
+
+https://user-images.githubusercontent.com/1637928/227703488-9bec973c-de2d-41d0-b811-dfffd370dfb7.mp4

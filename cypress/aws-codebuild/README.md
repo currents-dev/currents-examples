@@ -1,68 +1,15 @@
-# Cypress reporting on AWS CodeBuild
+# Currents.dev - AWS CodeBuild Example
 
-- **Framework:** `cypress`
-- **Use case:** `ci/aws-codebuild`
-- **Source repository:** https://github.com/currents-dev/aws-codebuild-example
+The full guide: https://currents.dev/readme/ci-setup/aws-code-build
 
-## What this example does
+This is an example repository that showcases using [Currents.dev](https://currents.dev) for running parallel cypress tests using AWS CodeBuild CI
 
-An example repo showing how to run **Cypress tests in parallel on AWS CodeBuild** and report them to **Currents** using `cypress-cloud`, specifically using CodeBuild **batch build + matrix mode** with **3 workers**.
+The example [buildspec.yml](https://github.com/currents-dev/aws-codebuild-example/blob/main/buildspec.yml) defines a configuration for running cypress tests in parallel mode using 3 workers in [matrix mode](https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html#batch_build_matrix). The example is designed to be executed within a [batch build](https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html).
 
-## How this example is used
+- Note: The example uses [CODEBUILD_INITIATOR](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-env-vars.html) as a [CI Build ID](https://currents.dev/readme/guides/cypress-ci-build-id). When testing interactively, the CODEBUILD_INITIATOR will be set to the username of the build initiator. When running a batched build, the variable will have the batch build id.
 
-1. **Create a Currents project** and obtain:
-   - `recordKey` (set as CodeBuild env var `CURRENTS_RECORD_KEY`)
-   - `projectId` (set in `currents.config.js`)
-2. **Run on AWS CodeBuild using batch/matrix**
-   - `buildspec.yml` defines matrix `WORKERS: 1,2,3` and runs `npx cypress-cloud run --record --parallel --ci-build-id $CODEBUILD_INITIATOR`.
-3. **Cypress configuration**
-   - Uses `cloudPlugin` from `cypress-cloud/plugin`, sets `baseUrl` to TodoMVC, and looks for specs in `cypress/e2e/*.spec.js` with support file `cypress/support/e2e.ts`.
-4. **CI Build ID behavior**
-   - README notes it uses `CODEBUILD_INITIATOR` as the CI Build ID, and explains differences between interactive vs batch builds.
+- Note: get your record key from [Currents.dev](https://app.currents.dev) and set [AWS CodeBuild Environment Variable](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project-console.html#change-project-console-environment) variable `CURRENTS_RECORD_KEY`
 
-## What scenarios are included
+- Note: set the `projectId` in `currents.config.js` - obtain the project id from [Currents.dev](https://app.currents.dev)
 
-- **CodeBuild batch/matrix parallelization**
-  - `buildspec.yml` with 3 workers and a parallel Cypress Cloud run (`--parallel --record`).
-- **Currents project configuration**
-  - `currents.config.js` with a `projectId` field.
-- **Cypress + Currents integration**
-  - `cypress.config.ts` showing `cloudPlugin(...)`, video settings, baseUrl, and spec pattern.
-- **Dependencies**
-  - `package.json` includes `cypress` + `cypress-cloud` + `typescript`.
-
-> Note: The repo clearly expects Cypress specs under `cypress/e2e/*.spec.js` but GitHub directory listing for `cypress/` didn’t render in the captured view, so I’m describing the tests based on the config rather than enumerating filenames.
-
-## How to implement this in your own project
-
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
-
-### Implementation notes from the audit
-
-1. **Reformat files (they’re currently effectively one-liners in raw view)**
-   - README + `buildspec.yml` + `cypress.config.ts` are hard to scan because they render as long single lines; reformat into normal multiline files.
-2. **Add a real “Quickstart”**
-   - Explicit steps: create Currents project → set `CURRENTS_RECORD_KEY` → set `projectId` → run CodeBuild batch build.
-   - Include copy/paste commands for local run (even if it’s not CodeBuild).
-3. **Add `scripts` in `package.json`**
-   - Example: `npm run cy:cloud` to run `cypress-cloud run --record --parallel ...` (right now there’s only a placeholder `test` script).
-4. **Add `.env.example`**
-   - Show required env vars and safe handling (avoid pasting keys into shell history).
-5. **Make worker count configurable**
-   - Right now sharding is implicitly “3 workers” via matrix; add a single place to change it (and document it).
-6. **Include a sample CodeBuild Project JSON (optional but helpful)**
-   - Similar to the Playwright CodeBuild example repo which includes a project config output; having that here would reduce AWS console guesswork.
-
-## Source markdown copied into this folder
-
-- [`source__README.md`](source__README.md)
-
-## Repository content copied into this folder
-
-- Total tracked files copied: **25**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+- Note: use CLI arguments to customize your cypress-cloud runs, e.g.: `npx cypress-cloud run --parallel --record --key <your currents.dev key> --group groupA`
