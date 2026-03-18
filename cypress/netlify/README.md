@@ -1,61 +1,182 @@
  [![astro](https://user-images.githubusercontent.com/3611928/167888733-9bf21eda-d051-46f3-9184-12b14e21a10a.png)](https://ntl.fyi/3LZGn73)
- 
-# Cypress on Netlify
 
-- **Framework:** `cypress`
-- **Use case:** `ci/netlify`
-- **Source repository:** https://github.com/currents-dev/currents-netlify-example
+# Astro Quickstart Template   
 
-## What this example does
+This is a bare-bones Astro project that has everything you need to quickly deploy it to [Netlify](https://netlify.com). 
 
-An example Netlify-deployed Astro site template that includes a **Netlify Build Plugin** configuration for **`netlify-plugin-currents`** via `netlify.toml`.
+Hate reading, here's a video: https://youtu.be/SknFflQVOys!
 
-> Note: The README describes this as an “Astro Quickstart Template” (Netlify template) and does **not** explain Currents; the Currents-specific part is in `netlify.toml`.
+Love reading, here's blog post: www.netlify.app/blog/deploy-your-astro-project-fast/!
 
-## How this example is used
+## Table of Contents:
 
-- Deploy the Astro template to Netlify (README gives standard “Deploy to Netlify” / CLI deploy instructions).
-- Netlify build will use:
-  - `[build] command = "astro build"` and `publish = "dist"`
-  - A plugin block that references `package = "netlify-plugin-currents"` and enables it in `postBuild`.
+- [Quick Setup + Deploy Option](#quick-setup--deploy-option)
+- [Regular Setup](#regular-setup)
+  - [Cloning + Install Packages](#1-cloning--install-packages)
+  - [Deploying](#2-deploying)
+- [Astro + Netlify Resources](#astro--netlify-resources)
+- [Project Structure](#project-structure)
+- [Styling](#styling)
+  - [Notes on Styling](#notes-on-styling)
+  - [Remove Styling](#remove-styling)
+- [Commands](#commands)
+- [Testing](#testing)
+  - [Included Default Testing](#included-default-testing)
+  - [Removing Renovate](#removing-renovate)
+  - [Removing Cypress](#removing-cypress)
+- [Want to learn more?](#want-to-learn-more)
 
-## What scenarios are included
+## Quick Setup + Deploy Option
 
-- **Astro quickstart project structure** (`src/`, `public/`, `astro.config.mjs`).
-- **Cypress E2E** included as a dependency + config:
-  - `cypress` dependency in `package.json`
-  - `cypress.config.ts` configured with baseUrl `http://localhost:3000/`
-  - `cypress/e2e/` folder present
-- **Netlify deploy config**:
-  - `netlify.toml` sets build/publish and includes the `netlify-plugin-currents` plugin entry.
+Click this button and it will help you create a new repo, create a new Netlify project, and deploy!
 
-## How to implement this in your own project
+[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-quickstart)
 
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
+## Regular Setup
 
-### Implementation notes from the audit
+ ### 1. Cloning + Install Packages
 
-1. **Explain the Currents part in the README**
-   - Add a “Currents on Netlify” section: what `netlify-plugin-currents` does, what it expects (env vars, artifacts, etc.), and a minimal `netlify.toml` snippet. Right now the README doesn’t mention Currents at all.
-2. **Fix / clarify plugin config correctness**
-   - `netlify.toml` has both `[plugins.inputs.postBuild]` and `[plugin.inputs]` (singular `plugin`) on the same line, which looks like a typo/misconfig. Reformat and verify the correct Netlify TOML schema.
-3. **Add an `.env.example` (or Netlify UI env var list)**
-   - If the plugin requires tokens/keys, document them explicitly and point users to Netlify environment variables setup.
-4. **Pretty-print committed files**
-   - `package.json`, `cypress.config.ts`, and `netlify.toml` are single-line blobs; format them for readability/copying.
-5. **Make the example “Currents-first”**
-   - If this repo is meant to demonstrate Currents on Netlify, consider renaming/rewriting the README so it’s not primarily a generic Astro template, and include a minimal “verify it worked” checklist (what to look for in Netlify logs / Currents UI).
+  - Clone this repo with one of these options:
 
-## Source markdown copied into this folder
+    - Click the 'Use this template' button at the top of the page
+    - Or via the command line `git clone https://github.com/netlify-templates/astro-quickstart`
 
-- [`source__README.md`](source__README.md)
+  - Then install the necessary packages and run the project locally to make sure everything works.
 
-## Repository content copied into this folder
+    ```bash
+    npm install
+    npm run dev
+    ```
 
-- Total tracked files copied: **17**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+  > Alternatively, you can run this locally with [the Netlify CLI](https://docs.netlify.com/cli/get-started/)'s by running the `netlify dev` command for more options like receiving a live preview to share (`netlify dev --live`) and the ability to test [Netlify Functions](https://www.netlify.com/products/functions) and [redirects](https://docs.netlify.com/routing/redirects/). 
+
+  ### 2. Deploying
+  - Install the Netlify CLI globally `npm install netlify-cli -g`
+    
+  - Run `npm run build`
+
+  - Then use the `netlify deploy` for a deploy preview link or `netlify deploy --prod` to deploy to production
+
+  Here are a few other ways you can deploy this template:
+    
+  - Use the Netlify CLI's create from template command `netlify sites:create-template astro-quickstart` which will create a repo, Netlify project, and deploy it
+    
+  - If you want to utilize continuous deployment through GitHub webhooks, run the Netlify command `netlify init` to create a new project based on your repo or `netlify link` to connect your repo to an existing project
+
+## Astro + Netlify Resources
+
+Here are some resources to help you on your Astro + Netlify coding fun!
+
+- [Astro on Netlify Integration Page](https://docs.netlify.com/integrations/frameworks/astro)
+
+- [Build wicked fast sites with Astro: An Introduction](https://www.netlify.com/blog/2021/07/08/build-wicked-fast-sites-with-astro-an-introduction/#main)
+
+- [A Template for Building Shopify Stores with Astro and the Storefront API](https://www.netlify.com/blog/2021/07/23/build-a-modern-shopping-site-with-astro-and-serverless-functions)
+
+Hope this template helps :) Happy coding 👩🏻‍💻!
+
+---
+
+## Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── style/
+│       └── demo-styling.css
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## Styling
+
+We've added some modern styling to this template using css within an external stylesheet, this will allow you to easily remove our styling and add in your own. 
+
+If you decide that you want to keep our styling you can review our style notes below. 
+
+### Notes on Styling
+
+The variables below give you the ability to change the gradient colors of the blobs and are interpolated into the URL string of the background-img within the body. 
+
+```css
+// Controls the blob blur gradient colors within the main tag's svg
+--top-right-blur-1: #20C6B7;
+--top-right-blur-2: #4D9ABF;
+--bttm-left-blur-1: #FF5C02;
+--bttm-left-blur-2: #FFCDB1;
+```
+
+### Remove Styling
+
+If you decide that our styling is not for you, all you'll need to do is remove the [demo-styling.css](https://github.com/netlify-templates/astro-quickstart/tree/main/src/style/demo-styling.css) file. 
+
+
+## Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+
+## Testing
+
+### Included Default Testing
+
+We’ve included some tooling that helps us maintain these templates. This template currently uses:
+
+- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
+- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
+- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+
+If your team is not interested in this tooling, you can remove them with ease!
+
+### Removing Renovate
+
+In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+
+### Removing Cypress
+
+For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
+
+```diff
+[[plugins]]
+  package = "netlify-plugin-cypress"
+-  [plugins.inputs.postBuild]
+-    enable = true
+-
+-  [plugins.inputs]
+-    enable = false 
+```
+
+If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
+
+```bash
+npm uninstall -D netlify-plugin-cypress
+```
+
+And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
+
+```bash
+npm uninstall cypress
+```
+
+## Want to learn more?
+
+Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).

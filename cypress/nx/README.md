@@ -1,61 +1,67 @@
-# Cypress in Nx Monorepo
+# currents-nx-example
 
-- **Framework:** `cypress`
-- **Use case:** `workspace/nx`
-- **Source repository:** https://github.com/currents-dev/currents-nx-example
+Example of using [`@currents/nx`](https://www.npmjs.com/package/@currents/nx) plugin for integrating cypress with alternative orchestration services - [Currents](https://currents.dev) and [Sorry Cypress](https://sorry-cypress.dev)
 
-## What this example does
+## Walkthrough
 
-An example Nx workspace showing how to use the **`@currents/nx` executor** to run **Cypress** tests and record/parallelize them with **Currents** (or alternatively **Sorry Cypress**).
+[`@currents/nx`](https://github.com/currents-dev/currents-nx/tree/main) is an NX plugin that runs cypress tests with the provided configuration options while using alternative orchestration services.
 
-## How this example is used
+You can recreate the example following the next steps.
 
-- The README walks you through creating an Nx workspace + web app, installing `@currents/nx`, then adding a new target using the `@currents/nx:currents` executor.
-- In this repo, that target already exists as `frontend-e2e:currents` in `apps/frontend-e2e/project.json` and enables `record` + `parallel`, points to a Cypress config, and sets `devServerTarget`.
-- You then run:
-  - `nx run frontend-e2e:currents --record --key <key> --ci-build-id hello-currents-nx`
-  - or (if options are set in config) omit flags and run with just `--ci-build-id`.
-- Cypress itself is configured with `cypress-cloud/plugin` and includes a Currents `projectId`.
+```sh
 
-## What scenarios are included
+# Create an "empty" workspace
+npx create-nx-workspace@latest currents-nx-example
+cd currents-nx-example
 
-- **Nx target configuration for Currents executor**
-  - `apps/frontend-e2e/project.json` shows the `currents` target using `@currents/nx:currents` with `record: true`, `parallel: true`, and `devServerTarget: frontend:serve`.
-- **Cypress configuration wired to cypress-cloud**
-  - `apps/frontend-e2e/cypress.config.js` uses `cypress-cloud/plugin`, defines `specPattern`, and sets `projectId`.
-- **Repo-level dependencies**
-  - `package.json` includes `@currents/nx`, `cypress`, and `cypress-cloud`.
-- **README “recreate the example” steps**
-  - End-to-end instructions for creating the Nx workspace and adding the executor target.
+# Create a dummy web project, choose any CSS styling
+# That will create a new project with `@nrwl/cypress` pre-installed and configured
+npm i -D @nx/web
+nx g @nx/web:app frontend
 
-## How to implement this in your own project
+# Install @currents/nx
+npm i -D @currents/nx
 
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
+# Configure a new target in apps/frontend-e2e/project.json
+vim apps/frontend-e2e/project.json
+```
 
-### Implementation notes from the audit
+Set executor value to `"@currents/nx:currents"`
 
-1. **Remove hardcoded / placeholder values**
-   - `project.json` has `key` and `ciBuildId` set to **documentation URLs** (not usable values). Replace with env-var usage or omit these options and document the CLI flags.  
-   - `cypress.config.js` hardcodes `projectId: 'Ij0RfK'`; make it env-driven and fail fast if missing.
-2. **Fix typos / consistency**
-   - README snippet references `cypres.config.ts` (typo) while this repo uses `apps/frontend-e2e/cypress.config.js`. Clean up the README example so it matches reality.
-3. **Pretty-print the repo files**
-   - Key files are committed as single-line blobs (`package.json`, `project.json`, `cypress.config.js`, README), which makes the example hard to learn from.
-4. **Add a minimal CI workflow**
-   - A small GitHub Actions example running `nx run frontend-e2e:currents ...` would make the “CI use case” copy/pasteable (this repo currently doesn’t surface a workflow in the README).
-5. **Make “Currents vs Sorry Cypress” explicit**
-   - README says it supports both, but doesn’t show the exact knob (`cloudServiceUrl` etc.). Add a short section + example config for Sorry Cypress mode and where to set it.
+```json
+{
+  "executor": "@currents/nx:currents",
+  "options": {
+    "record": true,
+    "parallel": true,
+    "cypressConfig": "apps/app-e2e/cypres.config.ts",
+    "devServerTarget": "my-react-app:serve",
+    "testingType": "e2e"
+  }
+}
+```
 
-## Source markdown copied into this folder
+- Get `projectId` and `recordKey` from https://app.currents.dev
+- Update the projectId in `cypress.config.js` file
+- Set the key either in configuration or as CLI flag
 
-- [`source__README.md`](source__README.md)
+Now you can start recording your tests to Currents or Sorry Cypress.
 
-## Repository content copied into this folder
+```sh
+nx run frontend-e2e:currents --record --key <key> --ci-build-id hello-currents-nx
+```
 
-- Total tracked files copied: **49**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+While having those options defined, you can omit the corresponding CLI flags:
+
+```sh
+nx run frontend-e2e:currents  --ci-build-id hello-currents-nx-001
+```
+
+### Misc
+
+- Learn more about [Parallelizing Cypress](https://currents.dev/readme/guides/parallelization) tests
+- Explore how to use [CI Build ID](https://currents.dev/readme/guides/cypress-ci-build-id) to organize your builds
+
+Here's a visual example of this demo project sending the results to Currents dashboard
+
+![Kapture 2021-11-19 at 01 14 50](https://user-images.githubusercontent.com/1637928/142597762-3cc0009f-d030-46aa-b273-1c31300c65f6.gif)
