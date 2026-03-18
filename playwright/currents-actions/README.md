@@ -1,62 +1,98 @@
-# currents-actions-example
+# Currents Actions with Playwright
 
-- **Framework:** `playwright`
-- **Use case:** `features/actions`
-- **Source repository:** https://github.com/currents-dev/currents-actions-example
+[Currents Actions](https://docs.currents.dev/guides/currents-actions) let you define rules that automatically **skip**, **quarantine**, or otherwise modify test behavior — without touching test code. Rules are created in the Currents dashboard and applied at runtime via Playwright fixtures.
 
-## What this example does
+## Prerequisites
 
-An example Playwright project showing how to use **Currents Actions** via **Currents Playwright fixtures** (“different ways to configure the Currents Playwright fixtures to apply Actions”).
+- A [Currents](https://app.currents.dev) account with a project
+- Your **Record Key** and **Project ID** (from project settings)
 
-## How this example is used
+## 1. Install
 
-- Setup flow described in README:
-  - `npm install`
-  - update `playwright.config.ts` with Currents **record key** and **project id**
-  - run `npm run test` to execute Playwright tests, apply Currents Actions, and send results to Currents.
-- Actions themselves are created in the Currents Dashboard (README links to the Currents docs section on creating rules/actions).
-- Currents Actions (docs): “Actions Engine” lets you trigger automated testing workflows (e.g., conditionally skip/quarantine tests).
+```bash
+npm install
+```
 
-## What scenarios are included
+## 2. Configure credentials
 
-The repo README explicitly lists 3 runnable variants:
-- `npm run test` — use `playwright test` with Currents loaded as a reporter
-- `npm run test:pwc` — use `pwc`
-- `npm run test:pwc-p` — orchestrated runs
-Also, the repository layout shows:
-- `.github/workflows/` (CI examples)
-- `basic/` (likely the fixture/action examples)
-- `playwright.config.ts` and `playwright.config.reporter.ts` (two configuration approaches).
+Set environment variables — no edits to config files needed:
 
-## How to implement this in your own project
+```bash
+export CURRENTS_RECORD_KEY=your_record_key
+export CURRENTS_PROJECT_ID=your_project_id
+```
 
-1. Start from the copied source markdown files in this folder and identify the exact config files/scripts used.
-2. Create or reuse a Currents project, then configure credentials through environment variables (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`).
-3. Replicate the framework + CI integration pattern shown in the source docs for this use case (reporter/plugin wiring, CI command, and build ID strategy).
-4. Run the same local commands from the source docs first, then execute the CI variant to confirm dashboard reporting works end-to-end.
-5. After validation, adapt the pattern to your repository structure while keeping secrets in env vars and preserving the same reporting/orchestration flow.
+`currents.config.ts` reads these and passes them to both the reporter and the fixtures:
 
-### Implementation notes from the audit
+```ts
+export default {
+  recordKey: process.env.CURRENTS_RECORD_KEY || "",
+  projectId: process.env.CURRENTS_PROJECT_ID || "",
+};
+```
 
-1. **Make the README a real README (it’s effectively one long line in raw form)**
-   - The GitHub-rendered README is readable, but the raw file is near-unusable for copying/editing. Reformat with sections + fenced code blocks.
-2. **Stop telling users to edit `playwright.config.ts` directly for secrets**
-   - Provide `.env.example` + document env vars (`CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`, optional `CURRENTS_CI_BUILD_ID`), and read them in config. README currently instructs “Update playwright.config.ts with record key and project id”.
-3. **Add explicit “Actions fixture wiring” snippet**
-   - Link to Currents “Playwright Fixtures” docs and show the exact code users should copy to extend Playwright `test` with Currents fixtures for Actions.
-4. **Document what’s inside `basic/`**
-   - Add a short list of what `basic/` contains (fixture file names + what each example demonstrates) and how it maps to the 3 npm scripts. Right now users only see the folder exists.
-5. **Expose CI workflows in the README**
-   - The repo has `.github/workflows/` but README doesn’t link to specific workflow files. Add direct links + explain which workflow runs which variant.
-6. **Add a “verify it works” checklist**
-   - Example: “create one simple action in Currents (e.g., skip tagged tests), run locally, confirm in dashboard screenshot”. README already includes screenshots—just add a step-by-step verification path.
+## 3. Wire Currents fixtures
 
-## Source markdown copied into this folder
+Extend Playwright's `test` with Currents fixtures so Actions are applied at runtime:
 
-- [`source__README.md`](source__README.md)
+```ts
+// basic/test.ts
+import {
+  CurrentsFixtures,
+  CurrentsWorkerFixtures,
+  fixtures,
+} from "@currents/playwright";
+import { test as base } from "@playwright/test";
 
-## Repository content copied into this folder
+export const test = base.extend<CurrentsFixtures, CurrentsWorkerFixtures>({
+  ...fixtures.baseFixtures,
+  ...fixtures.actionFixtures,
+});
+```
 
-- Total tracked files copied: **14**
-- Source `README.md` is saved as `README.upstream.md`.
-- Path mapping: [`content-map.md`](content-map.md)
+Then use this `test` instead of Playwright's built-in one in your spec files.
+
+Read more about [Playwright fixtures](https://playwright.dev/docs/test-fixtures).
+
+## 4. Run tests
+
+```bash
+npx playwright test
+```
+
+This runs your tests, applies any matching Currents Actions, and reports results to the dashboard.
+
+## 5. Create Actions in the dashboard
+
+Go to your project in the [Currents dashboard](https://app.currents.dev) and create rules. Each rule matches tests by criteria (file name, title, tag, etc.) and applies an action (Skip or Quarantine).
+
+See the [Actions documentation](https://docs.currents.dev/guides/currents-actions) for the full rule builder reference.
+
+![actions-show](https://github.com/user-attachments/assets/24b16c4a-cf77-42fd-a91d-eda8cb93e88d)
+
+## What's in `basic/`
+
+| File                      | What it demonstrates                                                              |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| `test.ts`                 | Extends Playwright `test` with Currents action fixtures                           |
+| `actions.spec.ts`         | A **quarantine** rule (match by file) and a **skip** rule (match by file + title) |
+| `getting-started.spec.ts` | Baseline passing tests                                                            |
+
+### Example rules from `actions.spec.ts`
+
+**Quarantine** — match by file name:
+
+| Field | Operation | Value             |
+| ----- | --------- | ----------------- |
+| File  | is        | `actions.spec.ts` |
+
+→ Action: **Quarantine** (test runs but failure is suppressed)
+
+**Skip** — match by file name AND test title:
+
+| Field | Operation | Value              |
+| ----- | --------- | ------------------ |
+| File  | is        | `actions.spec.ts`  |
+| Title | is        | `action skip test` |
+
+→ Action: **Skip** (test is not executed)

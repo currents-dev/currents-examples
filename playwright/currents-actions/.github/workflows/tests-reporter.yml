@@ -43,4 +43,4 @@ jobs:
           CURRENTS_PROJECT_ID: ${{ secrets.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
-          npx playwright test -c playwright.config.reporter.ts --shard=${{ matrix.shard }}/${{ strategy.job-total }}
+          npx playwright test -c playwright.config.ts --shard=${{ matrix.shard }}/${{ strategy.job-total }}
