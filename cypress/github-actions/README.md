@@ -2,7 +2,7 @@
 
 This is an example repository that showcases using [Currents.dev](https://currents.dev) for running cypress tests on GitHub Actions.
 
-The example [workflow config file](https://github.com/currents-dev/gh-actions-example/blob/main/.github/workflows/currents.yml):
+The example [workflow config file](https://github.com/currents-dev/currents-examples/blob/main/cypress/github-actions/.github/workflows/currents.yml):
 
 - runs 3 containers with cypress tests in parallel
 
