@@ -19,6 +19,7 @@ Examples demonstrating Playwright integration with Currents, including sharding,
 | [**GitHub Actions — Orchestration**](playwright/ci/github-actions/orchestration/) | Optimized parallel execution with load balancing         |
 | [**GitHub Actions — Rerun Failed**](playwright/ci/github-actions/rerun-failed/)   | Rerun only failed tests from a previous build            |
 | [**GitHub Actions — Visual Testing**](playwright/ci/github-actions/argos/)        | Integration with Argos for visual regression testing     |
+| [**GitLab CI**](gitlab/)                                   | Playwright + Currents on GitLab CI ([source on GitLab](https://gitlab.com/currents.dev/gitlab-playwright-currents)) |
 | [**Jenkins**](playwright/ci/jenkins/jenkins-last-failed/) | Advanced Jenkins setup with Docker, Sharding, and "Last Failed" rerun |
 | [**Nx Monorepo**](playwright/ci/nx/)                      | Playwright in an Nx workspace                                         |
 
