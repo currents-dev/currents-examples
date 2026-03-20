@@ -4,7 +4,7 @@ This is an example repository that showcases using [CircleCI](https://circleci.c
 
 We are hosting independent versions of the Cypress App and [docker images](https://hub.docker.com/r/currentsdev/cypress-included) with pre-installed binaries. Please refer to the [documentation](https://currents.dev/readme/integration-with-cypress/alternative-cypress-binaries) for the list of supported binaries and versions.
 
-The example [config file](https://github.com/currents-dev/circleci-example/blob/master/.circleci/config.yml) installs the custom Cypress App and runs 3 containers with Cypress tests in parallel using various setup scenarios.
+The example [config file](https://github.com/currents-dev/currents-examples/blob/main/cypress/circleci/.circleci/config.yml) installs the custom Cypress App and runs 3 containers with Cypress tests in parallel using various setup scenarios.
 
 ## Prerequisites
 
