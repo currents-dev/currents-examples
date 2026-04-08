@@ -1,6 +1,6 @@
 # Currents.dev - AWS CodeBuild Example
 
-The full guide: https://currents.dev/readme/ci-setup/aws-code-build
+The full guide: [https://currents.dev/readme/ci-setup/aws-code-build](https://docs.currents.dev/getting-started/ci-setup/playwright-aws-code-build)
 
 This is an example repository that showcases using [Currents.dev](https://currents.dev) for running parallel cypress tests using AWS CodeBuild CI
 
