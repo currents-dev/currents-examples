@@ -44,7 +44,7 @@ jobs:
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
           CURRENTS_CI_BUILD_ID: reporter-${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
         run: |
-          npx playwright test --shard=${{ matrix.shard }}/${{ strategy.job-total }} --config ./playwright.config.reporter.ts --grep @basic
+          npx playwright test --shard=${{ matrix.shard }}/${{ strategy.job-total }} ts --grep @basic
 
       - name: Show Summary
         if: always()

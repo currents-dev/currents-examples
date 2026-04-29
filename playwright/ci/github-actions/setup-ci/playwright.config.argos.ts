@@ -1,5 +1,5 @@
 import { currentsReporter } from "@currents/playwright";
-import config from "./pw.config.shared";
+import config from "./playwright.config";
 export default {
   ...config,
   reporter: [
