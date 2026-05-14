@@ -13,11 +13,11 @@ jobs:
         shard: [1, 2, 3]
     name: "PW tests"
     timeout-minutes: 60
-    runs-on: ubuntu-22.04
-    container: mcr.microsoft.com/playwright:v1.49.0-jammy
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.60.0-noble
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -26,7 +26,7 @@ jobs:
           echo "$GITHUB_WORKSPACE"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: "24.x"
 
@@ -44,4 +44,4 @@ jobs:
           CURRENTS_PROJECT_ID: bnsqNa
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
-          npx pwc-p
+          npx pwc-p run

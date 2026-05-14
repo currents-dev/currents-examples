@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@currents/playwright": "^1.13.0",
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.60.0",
     "nanoid": "^5.1.5"
   },
   "devDependencies": {

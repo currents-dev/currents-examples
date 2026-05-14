@@ -14,7 +14,7 @@ jobs:
         shard: [1, 2]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -25,7 +25,7 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 9
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: "pnpm"
 
@@ -54,7 +54,7 @@ jobs:
           PWTEST_BLOB_DO_NOT_REMOVE: 1 # Add the env variable to not remove test blobs
           # Add the blob reporter in the execution command
         run: |
-          pnpm exec pwc-p --reporter blob
+          pnpm exec pwc-p run --reporter blob
       # Generate a report based on the blob with the merge-report command
       - name: Generate HTML report from blob
         run: |
@@ -75,14 +75,14 @@ jobs:
     needs: playwright
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - uses: pnpm/action-setup@v4
         with:
           version: 9
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: "pnpm"
 

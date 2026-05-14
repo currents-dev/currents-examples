@@ -10,7 +10,7 @@
         "config": "apps/e2e-03/playwright.config.ts",
         "commands": [
           {
-            "command": "npx pwc-p"
+            "command": "npx pwc-p run"
           }
         ]
       }

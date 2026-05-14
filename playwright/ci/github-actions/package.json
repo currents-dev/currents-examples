@@ -14,7 +14,7 @@
     "@argos-ci/playwright": "^3.6.1",
     "@axe-core/playwright": "^4.4.4",
     "@currents/playwright": "^1.9.0",
-    "@playwright/test": "^1.49.0",
+    "@playwright/test": "^1.60.0",
     "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",

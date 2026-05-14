@@ -10,7 +10,7 @@
     "test": "start-server-and-test dev http://localhost:3000 playwright",
     "playwright": "playwright test",
     "pwc": "pwc",
-    "pwc-p": "pwc-p --ci-build-id `date +%s`"
+    "pwc-p": "pwc-p run --ci-build-id `date +%s`"
   },
   "dependencies": {
     "@types/node": "22.5.0",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@babel/runtime": "^7.26.0",
     "@currents/playwright": "^1.8.0",
-    "@playwright/test": "^1.49.0",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.14",
     "autoprefixer": "^10.4.20",
     "babel-plugin-istanbul": "^7.0.0",

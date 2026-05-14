@@ -14,11 +14,11 @@ jobs:
 
     name: "Playwright Tests - pwc-p"
     timeout-minutes: 60
-    runs-on: ubuntu-22.04
-    container: mcr.microsoft.com/playwright:v1.52.0-jammy
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.60.0-noble
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -27,9 +27,9 @@ jobs:
           echo "$GITHUB_WORKSPACE"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "22.x"
+          node-version: "24.x"
 
       - name: Install dependencies
         run: |
@@ -46,4 +46,4 @@ jobs:
 
         # Run the sharded tests
         run: |
-          npx pwc-p
+          npx pwc-p run

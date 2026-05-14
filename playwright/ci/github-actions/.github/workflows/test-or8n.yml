@@ -15,11 +15,11 @@ jobs:
 
     name: "Playwright Tests - pwc-p"
     timeout-minutes: 60
-    runs-on: ubuntu-22.04
-    container: mcr.microsoft.com/playwright:v1.49.0-jammy
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.60.0-noble
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -28,9 +28,9 @@ jobs:
           echo "$GITHUB_WORKSPACE"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "18.x"
+          node-version: "24.x"
 
       - name: Install dependencies
         run: |
@@ -50,9 +50,10 @@ jobs:
         # Add the blob reporter in the execution command
         run: |
           cp ../orchestration/currents.config.ts .
-          npx pwc-p --reporter blob
+          npx pwc-p run --reporter blob
 
       # Generate a report based on the blob with the merge-report command
       - name: Generate HTML report from blob
+        if: always() && !cancelled()
         run: |
           npx playwright merge-reports --reporter=html ./blob-report
