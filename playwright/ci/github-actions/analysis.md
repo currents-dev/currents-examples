@@ -43,7 +43,7 @@ From the README’s “Examples” section (each is a workflow file): :contentRe
 
 ### Rerun only failed tests
 
-- `rerun-shards-pwc.yml` — uses `currents-dev/playwright-last-failed@v1` to compute extra flags, then runs `npx pwc ...`. :contentReference[oaicite:14]{index=14}
+- `rerun-shards-pwc.yml` — uses `currents-dev/playwright-last-failed@v2` to compute extra flags, then runs `npx pwc ...`. :contentReference[oaicite:14]{index=14}
 - `rerun-shards-reporter.yml`, `reruns-or8n.yml` — listed in README. :contentReference[oaicite:15]{index=15}
 
 ### Repo-level config examples
