@@ -5,7 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@currents/playwright": "^1.7.1",
+    "@currents/playwright": "2.0.0-beta.4",
     "@eslint/js": "^9.8.0",
     "@nx/devkit": "20.0.5",
     "@nx/eslint": "20.0.5",

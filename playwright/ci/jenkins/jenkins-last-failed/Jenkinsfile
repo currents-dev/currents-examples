@@ -148,8 +148,8 @@ def runPlaywrightTestsLastFailedOrchestration(parallelIndex) {
         script {
             def outDir = "test-results/parallel-${parallelIndex}"
             def discoveryFile = "${outDir}/discovery.txt"
-            def discoverCommand = "npx pwc-p discover --pwc-discovery-output ${discoveryFile} --last-failed --output ${outDir}"
-            def runCommand = "npx pwc-p run --pwc-discovery-output ${discoveryFile} --output ${outDir}"
+            def discoverCommand = "npx pwc-p discover --pwc-discovery-file ${discoveryFile} --last-failed --output ${outDir}"
+            def runCommand = "npx pwc-p run --pwc-discovery-file ${discoveryFile} --output ${outDir}"
             echo "Running discovery: ${discoverCommand}"
             sh "${discoverCommand}"
             echo "Running command: ${runCommand}"

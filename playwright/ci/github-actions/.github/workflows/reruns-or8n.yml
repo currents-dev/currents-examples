@@ -17,7 +17,7 @@ jobs:
       CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
       CURRENTS_CI_BUILD_ID: ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
       CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
-      CURRENTS_DISCOVERY_OUTPUT_FILE: .currents/discovery.txt
+      CURRENTS_DISCOVERY_FILE: .currents/discovery.txt
     steps:
       - uses: actions/checkout@v6
         with:

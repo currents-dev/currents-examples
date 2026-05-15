@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@currents/cmd": "^1.1.2",
-    "@currents/playwright": "^1.6.2",
+    "@currents/playwright": "2.0.0-beta.4",
     "@playwright/experimental-ct-react": "^1.42.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^20.8.2",

@@ -26,7 +26,7 @@ This example ships with plain Playwright. To report to Currents, mirror the setu
 3. Extend `defineConfig` with `CurrentsFixtures` / `CurrentsWorkerFixtures`, register `currentsReporter(...)`, and pass `currentsConfigOptions` including `coverage` (e.g. `coverage: { projects: true }` as in the instrumented example).
 4. Set `use.baseURL` to `http://localhost:5173` so it matches `npm run dev`.
 
-For CLI/orchestrated runs, use the same `pwc` / `pwc-p` patterns described in the instrumented example README and the [Playwright + Currents](https://docs.currents.dev/getting-started/playwright/you-first-playwright-run) docs.
+For CLI/orchestrated runs, use the same `pwc` / `pwc-p run` patterns described in the instrumented example README and the [Playwright + Currents](https://docs.currents.dev/getting-started/playwright/you-first-playwright-run) docs.
 
 ## CI
 

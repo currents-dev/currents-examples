@@ -4,18 +4,20 @@ This directory demonstrates **Currents Orchestration**, which provides optimized
 
 ## Workflows
 
-| Workflow | Description |
-| :--- | :--- |
-| [`test-or8n.yml`](../.github/workflows/test-or8n.yml) | Orchestration with `pwc-p` + Blob Reporter |
+| Workflow                                              | Description                                    |
+| :---------------------------------------------------- | :--------------------------------------------- |
+| [`test-or8n.yml`](../.github/workflows/test-or8n.yml) | Orchestration with `pwc-p run` + Blob Reporter |
 
 ## How it works
 
 Unlike standard sharding (where tests are split by file count), Orchestration balances tests based on their historical duration.
 
 ### Key Components
-1.  **`pwc-p`**: The Currents Orchestration CLI.
+
+1.  **`pwc-p run`**: The Currents Orchestration CLI (use `pwc-p discover` when you need a separate discovery step).
 2.  **`currents.config.ts`**: Configuration file for orchestration.
 3.  **Blob Reporter**: Used to merge reports from multiple machines.
 
 ## Configuration
+
 - [`currents.config.ts`](./currents.config.ts): Contains the project ID, record key, and orchestration settings.

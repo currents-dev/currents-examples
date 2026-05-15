@@ -96,7 +96,7 @@ nx run-many -t e2e  --parallel=2 --verbose --last-failed
 ## Single project orchestration
 
 The project named `e2e-03` has a different target than the other two projects. The target is `or8n`
-This target project executes `pwc-p` command. When using it in multiple machines it will execute in parallel the tests of this project.
+This target project executes `pwc-p run`. When using it in multiple machines it will execute in parallel the tests of this project.
 
 ```sh
 CURRENTS_RECORD_KEY=recordkey \

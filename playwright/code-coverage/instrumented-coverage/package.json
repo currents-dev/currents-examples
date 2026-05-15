@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "test:e2e": "start-server-and-test dev http://localhost:3000 pwc",
-    "test:e2e:pwc-p": "start-server-and-test dev http://localhost:3000 pwc-p",
+    "test:e2e:pwc-p": "start-server-and-test dev http://localhost:3000 pwc-p run",
     "test": "start-server-and-test dev http://localhost:3000 playwright",
     "playwright": "playwright test",
     "pwc": "pwc",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.26.0",
-    "@currents/playwright": "^1.8.0",
+    "@currents/playwright": "2.0.0-beta.4",
     "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.14",
     "autoprefixer": "^10.4.20",

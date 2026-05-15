@@ -3,15 +3,19 @@
 - **Link to the repository:** https://github.com/currents-dev/jenkins-last-failed :contentReference[oaicite:0]{index=0}
 
 ## Last time a change was introduced (excluding automated security/dependency updates)
+
 - Latest commits are **Dependabot** on **Jul 22, 2025** (excluded). :contentReference[oaicite:1]{index=1}
 - Latest **non-bot** change is **Nov 14, 2024** (“fix: remove api request script”) by `miguelangarano`. :contentReference[oaicite:2]{index=2}
 
 ## What is it for?
+
 An example repo showing how to run **Playwright on Jenkins** and use Currents’ **`--last-failed`** capability (rerun only previously failed tests), supporting both:
+
 - **native shards** (`pwc --shard=...`)
 - **Currents orchestration** (`pwc-p`) :contentReference[oaicite:3]{index=3}
 
 ## How is it used?
+
 - You configure Jenkins credentials:
   - `CURRENTS_RECORD_KEY`, `CURRENTS_PROJECT_ID`, and `CURRENTS_API_KEY`. :contentReference[oaicite:4]{index=4}
 - The `Jenkinsfile` defines parameters:
@@ -19,12 +23,13 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
   - `IS_ORCHESTRATION` (choose orchestration vs shards). :contentReference[oaicite:5]{index=5}
 - If `CI_BUILD_ID != 'none'`, it first generates a `.last-run.json` file by calling:
   - `npx currents api get-run --api-key ... --project-id ... --ci-build-id ... --pw-last-run --output .last-run.json` :contentReference[oaicite:6]{index=6}
-  This matches Currents docs: `--last-failed` needs an API key and uses `@currents/cmd` to generate `.last-run.json` for the target CI build id. :contentReference[oaicite:7]{index=7}
+    This matches Currents docs: `--last-failed` needs an API key and uses `@currents/cmd` to generate `.last-run.json` for the target CI build id. :contentReference[oaicite:7]{index=7}
 - It then runs either:
   - **Shards:** `npx pwc --shard=i/N` (or `--last-failed --output ...`) across `TOTAL_SHARDS` in parallel :contentReference[oaicite:8]{index=8}
-  - **Orchestration:** `npx pwc-p` (or `--last-failed --output ...`) across `PARALLEL_JOBS` in parallel :contentReference[oaicite:9]{index=9}
+  - **Orchestration:** `npx pwc-p run` (use `npx pwc-p discover ...` first when rerunning with `--last-failed` / a discovery file) across `PARALLEL_JOBS` in parallel :contentReference[oaicite:9]{index=9}
 
 ## What examples are provided?
+
 - **Jenkins Pipeline** example with:
   - parameters (CI_BUILD_ID, orchestration toggle)
   - dependency install + Playwright install
@@ -38,6 +43,7 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
 - `tests/` directory exists (the suite the pipeline runs). :contentReference[oaicite:13]{index=13}
 
 ## What changes need to be done to make the examples more accessible?
+
 1. **Remove hardcoded Currents keys from `playwright.config.ts`**
    - It currently hardcodes `recordKey` and `projectId` in source. Use env vars and fail-fast if missing (and keep secrets out of git). :contentReference[oaicite:14]{index=14}
 2. **Rewrite the README as a real setup guide**
@@ -55,4 +61,4 @@ An example repo showing how to run **Playwright on Jenkins** and use Currents’
    - Minimal steps to run:
      - `npx pwc --shard=1/3` and
      - `npx currents api get-run ... --pw-last-run` + `npx pwc --last-failed ...`
-     so people can validate before wiring Jenkins. :contentReference[oaicite:18]{index=18}
+       so people can validate before wiring Jenkins. :contentReference[oaicite:18]{index=18}
