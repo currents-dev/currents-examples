@@ -41,6 +41,6 @@ jobs:
       # - name: Report Vitest Sharded results
       #   env:
       #     CURRENTS_KEY: ${{ secrets.CURRENTS_KEY }}
-      #     CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
+      #     CURRENTS_PROJECT_ID: ${{ vars.CURRENTS_PROJECT_ID }}
       #     CURRENTS_CI_BUILD_ID: ${{ github.run_id }}-${{ github.run_number }}
       #   run: node scripts/uploadResults.js --report-dir vitest-sharded-example
