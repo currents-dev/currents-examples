@@ -19,7 +19,7 @@ jobs:
     vmImage: ubuntu-latest
 
   # If you choose to not use the playwright container, you will also need to npx install playwright in your steps
-  container: mcr.microsoft.com/playwright:v1.42.1-jammy
+  container: mcr.microsoft.com/playwright:v1.60.0-noble
   variables:
   - name: npm_config_cache
     value: $(Pipeline.Workspace)/.npm
@@ -52,5 +52,5 @@ jobs:
     displayName: 'Run Basic Tests'
     env:
       CI: 'true'
-      CURRENTS_PROJECT_ID: '3W3DU4'
+      CURRENTS_PROJECT_ID: $(CURRENTS_PROJECT_ID)
       CURRENTS_RECORD_KEY: $(CURRENTS_RECORD_KEY)

@@ -1,4 +1,4 @@
-name: demo.playwright.pwc.staging
+name: demo.playwright.pwc
 on:
   workflow_dispatch:
   pull_request:
@@ -41,9 +41,9 @@ jobs:
         continue-on-error: true
         working-directory: ${{ env.TESTGROUP }}
         env:
-          CURRENTS_API_URL: https://cy-staging.currents.dev
-          CURRENTS_PROJECT_ID: dJeKhI
-          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY_STAGING }}
+          CURRENTS_API_URL: https://cy.currents.dev
+          CURRENTS_PROJECT_ID: ${{ vars.CURRENTS_PROJECT_ID }}
+          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
           npx pwc --shard=${{ matrix.shard }}/${{ strategy.job-total }} --ci-build-id "${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}" --grep @basic
 
@@ -51,8 +51,8 @@ jobs:
         continue-on-error: true
         working-directory: ${{ env.TESTGROUP }}
         env:
-          CURRENTS_API_URL: https://cy-staging.currents.dev
-          CURRENTS_PROJECT_ID: dJeKhI
-          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY_STAGING }}
+          CURRENTS_API_URL: https://cy.currents.dev
+          CURRENTS_PROJECT_ID: ${{ vars.CURRENTS_PROJECT_ID }}
+          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
           npx pwc --shard=${{ matrix.shard }}/${{ strategy.job-total }} --ci-build-id "${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}" --grep-invert @basic

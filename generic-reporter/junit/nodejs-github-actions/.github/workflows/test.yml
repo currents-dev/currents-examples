@@ -42,4 +42,4 @@ jobs:
         env:
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
-          CURRENTS_API_URL=https://cy-staging.currents.dev/ npx currents upload --project-id JOw2i3 --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
+          CURRENTS_API_URL=https://cy.currents.dev/ npx currents upload --project-id JOw2i3 --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}

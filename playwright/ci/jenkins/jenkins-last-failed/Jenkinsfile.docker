@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             // Ensure this version matches the Playwright version in package.json
-            image 'mcr.microsoft.com/playwright:v1.48.0-jammy'
+            image 'mcr.microsoft.com/playwright:v1.60.0-noble'
         }
     }
 

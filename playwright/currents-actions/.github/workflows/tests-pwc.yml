@@ -40,7 +40,7 @@ jobs:
       - name: Playwright Tests
         continue-on-error: false
         env:
-          CURRENTS_PROJECT_ID: ${{ secrets.CURRENTS_PROJECT_ID }}
+          CURRENTS_PROJECT_ID: ${{ vars.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
           npx pwc --shard=${{ matrix.shard }}/${{ strategy.job-total }}
