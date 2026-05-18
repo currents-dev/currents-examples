@@ -39,7 +39,7 @@ jobs:
       - name: Run Orchestrated tests
         continue-on-error: false
         env:
-          CURRENTS_PROJECT_ID: ldcYCp
+          CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
           CURRENTS_CI_BUILD_ID: ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
           COMMIT_INFO_MESSAGE: "shard: ${{ github.event.head_commit.message }}" 

@@ -41,7 +41,7 @@ jobs:
           ARGOS_PARALLEL: 1
           ARGOS_PARALLEL_TOTAL: -1
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
-          CURRENTS_PROJECT_ID: bnsqNa
+          CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
           npx pwc-p run

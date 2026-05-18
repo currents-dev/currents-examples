@@ -42,7 +42,7 @@ jobs:
         working-directory: ./setup-ci
         env:
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
-          CURRENTS_PROJECT_ID: bnsqNa
+          CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
           CURRENTS_CI_BUILD_ID: reporter-${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
           COMMIT_INFO_MESSAGE: "pwc-p: ${{ github.event.head_commit.message }}"

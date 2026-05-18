@@ -41,7 +41,7 @@ jobs:
         continue-on-error: false
         working-directory: ./setup-ci
         env:
-          CURRENTS_PROJECT_ID: bnsqNa
+          CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: |
           npx pwc --shard=${{ matrix.shard }}/${{ strategy.job-total }}

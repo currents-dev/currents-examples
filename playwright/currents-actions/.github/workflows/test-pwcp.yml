@@ -40,7 +40,7 @@ jobs:
       - name: Playwright Tests
         continue-on-error: false
         env:
-          CURRENTS_PROJECT_ID: ${{ secrets.CURRENTS_PROJECT_ID }}
+          CURRENTS_PROJECT_ID: ${{ env.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
           CURRENTS_CI_BUILD_ID: ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
         run: |

@@ -12,7 +12,7 @@ steps:
       npx playwright test --config playwright.config.ts --shard=$$((BUILDKITE_PARALLEL_JOB + 1))/$$BUILDKITE_PARALLEL_JOB_COUNT
     plugins:
       - docker#v5.11.0:
-          image: "mcr.microsoft.com/playwright:latest"
+          image: "mcr.microsoft.com/playwright:v1.60.0-noble"
           propagate-environment: true
           environment:
             - CURRENTS_RECORD_KEY
