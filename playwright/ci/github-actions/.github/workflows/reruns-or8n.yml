@@ -11,14 +11,15 @@ jobs:
         shard: [1, 2, 3]
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:v1.49.0-noble
+    container: mcr.microsoft.com/playwright:v1.60.0-noble
     env:
       CURRENTS_PROJECT_ID: bnsqNa
       CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
       CURRENTS_CI_BUILD_ID: ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
       CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
+      CURRENTS_DISCOVERY_FILE: .currents/discovery.txt
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.ref }}
 
@@ -26,9 +27,9 @@ jobs:
       - run: |
           echo "$GITHUB_WORKSPACE"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "20.x"
+          node-version: "24.x"
 
       - name: Install dependencies
         run: |
@@ -37,7 +38,7 @@ jobs:
 
       - name: Playwright Last Failed action
         id: last-failed-action
-        uses: currents-dev/playwright-last-failed@v1
+        uses: currents-dev/playwright-last-failed@v2
         with:
           or8n: true
           # debug: true
@@ -48,6 +49,9 @@ jobs:
         working-directory: ./setup-ci
         run: |
           cp ../orchestration/currents.config.ts .
-          COMMAND="npx pwc-p ${{ steps.last-failed-action.outputs.extra-pw-flags }}"
+          DISCOVERY_COMMAND="npx pwc-p discover ${{ steps.last-failed-action.outputs.extra-discovery-flags }}"
+          echo "Running discovery: $DISCOVERY_COMMAND"
+          $DISCOVERY_COMMAND
+          COMMAND="npx pwc-p run"
           echo "Running command: $COMMAND"
           $COMMAND

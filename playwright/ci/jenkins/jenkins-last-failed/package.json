@@ -15,15 +15,15 @@
   },
   "devDependencies": {
     "@currents/cmd": "^1.1.2",
-    "@currents/playwright": "^1.6.2",
+    "@currents/playwright": "2.0.0-beta.4",
     "@playwright/experimental-ct-react": "^1.42.0",
-    "@playwright/test": "^1.48.2",
+    "@playwright/test": "^1.60.0",
     "@types/node": "^20.8.2",
-    "playwright": "^1.48.2",
+    "playwright": "^1.60.0",
     "ts-node": "^10.9.2"
   },
   "overrides": {
-    "@playwright/test": "^1.48.2",
-    "playwright": "^1.48.2"
+    "@playwright/test": "^1.60.0",
+    "playwright": "^1.60.0"
   }
 }

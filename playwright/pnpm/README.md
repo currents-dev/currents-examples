@@ -13,7 +13,7 @@ pnpm install
 Set your own `CURRENTS_RECORD_KEY` and `CURRENTS_PROJECT_ID`:
 
 ```sh
-CURRENTS_RECORD_KEY=xxx CURRENTS_PROJECT_ID=yyy pnpm exec pwc-p
+CURRENTS_RECORD_KEY=xxx CURRENTS_PROJECT_ID=yyy pnpm exec pwc-p run
 ```
 
 GitHub Actions:

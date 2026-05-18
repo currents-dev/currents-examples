@@ -6,7 +6,7 @@
 
 It is recommended to set `batchSize = workers`
 
-- Use `--pwc-batch-size` CLI params, e.g.: `pwc-p --pwc-batch-size=3`
+- Use `--pwc-batch-size` CLI params, e.g.: `pwc-p run --pwc-batch-size=3`
 - Set environment variable `CURRENTS_BATCH_SIZE` e.g.: `CURRENTS_BATCH_SIZE=3`
 - Set the values in `currents.confg.ts`, e.g.: `orchestration.batchSize: 3`
 
