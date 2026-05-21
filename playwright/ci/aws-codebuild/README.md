@@ -89,7 +89,7 @@ The `buildspec.yml` file uses [matrix mode](https://docs.aws.amazon.com/codebuil
             - 3
 
         # and later, note the use of $WORKER env variable
-      - npx pwc --project-id bnsqNa --key $CURRENTS_RECORD_KEY --ci-build-id $CODEBUILD_INITIATOR --shard $WORKER/3
+      - npx pwc --project-id $CURRENTS_PROJECT_ID --key $CURRENTS_RECORD_KEY --ci-build-id $CODEBUILD_INITIATOR --shard $WORKER/3
 ```
 
 ## CI Build ID for AWS CodeBuild

@@ -36,5 +36,6 @@ jobs:
         # CURRENTS_RECORD_KEY is a secret stored in the repository settings
         env:
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
+          CURRENTS_PROJECT_ID: ${{ secrets.CURRENTS_PROJECT_ID }}
         run: |
-          npx currents upload --project-id mdXsz8 --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
+          npx currents upload --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
