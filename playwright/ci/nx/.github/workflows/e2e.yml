@@ -28,7 +28,7 @@ jobs:
 
       - name: Run All E2E Tests
         env:
-          CURRENTS_API_URL: https://cy-staging.currents.dev
+          CURRENTS_API_URL: https://cy.currents.dev
           CURRENTS_PROJECT_ID: ${{secrets.CURRENTS_PROJECT_ID}}
           CURRENTS_RECORD_KEY: ${{secrets.CURRENTS_RECORD_KEY}}
           CURRENTS_CI_BUILD_ID: ${{ github.run_id }}-${{ github.sha }}
