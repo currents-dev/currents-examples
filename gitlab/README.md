@@ -11,7 +11,7 @@ See the [`.gitlab-ci.yml`](.gitlab-ci.yml) file - it created a GitLab CI pipelin
 Example command:
 
 ```sh
-npx pwc --key $CURRENTS_RECORD_KEY --project-id bnsqNa --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
+npx pwc --key $CURRENTS_RECORD_KEY --project-id $CURRENTS_PROJECT_ID --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL
 ```
 
 ## Setup

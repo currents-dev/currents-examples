@@ -48,9 +48,16 @@ Please refer to the [sample output of AWS CodeBuild project configuration](./aws
 ### Obtain Currents Credentials
 
 - Create an organization, get your **Record Key** and **Project ID** at https://app.currents.dev.
-- Update the command in `buildspec.yml` file with the **Project ID**: e.g. `npx pwc --project-id <your-project-id> ...`
 
 ### Configure AWS CodeBuild Build Project
+
+#### Configure `CURRENTS_PROJECT_ID`
+
+Add your **Project ID** as `CURRENTS_PROJECT_ID` [Environment variable](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project-console.html#change-project-console-environment):
+
+- Update the Build Project environment variables as follows:
+  - Variable name: `CURRENTS_PROJECT_ID`
+  - Variable value: your Currents Project ID (e.g., `abc123xyz`)
 
 #### Configure `CURRENTS_RECORD_KEY`
 
@@ -89,7 +96,7 @@ The `buildspec.yml` file uses [matrix mode](https://docs.aws.amazon.com/codebuil
             - 3
 
         # and later, note the use of $WORKER env variable
-      - npx pwc --project-id bnsqNa --key $CURRENTS_RECORD_KEY --ci-build-id $CODEBUILD_INITIATOR --shard $WORKER/3
+      - npx pwc --project-id $CURRENTS_PROJECT_ID --key $CURRENTS_RECORD_KEY --ci-build-id $CODEBUILD_INITIATOR --shard $WORKER/3
 ```
 
 ## CI Build ID for AWS CodeBuild
