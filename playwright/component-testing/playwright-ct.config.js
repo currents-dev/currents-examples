@@ -26,8 +26,8 @@ module.exports = defineConfig({
 
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100,
-    trace: "on",
-    video: "on",
+    trace: "retain-on-failure-and-retries",
+    video: "retain-on-failure",
     screenshot: "on",
   },
 

@@ -23,8 +23,8 @@ export default defineConfig<CurrentsFixtures, CurrentsWorkerFixtures>({
 
   use: {
     actionTimeout: 0,
-    trace: "on",
-    video: "on",
+    trace: "retain-on-failure-and-retries",
+    video: "retain-on-failure",
     screenshot: "on",
     currentsConfigOptions: currentsConfig, // 👈🏻 add Currents configuration for fixtures
 

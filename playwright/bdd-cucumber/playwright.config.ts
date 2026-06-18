@@ -20,7 +20,7 @@ export default defineConfig({
     }),
   ],
   use: {
-    trace: "on",
+    trace: "retain-on-failure-and-retries",
     screenshot: "only-on-failure",
     baseURL: "http://localhost:3000",
   },

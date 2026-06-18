@@ -15,8 +15,8 @@ const config: PlaywrightTestConfig = {
   reporter: [["blob"], currentsReporter()],
   use: {
     screenshot: "on",
-    video: "on",
-    trace: "on",
+    video: "retain-on-failure",
+    trace: "retain-on-failure-and-retries",
   },
 
   projects: [
