@@ -12,6 +12,8 @@ on:
 
 jobs:
   android:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 60
     defaults:
@@ -19,7 +21,7 @@ jobs:
         working-directory: generic-reporter/jest/detox
     env:
       CURRENTS_PROJECT_ID: X7niCl
-      CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
+      HAS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY != '' }}
       CURRENTS_CI_BUILD_ID: ${{ github.repository }}-detox-${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
@@ -86,7 +88,10 @@ jobs:
       # Runs after `detox test` exits, when Detox has finished writing the
       # videos and logs.
       - name: Upload the results to Currents
-        if: ${{ !cancelled() && env.CURRENTS_RECORD_KEY != '' }}
+        # Pull requests from forks get no secrets and skip the upload.
+        if: ${{ !cancelled() && env.HAS_RECORD_KEY == 'true' }}
+        env:
+          CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
         run: npx currents upload
 
       - name: Keep the Detox artifacts
