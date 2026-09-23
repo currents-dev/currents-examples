@@ -8,20 +8,20 @@ Examples demonstrating Playwright integration with Currents, including sharding,
 
 ### CI
 
-| Example                                                   | Description                                                           |
-| :-------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [**AWS CodeBuild**](playwright/ci/aws-codebuild/)         | Run Playwright tests in AWS CodeBuild                                 |
-| [**Azure DevOps**](playwright/ci/azure-devops/)           | Integration with Azure DevOps pipelines                               |
-| [**Buildkite**](playwright/ci/buildkite/)                 | Run Playwright tests in Buildkite                                     |
-| [**CircleCI**](playwright/ci/circleci/)                   | Run Playwright tests in CircleCI                                      |
-| [**GitHub Actions**](playwright/ci/github-actions/)       | Comprehensive GitHub Actions workflow                                 |
-| [**GitHub Actions — Basic Setup**](playwright/ci/github-actions/setup-ci/)       | Standard CI setup with sharding and reporting            |
-| [**GitHub Actions — Orchestration**](playwright/ci/github-actions/orchestration/) | Optimized parallel execution with load balancing         |
-| [**GitHub Actions — Rerun Failed**](playwright/ci/github-actions/rerun-failed/)   | Rerun only failed tests from a previous build            |
-| [**GitHub Actions — Visual Testing**](playwright/ci/github-actions/argos/)        | Integration with Argos for visual regression testing     |
-| [**GitLab CI**](gitlab/)                                   | Playwright + Currents on GitLab CI ([source on GitLab](https://gitlab.com/currents.dev/gitlab-playwright-currents)) |
-| [**Jenkins**](playwright/ci/jenkins/jenkins-last-failed/) | Advanced Jenkins setup with Docker, Sharding, and "Last Failed" rerun |
-| [**Nx Monorepo**](playwright/ci/nx/)                      | Playwright in an Nx workspace                                         |
+| Example                                                                           | Description                                                                                                         |
+| :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| [**AWS CodeBuild**](playwright/ci/aws-codebuild/)                                 | Run Playwright tests in AWS CodeBuild                                                                               |
+| [**Azure DevOps**](playwright/ci/azure-devops/)                                   | Integration with Azure DevOps pipelines                                                                             |
+| [**Buildkite**](playwright/ci/buildkite/)                                         | Run Playwright tests in Buildkite                                                                                   |
+| [**CircleCI**](playwright/ci/circleci/)                                           | Run Playwright tests in CircleCI                                                                                    |
+| [**GitHub Actions**](playwright/ci/github-actions/)                               | Comprehensive GitHub Actions workflow                                                                               |
+| [**GitHub Actions — Basic Setup**](playwright/ci/github-actions/setup-ci/)        | Standard CI setup with sharding and reporting                                                                       |
+| [**GitHub Actions — Orchestration**](playwright/ci/github-actions/orchestration/) | Optimized parallel execution with load balancing                                                                    |
+| [**GitHub Actions — Rerun Failed**](playwright/ci/github-actions/rerun-failed/)   | Rerun only failed tests from a previous build                                                                       |
+| [**GitHub Actions — Visual Testing**](playwright/ci/github-actions/argos/)        | Integration with Argos for visual regression testing                                                                |
+| [**GitLab CI**](gitlab/)                                                          | Playwright + Currents on GitLab CI ([source on GitLab](https://gitlab.com/currents.dev/gitlab-playwright-currents)) |
+| [**Jenkins**](playwright/ci/jenkins/jenkins-last-failed/)                         | Advanced Jenkins setup with Docker, Sharding, and "Last Failed" rerun                                               |
+| [**Nx Monorepo**](playwright/ci/nx/)                                              | Playwright in an Nx workspace                                                                                       |
 
 ### Features
 
@@ -52,8 +52,9 @@ Examples demonstrating Cypress integration with Currents.
 
 Examples for other test runners using Currents' generic reporters.
 
-| Example                                                              | Description                             |
-| :------------------------------------------------------------------- | :-------------------------------------- |
-| [**Jest**](generic-reporter/jest/github-actions/)                    | Reporting Jest results to Currents      |
-| [**JUnit XML**](generic-reporter/junit/junit-xml/)                   | Uploading generic JUnit XML reports     |
-| [**Node.js / JUnit**](generic-reporter/junit/nodejs-github-actions/) | Node.js project reporting JUnit results |
+| Example                                                              | Description                                                          |
+| :------------------------------------------------------------------- | :------------------------------------------------------------------- |
+| [**Jest**](generic-reporter/jest/github-actions/)                    | Reporting Jest results to Currents                                   |
+| [**Detox + Jest**](generic-reporter/jest/detox/)                     | React Native Detox tests with videos, screenshots, steps and retries |
+| [**JUnit XML**](generic-reporter/junit/junit-xml/)                   | Uploading generic JUnit XML reports                                  |
+| [**Node.js / JUnit**](generic-reporter/junit/nodejs-github-actions/) | Node.js project reporting JUnit results                              |
