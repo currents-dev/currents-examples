@@ -2,8 +2,7 @@
 
 A small React Native app with Detox tests that report to [Currents](https://currents.dev) through [`@currents/jest`](https://www.npmjs.com/package/@currents/jest) and [`currents upload`](https://www.npmjs.com/package/@currents/cmd). Each run in Currents shows:
 
-- a video, a screenshot and the device logs of every failed attempt
-- the Detox element actions (`typeText`, `tap`, `toHaveText`, ...) of each attempt as test steps
+- a video and a screenshot of every failed attempt, and the device logs of every attempt
 - the attempts of `detox test --retries` merged into one test: a test that fails on the first run and passes on the rerun is marked flaky
 - `detox.trace.json`, attached to the first test of each spec file
 
@@ -32,7 +31,7 @@ Android only. The same setup works for iOS: add an iOS app and device to `.detox
    reporters: ['detox/runners/jest/reporter', '@currents/jest'],
    ```
 
-3. Record logs, screenshots and videos in `.detoxrc.js`. Logs also make Detox write `detox.trace.json`, which the steps come from:
+3. Record logs, screenshots and videos in `.detoxrc.js`. Logs also make Detox write `detox.trace.json`:
 
    ```js
    artifacts: {

@@ -11,7 +11,7 @@ module.exports = {
   },
   artifacts: {
     plugins: {
-      // Logs also make Detox write detox.trace.json, which becomes the test steps in Currents.
+      // Logs also make Detox write detox.trace.json, which currents upload sends with the run.
       log: "all",
       screenshot: "failing",
       video: "failing",

@@ -76,7 +76,7 @@ function Counter({ user, onLogout }: { user: string; onLogout: () => void }) {
       <Button
         testID="increment"
         title="Add one"
-        onPress={() => setCount(count + 1)}
+        onPress={() => setCount((c) => c + 1)}
       />
       <Button testID="reset" title="Reset" onPress={() => setCount(0)} />
       <Button testID="logout" title="Sign out" onPress={onLogout} />
