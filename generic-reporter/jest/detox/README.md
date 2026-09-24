@@ -64,27 +64,3 @@ npx currents upload --project-id <project id> --key <record key>
 ## Run it in GitHub Actions
 
 [`.github/workflows/jest-detox.yml`](../../../.github/workflows/jest-detox.yml) builds the app, starts an emulator with [`reactivecircus/android-emulator-runner`](https://github.com/ReactiveCircus/android-emulator-runner), runs the tests with `--retries 1` and uploads the results. Set the `CURRENTS_RECORD_KEY` secret and the `CURRENTS_PROJECT_ID` value to your own.
-
-The workflow also sets the commit details of pull request runs. On `pull_request` events, GitHub checks out a merge commit that it creates, so without this step Currents shows the commit message as `Merge <sha> into <sha>`. The step reads the last commit of the pull request and passes it to `currents upload` through the `COMMIT_INFO_*` variables:
-
-```yaml
-- name: Use the pull request commit for Currents
-  if: ${{ !cancelled() && github.event_name == 'pull_request' }}
-  env:
-    HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-    HEAD_REF: ${{ github.event.pull_request.head.ref }}
-  run: |
-    git fetch --depth=1 origin "$HEAD_SHA"
-    # A random delimiter: a commit message line equal to a fixed one would end the
-    # value early and add the lines after it as variables.
-    delimiter="EOF_$(openssl rand -hex 16)"
-    {
-      echo "COMMIT_INFO_SHA=$HEAD_SHA"
-      echo "COMMIT_INFO_BRANCH=$HEAD_REF"
-      echo "COMMIT_INFO_AUTHOR=$(git log -1 --format=%an "$HEAD_SHA")"
-      echo "COMMIT_INFO_EMAIL=$(git log -1 --format=%ae "$HEAD_SHA")"
-      echo "COMMIT_INFO_MESSAGE<<$delimiter"
-      git log -1 --format=%B "$HEAD_SHA"
-      echo "$delimiter"
-    } >> "$GITHUB_ENV"
-```
