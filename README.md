@@ -58,3 +58,11 @@ Examples for other test runners using Currents' generic reporters.
 | [**Detox + Jest**](generic-reporter/jest/detox/)                     | React Native Detox tests with videos, screenshots, steps and retries |
 | [**JUnit XML**](generic-reporter/junit/junit-xml/)                   | Uploading generic JUnit XML reports                                  |
 | [**Node.js / JUnit**](generic-reporter/junit/nodejs-github-actions/) | Node.js project reporting JUnit results                              |
+
+## 🧾 Evidence Sharing
+
+Record a browser session as evidence and share it with a link that opens without a Currents login.
+
+| Example                                                          | Description                                                                         |
+| :--------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| [**Checkout bug, before and after**](evidence-sharing/checkout/) | Record a bug and its fix with the `currents session` CLI or the Currents MCP server |
