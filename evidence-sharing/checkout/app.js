@@ -26,22 +26,22 @@ render(0);
 
 const form = document.getElementById("discount-form");
 const input = document.getElementById("discount-code");
-const button = document.getElementById("apply");
 const status = document.getElementById("discount-status");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  button.disabled = true;
-  button.textContent = "Applying…";
-  status.textContent = "";
 
-  const code = input.value;
-  const { percent } = DISCOUNT_CODES[code];
-  const discountCents = Math.round((subtotalCents * percent) / 100);
+  const code = input.value.trim().toUpperCase();
+  const discount = DISCOUNT_CODES[code];
+  if (!discount) {
+    render(0);
+    status.className = "status bad";
+    status.textContent = `${input.value.trim()} is not a valid code`;
+    return;
+  }
 
+  const discountCents = Math.round((subtotalCents * discount.percent) / 100);
   render(discountCents);
   status.className = "status ok";
-  status.textContent = `${code} applied: ${percent}% off`;
-  button.disabled = false;
-  button.textContent = "Apply";
+  status.textContent = `${code} applied: ${discount.percent}% off`;
 });
