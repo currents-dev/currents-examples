@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — Northwind Supply</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <span class="brand">Northwind Supply</span>
+      <span class="step">Checkout</span>
+    </header>
+
+    <main class="checkout">
+      <section class="cart" aria-labelledby="cart-heading">
+        <h1 id="cart-heading">Your cart</h1>
+        <ul class="items">
+          <li class="item">
+            <span class="name">Trail running shoes</span>
+            <span class="qty">1 ×</span>
+            <span class="price" data-cents="12900">$129.00</span>
+          </li>
+          <li class="item">
+            <span class="name">Merino socks, 3-pack</span>
+            <span class="qty">2 ×</span>
+            <span class="price" data-cents="3600">$36.00</span>
+          </li>
+          <li class="item">
+            <span class="name">Insulated bottle</span>
+            <span class="qty">1 ×</span>
+            <span class="price" data-cents="2850">$28.50</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Order summary</h2>
+
+        <form id="discount-form" class="discount">
+          <label for="discount-code">Discount code</label>
+          <div class="discount-row">
+            <input
+              id="discount-code"
+              name="code"
+              autocomplete="off"
+              placeholder="e.g. SAVE10"
+            />
+            <button id="apply" type="submit">Apply</button>
+          </div>
+          <p id="discount-status" class="status" role="status"></p>
+        </form>
+
+        <dl class="totals">
+          <div>
+            <dt>Subtotal</dt>
+            <dd id="subtotal"></dd>
+          </div>
+          <div>
+            <dt>Discount</dt>
+            <dd id="discount">—</dd>
+          </div>
+          <div class="total">
+            <dt>Total</dt>
+            <dd id="total"></dd>
+          </div>
+        </dl>
+
+        <button class="pay" type="button">Pay now</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

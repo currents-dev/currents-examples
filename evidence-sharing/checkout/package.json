@@ -1,0 +1,13 @@
+{
+  "name": "currents-evidence-sharing-checkout",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "npx --yes http-server -p 4173 -c-1 .",
+    "capture": "node capture.mjs"
+  },
+  "devDependencies": {
+    "@currents/cmd": "^2.0.1",
+    "playwright": "^1.63.0"
+  }
+}
