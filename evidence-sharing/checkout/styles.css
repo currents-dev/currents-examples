@@ -154,3 +154,123 @@ h2 {
   width: 100%;
   padding: 12px;
 }
+
+.save-cart {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 15px;
+  padding: 11px 12px;
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.plan-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgb(29 36 51 / 0.55);
+}
+
+.plan-dialog {
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgb(29 36 51 / 0.25);
+}
+
+.plan-dialog:focus {
+  outline: none;
+}
+
+.plan-dialog h2 {
+  font-size: 22px;
+}
+
+.plan-dialog p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.plan-dialog p:last-child {
+  margin-bottom: 0;
+}
+
+.plan-compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.plan-compare th,
+.plan-compare td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.plan-compare th:first-child {
+  text-align: left;
+}
+
+.plan-compare thead th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.plan-compare tbody th {
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.plan-compare .pro {
+  background: color-mix(in srgb, var(--accent) 10%, #fff);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.plan-compare thead th.pro {
+  background: color-mix(in srgb, var(--accent) 10%, #fff);
+}
+
+.plan-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.plan-actions button {
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.plan-upgrade {
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+}
+
+.plan-dismiss {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+}

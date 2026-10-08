@@ -67,8 +67,59 @@
         </dl>
 
         <button class="pay" type="button">Pay now</button>
+        <button id="save-cart" class="save-cart" type="button">
+          Save cart for later
+        </button>
       </section>
     </main>
+
+    <div id="plan-panel" class="plan-backdrop" hidden>
+      <div
+        class="plan-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="plan-heading"
+        tabindex="-1"
+      >
+        <h2 id="plan-heading">Saved carts are on the Pro plan</h2>
+        <div id="plan-body">
+          <p>
+            Your Starter plan keeps the cart for this visit only. Pro keeps
+            saved carts for 90 days and syncs them across devices.
+          </p>
+          <table class="plan-compare">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Starter</th>
+                <th scope="col" class="pro">Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Saved carts</th>
+                <td>—</td>
+                <td class="pro">90 days</td>
+              </tr>
+              <tr>
+                <th scope="row">Devices</th>
+                <td>1</td>
+                <td class="pro">Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Order history</th>
+                <td>30 days</td>
+                <td class="pro">2 years</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="plan-actions">
+            <button class="plan-upgrade" type="button">Upgrade to Pro</button>
+            <button class="plan-dismiss" type="button">Not now</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>

@@ -45,3 +45,49 @@ form.addEventListener("submit", (event) => {
   status.className = "status ok";
   status.textContent = `${code} applied: ${discount.percent}% off`;
 });
+
+const saveCartButton = document.getElementById("save-cart");
+const planPanel = document.getElementById("plan-panel");
+const planDialog = planPanel.querySelector(".plan-dialog");
+const planBody = document.getElementById("plan-body");
+
+function openPlanPanel() {
+  planPanel.hidden = false;
+  planDialog.focus();
+}
+
+function closePlanPanel() {
+  planPanel.hidden = true;
+  saveCartButton.focus();
+}
+
+saveCartButton.addEventListener("click", openPlanPanel);
+
+planPanel.addEventListener("click", (event) => {
+  if (event.target === planPanel) closePlanPanel();
+});
+
+planDialog
+  .querySelector(".plan-dismiss")
+  .addEventListener("click", closePlanPanel);
+
+planDialog.querySelector(".plan-upgrade").addEventListener("click", () => {
+  const thanks = document.createElement("p");
+  thanks.textContent = "Thanks! We'll email you an upgrade link.";
+  planBody.replaceChildren(thanks);
+  planDialog.focus();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (planPanel.hidden) return;
+
+  if (event.key === "Escape") {
+    closePlanPanel();
+  } else if (event.key === "Tab") {
+    const buttons = planDialog.querySelectorAll("button");
+    const index = [...buttons].indexOf(document.activeElement);
+    const next = event.shiftKey ? index - 1 : index + 1;
+    event.preventDefault();
+    buttons[(next + buttons.length) % buttons.length]?.focus();
+  }
+});
