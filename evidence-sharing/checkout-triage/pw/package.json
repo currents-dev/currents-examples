@@ -1,0 +1,9 @@
+{
+  "name": "checkout-graphql-demo-tests",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@currents/playwright": "^2.5.2",
+    "@playwright/test": "1.63"
+  }
+}

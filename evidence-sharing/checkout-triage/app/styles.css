@@ -1,0 +1,184 @@
+:root {
+  --ink: #1d2433;
+  --muted: #5d6779;
+  --line: #dfe3ea;
+  --panel: #f6f7f9;
+  --accent: #1f6feb;
+  --ok: #1a7f37;
+  --bad: #c62828;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.step,
+.viewer {
+  color: var(--muted);
+}
+
+.viewer {
+  margin-left: auto;
+}
+
+.badge {
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 32px;
+}
+
+h1,
+h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto 90px;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.gift-wrap {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.qty {
+  color: var(--muted);
+}
+
+.price {
+  text-align: right;
+}
+
+.summary {
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.discount label {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.discount-row {
+  display: flex;
+  gap: 8px;
+}
+
+.discount input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.discount button,
+.pay {
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.discount button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.status {
+  min-height: 20px;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.status.ok {
+  color: var(--ok);
+}
+
+.status.bad {
+  color: var(--bad);
+}
+
+.totals {
+  margin: 20px 0;
+}
+
+.totals div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.totals dt,
+.totals dd {
+  margin: 0;
+}
+
+.totals .total {
+  border-top: 1px solid var(--line);
+  margin-top: 6px;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pay {
+  width: 100%;
+  padding: 12px;
+}

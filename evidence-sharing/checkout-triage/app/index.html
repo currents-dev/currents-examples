@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — Northwind Supply</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <span class="brand">Northwind Supply</span>
+      <span class="step">Checkout</span>
+      <span id="viewer" class="viewer"></span>
+      <span id="cart-badge" class="badge" aria-label="Items in cart"></span>
+    </header>
+
+    <main class="checkout">
+      <section class="cart" aria-labelledby="cart-heading">
+        <h1 id="cart-heading">Your cart</h1>
+        <ul id="items" class="items"></ul>
+        <button id="gift-wrap" class="gift-wrap" type="button">Add gift wrap</button>
+      </section>
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Order summary</h2>
+
+        <form id="discount-form" class="discount">
+          <label for="discount-code">Discount code</label>
+          <div class="discount-row">
+            <input
+              id="discount-code"
+              name="code"
+              autocomplete="off"
+              placeholder="e.g. SAVE10"
+            />
+            <button id="apply" type="submit">Apply</button>
+          </div>
+          <p id="discount-status" class="status" role="status"></p>
+        </form>
+
+        <dl class="totals">
+          <div>
+            <dt>Subtotal</dt>
+            <dd id="subtotal"></dd>
+          </div>
+          <div>
+            <dt>Discount</dt>
+            <dd id="discount">—</dd>
+          </div>
+          <div class="total">
+            <dt>Total</dt>
+            <dd id="total"></dd>
+          </div>
+        </dl>
+
+        <button class="pay" type="button">Pay now</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
