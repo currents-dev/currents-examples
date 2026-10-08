@@ -57,7 +57,7 @@ function applyDiscountV1({ code }) {
 
 function applyDiscountV2({ code }) {
   const { subtotal, discount, ...applied } = lookupDiscount(code);
-  const total = (subtotal - discount) - discount;
+  const total = subtotal - discount;
   return { ...applied, discount, total };
 }
 
