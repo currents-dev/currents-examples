@@ -45,3 +45,9 @@ form.addEventListener("submit", (event) => {
   status.className = "status ok";
   status.textContent = `${code} applied: ${discount.percent}% off`;
 });
+
+const welcome = new URLSearchParams(location.search).get("welcome");
+if (welcome) {
+  const name = welcome.charAt(0).toUpperCase() + welcome.slice(1);
+  document.querySelector(".step").textContent = `Checkout · Signed in as ${name}`;
+}
