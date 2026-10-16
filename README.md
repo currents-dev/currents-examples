@@ -53,9 +53,10 @@ Examples demonstrating Cypress integration with Currents.
 
 Examples for other test runners using Currents' generic reporters.
 
-| Example                                                              | Description                                                          |
-| :------------------------------------------------------------------- | :------------------------------------------------------------------- |
-| [**Jest**](generic-reporter/jest/github-actions/)                    | Reporting Jest results to Currents                                   |
-| [**Detox + Jest**](generic-reporter/jest/detox/)                     | React Native Detox tests with videos, screenshots, steps and retries |
-| [**JUnit XML**](generic-reporter/junit/junit-xml/)                   | Uploading generic JUnit XML reports                                  |
-| [**Node.js / JUnit**](generic-reporter/junit/nodejs-github-actions/) | Node.js project reporting JUnit results                              |
+| Example                                                              | Description                                                                                  |
+| :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| [**Jest**](generic-reporter/jest/github-actions/)                    | Reporting Jest results to Currents                                                           |
+| [**Detox + Jest**](generic-reporter/jest/detox/)                     | React Native Detox tests with videos, screenshots, steps and retries                         |
+| [**JUnit XML**](generic-reporter/junit/junit-xml/)                   | Uploading generic JUnit XML reports                                                          |
+| [**Node.js / JUnit**](generic-reporter/junit/nodejs-github-actions/) | Node.js project reporting JUnit results                                                      |
+| [**Detox JUnit + Actions**](generic-reporter/junit/detox-actions/)   | Quarantine Detox tests reported as JUnit, keeping each attempt's result, error and artifacts |
