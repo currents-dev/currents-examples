@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="1" errors="0" time="8.3">
+  <testsuite name="wallet" file="e2e/wallet.test.js" timestamp="2026-10-16T10:00:00" tests="2" failures="1" errors="0" skipped="0" time="8.3">
+    <!-- Failed on both attempts. The quarantine action marks it as skipped;
+         both failed attempts keep their error and their device log. -->
+    <testcase classname="wallet" name="shows the balance" time="6.2">
+      <properties>
+        <property name="currents.artifact.attempt.0.path" value="artifacts/balance-attempt-1.log"/>
+        <property name="currents.artifact.attempt.0.type" value="attachment"/>
+        <property name="currents.artifact.attempt.0.contentType" value="text/plain"/>
+        <property name="currents.artifact.attempt.0.name" value="device.log"/>
+        <property name="currents.artifact.attempt.1.path" value="artifacts/balance-attempt-2.log"/>
+        <property name="currents.artifact.attempt.1.type" value="attachment"/>
+        <property name="currents.artifact.attempt.1.contentType" value="text/plain"/>
+        <property name="currents.artifact.attempt.1.name" value="device.log"/>
+      </properties>
+      <failure message="Element not found: balance">Error: Element not found: balance
+    at e2e/wallet.test.js:12:5</failure>
+      <failure message="Element not found: balance">Error: Element not found: balance
+    at e2e/wallet.test.js:12:5</failure>
+    </testcase>
+    <!-- Passed: not quarantined, it counts as passed. -->
+    <testcase classname="wallet" name="loads the history" time="2.1">
+      <properties>
+        <property name="currents.artifact.attempt.0.path" value="artifacts/history-attempt-1.log"/>
+        <property name="currents.artifact.attempt.0.type" value="attachment"/>
+        <property name="currents.artifact.attempt.0.contentType" value="text/plain"/>
+        <property name="currents.artifact.attempt.0.name" value="device.log"/>
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>
