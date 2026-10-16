@@ -38,15 +38,16 @@ Examples demonstrating Playwright integration with Currents, including sharding,
 
 Examples demonstrating Cypress integration with Currents.
 
-| Example                                       | Description                             |
-| :-------------------------------------------- | :-------------------------------------- |
-| [**AWS CodeBuild**](cypress/aws-codebuild/)   | Run Cypress tests in AWS CodeBuild      |
-| [**Azure DevOps**](cypress/azure-devops/)     | Integration with Azure DevOps pipelines |
-| [**CircleCI**](cypress/circleci/)             | Run Cypress tests in CircleCI           |
-| [**GitHub Actions**](cypress/github-actions/) | Standard GitHub Actions workflow        |
-| [**Netlify**](cypress/netlify/)               | Integration with Netlify Build          |
-| [**Cucumber**](cypress/cucumber/)             | Cypress with Cucumber preprocessor      |
-| [**Nx Monorepo**](cypress/nx/)                | Cypress in an Nx workspace              |
+| Example                                          | Description                                                                                                         |
+| :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| [**AWS CodeBuild**](cypress/aws-codebuild/)      | Run Cypress tests in AWS CodeBuild                                                                                  |
+| [**Azure DevOps**](cypress/azure-devops/)        | Integration with Azure DevOps pipelines                                                                             |
+| [**CircleCI**](cypress/circleci/)                | Run Cypress tests in CircleCI                                                                                       |
+| [**GitHub Actions**](cypress/github-actions/)    | Standard GitHub Actions workflow                                                                                    |
+| [**Netlify**](cypress/netlify/)                  | Integration with Netlify Build                                                                                      |
+| [**Cucumber**](cypress/cucumber/)                | Cypress with Cucumber preprocessor                                                                                  |
+| [**Nx Monorepo**](cypress/nx/)                   | Cypress in an Nx workspace                                                                                          |
+| [**GitLab CI — Upload**](cypress/gitlab-upload/) | Cypress 13+ on GitLab CI without Currents packages, results uploaded with `currents run upload` from a separate job |
 
 ## 📊 Generic Reporters
 

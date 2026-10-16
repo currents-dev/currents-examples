@@ -1,0 +1,18 @@
+{
+  "name": "currents-cypress-gitlab-upload-example",
+  "version": "0.0.0",
+  "description": "Cypress on GitLab CI, results uploaded to Currents from a separate job",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "attach-screenshots": "node attach-screenshots.js results cypress/screenshots",
+    "report": "currents run upload --input-format=junit --input-file='results/*.xml' --framework=cypress --framework-version=14.5.4",
+    "report:json": "currents run upload --input-format=cypress-json --input-file='results/cypress-results-*.json'"
+  },
+  "devDependencies": {
+    "@currents/cmd": "^2.3.0",
+    "cypress": "14.5.4",
+    "xml2js": "^0.6.2"
+  },
+  "license": "ISC"
+}
