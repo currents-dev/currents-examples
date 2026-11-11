@@ -1,5 +1,5 @@
 const POSTCODE_FORMATS = {
-  GB: /^[A-Z]{1,2}\d[A-Z\d]?\d[A-Z]{2}$/,
+  GB: /^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$/,
   US: /^\d{5}(-\d{4})?$/,
   DE: /^\d{5}$/,
 };
@@ -22,6 +22,6 @@ const RATES = {
 export function quoteShipping({ country, postcode = "" }) {
   const format = POSTCODE_FORMATS[country];
   if (!format) return { error: "unsupported_country" };
-  if (!format.test(postcode)) return { error: "invalid_postcode", postcode };
+  if (!format.test(postcode.trim().toUpperCase())) return { error: "invalid_postcode", postcode };
   return { rates: RATES[country] };
 }
