@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f6f3ee;
+  color: #1f1b16;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: #fff;
+  border-bottom: 1px solid #e7e1d8;
+}
+.brand { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+.brand em { font-style: normal; color: #9a6b3c; }
+.steps { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; color: #9b948a; }
+.steps .done { color: #3d7a4f; }
+.steps .current { color: #1f1b16; font-weight: 600; }
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 36px auto;
+  padding: 0 24px;
+}
+.card { background: #fff; border: 1px solid #e7e1d8; border-radius: 12px; padding: 28px; }
+h1 { font-size: 22px; margin: 0 0 20px; }
+h2 { font-size: 16px; margin: 0 0 14px; }
+form { display: grid; gap: 14px; }
+label { display: grid; gap: 6px; font-size: 13px; color: #5b544a; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+input, select {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #d6cfc4;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f1b16;
+}
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #1f1b16;
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled { background: #cfc8bd; cursor: not-allowed; }
+.error {
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fdecea;
+  color: #a1281c;
+}
+.rates { margin-top: 22px; display: grid; gap: 10px; }
+.rate {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #d6cfc4;
+  border-radius: 8px;
+  color: #1f1b16;
+  font-size: 14px;
+}
+.rate small { display: block; color: #8a8378; }
+.summary .items { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
+.summary .items li, .summary dl div { display: flex; justify-content: space-between; gap: 12px; }
+.summary dl { display: grid; gap: 6px; margin: 0 0 20px; padding-top: 14px; border-top: 1px solid #eee7dc; }
+.summary dt { color: #5b544a; }
+.summary dd { margin: 0; }
+.summary .total { font-weight: 700; font-size: 17px; padding-top: 6px; }
+.summary button { width: 100%; }

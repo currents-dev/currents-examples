@@ -1,0 +1,3710 @@
+[
+ {
+  "id": "chk_255s",
+  "at": "2026-11-06T22:00:00.065Z",
+  "email": "amelia.756@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 7892,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_256t",
+  "at": "2026-11-06T22:06:35.239Z",
+  "email": "leo.716@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9130,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_257u",
+  "at": "2026-11-06T22:22:55.347Z",
+  "email": "oscar.148@example.com",
+  "country": "GB",
+  "postcode": "BS1 4ST",
+  "cartCents": 9706,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_258v",
+  "at": "2026-11-06T22:32:16.821Z",
+  "email": "harry.561@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 12578,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_259w",
+  "at": "2026-11-06T22:46:03.022Z",
+  "email": "emma.917@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5966,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25ax",
+  "at": "2026-11-06T22:52:45.485Z",
+  "email": "amelia.367@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 6641,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25by",
+  "at": "2026-11-06T22:58:39.333Z",
+  "email": "sofia.890@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 2203,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25cz",
+  "at": "2026-11-06T23:04:07.522Z",
+  "email": "noah.273@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 12407,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25e0",
+  "at": "2026-11-06T23:05:13.377Z",
+  "email": "emma.563@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 3486,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25f1",
+  "at": "2026-11-06T23:13:20.123Z",
+  "email": "isla.578@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 8868,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25g2",
+  "at": "2026-11-06T23:17:59.999Z",
+  "email": "emma.671@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 9112,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25h3",
+  "at": "2026-11-06T23:28:19.491Z",
+  "email": "noah.737@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 4513,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25i4",
+  "at": "2026-11-06T23:40:03.722Z",
+  "email": "liam.889@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 2832,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25j5",
+  "at": "2026-11-06T23:56:26.746Z",
+  "email": "harry.996@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 4140,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25k6",
+  "at": "2026-11-07T00:09:05.582Z",
+  "email": "harry.929@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 12114,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25l7",
+  "at": "2026-11-07T00:26:54.271Z",
+  "email": "sofia.347@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 1625,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25m8",
+  "at": "2026-11-07T00:31:52.223Z",
+  "email": "jack.767@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 7372,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25n9",
+  "at": "2026-11-07T00:45:37.253Z",
+  "email": "noah.904@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 2920,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25oa",
+  "at": "2026-11-07T00:55:24.365Z",
+  "email": "emma.118@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 12300,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25pb",
+  "at": "2026-11-07T00:59:10.125Z",
+  "email": "oscar.339@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 4173,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25qc",
+  "at": "2026-11-07T01:03:20.846Z",
+  "email": "sofia.730@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 10068,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25rd",
+  "at": "2026-11-07T01:13:18.670Z",
+  "email": "harry.719@example.com",
+  "country": "GB",
+  "postcode": "G2 3AA",
+  "cartCents": 12216,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25se",
+  "at": "2026-11-07T01:14:03.143Z",
+  "email": "lucas.958@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 10678,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25tf",
+  "at": "2026-11-07T01:22:26.665Z",
+  "email": "noah.311@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 6358,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25ug",
+  "at": "2026-11-07T01:40:11.047Z",
+  "email": "mia.761@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5520,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25vh",
+  "at": "2026-11-07T01:54:41.286Z",
+  "email": "lucas.994@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 9088,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_25wi",
+  "at": "2026-11-07T02:12:07.915Z",
+  "email": "oscar.221@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 7469,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25xj",
+  "at": "2026-11-07T02:23:16.762Z",
+  "email": "ava.268@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 6860,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25yk",
+  "at": "2026-11-07T02:26:36.083Z",
+  "email": "leo.556@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10585,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_25zl",
+  "at": "2026-11-07T02:33:51.026Z",
+  "email": "isla.587@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 3933,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_260m",
+  "at": "2026-11-07T02:48:18.542Z",
+  "email": "ava.167@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 10774,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_261n",
+  "at": "2026-11-07T03:04:45.981Z",
+  "email": "oscar.962@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 1802,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_262o",
+  "at": "2026-11-07T03:20:00.357Z",
+  "email": "emma.133@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 3131,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_263p",
+  "at": "2026-11-07T03:21:36.681Z",
+  "email": "mia.951@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 3804,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_264q",
+  "at": "2026-11-07T03:24:17.057Z",
+  "email": "ava.994@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6571,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_265r",
+  "at": "2026-11-07T03:37:45.561Z",
+  "email": "noah.155@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4261,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_266s",
+  "at": "2026-11-07T03:53:54.726Z",
+  "email": "emma.557@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 2965,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_267t",
+  "at": "2026-11-07T03:58:06.878Z",
+  "email": "harry.345@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 9258,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_268u",
+  "at": "2026-11-07T04:09:14.205Z",
+  "email": "noah.383@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 1549,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_269v",
+  "at": "2026-11-07T04:09:21.588Z",
+  "email": "emma.799@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 10667,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_26aw",
+  "at": "2026-11-07T04:18:05.787Z",
+  "email": "liam.695@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 8365,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26bx",
+  "at": "2026-11-07T04:25:03.427Z",
+  "email": "leo.749@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 9481,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26cy",
+  "at": "2026-11-07T04:37:42.805Z",
+  "email": "liam.989@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 6756,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26dz",
+  "at": "2026-11-07T04:47:27.272Z",
+  "email": "noah.171@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 5613,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26f0",
+  "at": "2026-11-07T05:05:06.452Z",
+  "email": "lucas.808@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 3984,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26g1",
+  "at": "2026-11-07T05:09:52.247Z",
+  "email": "emma.820@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 9122,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26h2",
+  "at": "2026-11-07T05:24:06.000Z",
+  "email": "leo.886@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 4746,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26i3",
+  "at": "2026-11-07T05:37:49.973Z",
+  "email": "mia.308@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 12286,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_26j4",
+  "at": "2026-11-07T05:54:16.443Z",
+  "email": "harry.376@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 12551,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26k5",
+  "at": "2026-11-07T05:54:18.023Z",
+  "email": "oscar.908@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 3575,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_26l6",
+  "at": "2026-11-07T05:58:32.484Z",
+  "email": "amelia.205@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 9019,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26m7",
+  "at": "2026-11-07T05:58:51.605Z",
+  "email": "sofia.215@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5475,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26n8",
+  "at": "2026-11-07T06:13:09.387Z",
+  "email": "mia.799@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 9929,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26o9",
+  "at": "2026-11-07T06:27:49.777Z",
+  "email": "olivia.651@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 4198,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26pa",
+  "at": "2026-11-07T06:39:27.147Z",
+  "email": "mia.831@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 4373,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_26qb",
+  "at": "2026-11-07T06:57:33.769Z",
+  "email": "liam.693@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 11156,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26rc",
+  "at": "2026-11-07T06:59:39.353Z",
+  "email": "liam.482@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11895,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26sd",
+  "at": "2026-11-07T07:15:28.081Z",
+  "email": "emma.271@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10136,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26te",
+  "at": "2026-11-07T07:18:33.584Z",
+  "email": "olivia.169@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 4643,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26uf",
+  "at": "2026-11-07T07:37:22.461Z",
+  "email": "jack.278@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 1857,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26vg",
+  "at": "2026-11-07T07:46:46.266Z",
+  "email": "isla.532@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 4221,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26wh",
+  "at": "2026-11-07T07:47:52.241Z",
+  "email": "ava.827@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 10237,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_26xi",
+  "at": "2026-11-07T07:58:05.178Z",
+  "email": "mia.968@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10747,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26yj",
+  "at": "2026-11-07T08:17:19.604Z",
+  "email": "liam.254@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 2285,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_26zk",
+  "at": "2026-11-07T08:31:51.501Z",
+  "email": "leo.448@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 7433,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_270l",
+  "at": "2026-11-07T08:34:17.801Z",
+  "email": "isla.280@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 9179,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_271m",
+  "at": "2026-11-07T08:36:48.313Z",
+  "email": "emma.139@example.com",
+  "country": "GB",
+  "postcode": "n1 9gu",
+  "cartCents": 10717,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_272n",
+  "at": "2026-11-07T08:43:10.182Z",
+  "email": "olivia.994@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 3965,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_273o",
+  "at": "2026-11-07T08:56:01.605Z",
+  "email": "sofia.778@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 4489,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_274p",
+  "at": "2026-11-07T09:13:10.662Z",
+  "email": "ava.368@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 4539,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_275q",
+  "at": "2026-11-07T09:30:48.497Z",
+  "email": "ava.880@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11337,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_276r",
+  "at": "2026-11-07T09:47:04.216Z",
+  "email": "oscar.356@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10045,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_277s",
+  "at": "2026-11-07T09:53:33.401Z",
+  "email": "liam.692@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 11291,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_278t",
+  "at": "2026-11-07T10:02:53.724Z",
+  "email": "olivia.308@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 3846,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_279u",
+  "at": "2026-11-07T10:03:21.753Z",
+  "email": "mia.868@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 11885,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27av",
+  "at": "2026-11-07T10:19:37.861Z",
+  "email": "noah.584@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 10513,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27bw",
+  "at": "2026-11-07T10:29:58.986Z",
+  "email": "oscar.794@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 5068,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27cx",
+  "at": "2026-11-07T10:35:04.473Z",
+  "email": "lucas.611@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5295,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27dy",
+  "at": "2026-11-07T10:47:04.785Z",
+  "email": "leo.245@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4004,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27ez",
+  "at": "2026-11-07T10:49:26.749Z",
+  "email": "oscar.450@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 5667,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27g0",
+  "at": "2026-11-07T10:57:24.558Z",
+  "email": "ava.438@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 2597,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_27h1",
+  "at": "2026-11-07T11:10:05.626Z",
+  "email": "liam.346@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 5140,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27i2",
+  "at": "2026-11-07T11:12:31.436Z",
+  "email": "mia.620@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 10547,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27j3",
+  "at": "2026-11-07T11:28:13.078Z",
+  "email": "harry.661@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 10335,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27k4",
+  "at": "2026-11-07T11:46:02.316Z",
+  "email": "isla.995@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 1949,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27l5",
+  "at": "2026-11-07T11:48:06.143Z",
+  "email": "sofia.592@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 4370,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27m6",
+  "at": "2026-11-07T11:58:47.645Z",
+  "email": "liam.714@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 8479,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27n7",
+  "at": "2026-11-07T12:17:48.905Z",
+  "email": "leo.652@example.com",
+  "country": "GB",
+  "postcode": "BS1 4ST",
+  "cartCents": 9804,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_27o8",
+  "at": "2026-11-07T12:31:26.995Z",
+  "email": "liam.711@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 8304,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27p9",
+  "at": "2026-11-07T12:35:49.002Z",
+  "email": "ava.120@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 11854,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27qa",
+  "at": "2026-11-07T12:48:52.388Z",
+  "email": "sofia.944@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 8351,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27rb",
+  "at": "2026-11-07T13:01:19.162Z",
+  "email": "ava.142@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 8311,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_27sc",
+  "at": "2026-11-07T13:16:56.188Z",
+  "email": "isla.653@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 6568,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27td",
+  "at": "2026-11-07T13:23:17.050Z",
+  "email": "ava.671@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 7548,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_27ue",
+  "at": "2026-11-07T13:34:09.380Z",
+  "email": "lucas.516@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 11489,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27vf",
+  "at": "2026-11-07T13:53:46.578Z",
+  "email": "mia.147@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4937,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27wg",
+  "at": "2026-11-07T13:54:20.552Z",
+  "email": "jack.699@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 4157,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27xh",
+  "at": "2026-11-07T13:59:47.211Z",
+  "email": "mia.780@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 1671,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27yi",
+  "at": "2026-11-07T14:16:17.292Z",
+  "email": "lucas.165@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 3674,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_27zj",
+  "at": "2026-11-07T14:17:03.771Z",
+  "email": "jack.571@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 11524,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_280k",
+  "at": "2026-11-07T14:31:13.187Z",
+  "email": "harry.655@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 10492,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_281l",
+  "at": "2026-11-07T14:32:58.663Z",
+  "email": "oscar.668@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 3382,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_282m",
+  "at": "2026-11-07T14:51:35.126Z",
+  "email": "sofia.244@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 12170,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_283n",
+  "at": "2026-11-07T14:54:46.642Z",
+  "email": "ava.986@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 6873,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_284o",
+  "at": "2026-11-07T15:05:48.556Z",
+  "email": "amelia.265@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 11554,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_285p",
+  "at": "2026-11-07T15:12:32.244Z",
+  "email": "harry.530@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 7594,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_286q",
+  "at": "2026-11-07T15:12:47.990Z",
+  "email": "amelia.160@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 9124,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_287r",
+  "at": "2026-11-07T15:21:30.852Z",
+  "email": "emma.747@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 12178,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_288s",
+  "at": "2026-11-07T15:34:54.066Z",
+  "email": "jack.708@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 7090,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_289t",
+  "at": "2026-11-07T15:34:55.359Z",
+  "email": "leo.207@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 4159,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28au",
+  "at": "2026-11-07T15:42:08.939Z",
+  "email": "jack.744@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 10503,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28bv",
+  "at": "2026-11-07T15:55:45.874Z",
+  "email": "jack.592@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6350,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28cw",
+  "at": "2026-11-07T16:07:36.321Z",
+  "email": "liam.467@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 5801,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28dx",
+  "at": "2026-11-07T16:27:04.101Z",
+  "email": "jack.964@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12583,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28ey",
+  "at": "2026-11-07T16:41:20.213Z",
+  "email": "emma.264@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 7272,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28fz",
+  "at": "2026-11-07T16:50:10.332Z",
+  "email": "oscar.650@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 1569,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28h0",
+  "at": "2026-11-07T16:56:06.309Z",
+  "email": "olivia.596@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 12629,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28i1",
+  "at": "2026-11-07T16:56:19.942Z",
+  "email": "leo.874@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 12483,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28j2",
+  "at": "2026-11-07T17:14:40.701Z",
+  "email": "oscar.179@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6444,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28k3",
+  "at": "2026-11-07T17:16:16.040Z",
+  "email": "noah.111@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 6264,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28l4",
+  "at": "2026-11-07T17:24:36.888Z",
+  "email": "olivia.498@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 8361,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28m5",
+  "at": "2026-11-07T17:37:18.151Z",
+  "email": "olivia.349@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 9471,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28n6",
+  "at": "2026-11-07T17:41:01.270Z",
+  "email": "leo.242@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 6551,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28o7",
+  "at": "2026-11-07T17:55:02.368Z",
+  "email": "noah.276@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 1585,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28p8",
+  "at": "2026-11-07T17:59:26.159Z",
+  "email": "olivia.946@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 2537,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28q9",
+  "at": "2026-11-07T18:01:35.799Z",
+  "email": "oscar.621@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12783,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28ra",
+  "at": "2026-11-07T18:02:46.644Z",
+  "email": "isla.281@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 1889,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28sb",
+  "at": "2026-11-07T18:05:51.603Z",
+  "email": "leo.666@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 3026,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28tc",
+  "at": "2026-11-07T18:24:12.692Z",
+  "email": "lucas.722@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 3268,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28ud",
+  "at": "2026-11-07T18:31:55.316Z",
+  "email": "noah.812@example.com",
+  "country": "GB",
+  "postcode": "EC1A 1BB",
+  "cartCents": 9208,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28ve",
+  "at": "2026-11-07T18:45:29.320Z",
+  "email": "leo.102@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 5621,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28wf",
+  "at": "2026-11-07T19:04:41.458Z",
+  "email": "liam.461@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10720,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28xg",
+  "at": "2026-11-07T19:11:54.458Z",
+  "email": "olivia.563@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 7384,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_28yh",
+  "at": "2026-11-07T19:19:38.989Z",
+  "email": "leo.190@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 1780,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_28zi",
+  "at": "2026-11-07T19:35:03.144Z",
+  "email": "emma.701@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10405,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_290j",
+  "at": "2026-11-07T19:51:44.325Z",
+  "email": "noah.126@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 2482,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_291k",
+  "at": "2026-11-07T19:53:43.991Z",
+  "email": "amelia.105@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 1998,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_292l",
+  "at": "2026-11-07T20:07:33.643Z",
+  "email": "liam.950@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 10340,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_293m",
+  "at": "2026-11-07T20:18:38.053Z",
+  "email": "noah.526@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 7805,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_294n",
+  "at": "2026-11-07T20:28:55.195Z",
+  "email": "leo.753@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5581,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_295o",
+  "at": "2026-11-07T20:46:01.339Z",
+  "email": "lucas.282@example.com",
+  "country": "GB",
+  "postcode": "BS1 4ST",
+  "cartCents": 1607,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_296p",
+  "at": "2026-11-07T20:50:20.233Z",
+  "email": "mia.470@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 11687,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_297q",
+  "at": "2026-11-07T20:51:04.631Z",
+  "email": "ava.406@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 3975,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_298r",
+  "at": "2026-11-07T21:03:49.890Z",
+  "email": "harry.607@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 12616,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_299s",
+  "at": "2026-11-07T21:04:14.587Z",
+  "email": "mia.130@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 12231,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29at",
+  "at": "2026-11-07T21:16:42.507Z",
+  "email": "leo.475@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 13059,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29bu",
+  "at": "2026-11-07T21:33:07.307Z",
+  "email": "olivia.341@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 7532,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29cv",
+  "at": "2026-11-07T21:43:53.832Z",
+  "email": "noah.650@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 11586,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29dw",
+  "at": "2026-11-07T21:50:57.877Z",
+  "email": "olivia.925@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 10284,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_29ex",
+  "at": "2026-11-07T22:04:06.465Z",
+  "email": "mia.886@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 3088,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29fy",
+  "at": "2026-11-07T22:13:06.837Z",
+  "email": "lucas.134@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 3098,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29gz",
+  "at": "2026-11-07T22:30:18.324Z",
+  "email": "harry.551@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 6860,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29i0",
+  "at": "2026-11-07T22:45:11.284Z",
+  "email": "harry.186@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 6609,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29j1",
+  "at": "2026-11-07T23:03:55.291Z",
+  "email": "emma.869@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10352,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29k2",
+  "at": "2026-11-07T23:10:31.888Z",
+  "email": "sofia.558@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9183,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29l3",
+  "at": "2026-11-07T23:24:35.007Z",
+  "email": "emma.755@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 3984,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29m4",
+  "at": "2026-11-07T23:32:02.901Z",
+  "email": "noah.883@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 9918,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29n5",
+  "at": "2026-11-07T23:46:51.966Z",
+  "email": "olivia.759@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 6315,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29o6",
+  "at": "2026-11-07T23:50:30.162Z",
+  "email": "lucas.636@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 9059,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_29p7",
+  "at": "2026-11-07T23:51:12.174Z",
+  "email": "harry.311@example.com",
+  "country": "GB",
+  "postcode": "G2 3AA",
+  "cartCents": 9211,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_29q8",
+  "at": "2026-11-07T23:56:49.029Z",
+  "email": "jack.852@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6425,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29r9",
+  "at": "2026-11-08T00:16:31.484Z",
+  "email": "noah.434@example.com",
+  "country": "GB",
+  "postcode": "sw1a1aa",
+  "cartCents": 12385,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_29sa",
+  "at": "2026-11-08T00:29:07.291Z",
+  "email": "isla.900@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 10260,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29tb",
+  "at": "2026-11-08T00:29:07.399Z",
+  "email": "isla.748@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 7375,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_29uc",
+  "at": "2026-11-08T00:29:23.960Z",
+  "email": "sofia.561@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 8594,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29vd",
+  "at": "2026-11-08T00:40:06.455Z",
+  "email": "isla.714@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12817,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29we",
+  "at": "2026-11-08T00:54:14.797Z",
+  "email": "oscar.877@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 2677,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29xf",
+  "at": "2026-11-08T01:04:58.629Z",
+  "email": "sofia.384@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 7821,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29yg",
+  "at": "2026-11-08T01:14:07.759Z",
+  "email": "ava.190@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 2035,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_29zh",
+  "at": "2026-11-08T01:17:48.278Z",
+  "email": "liam.285@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 2166,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a0i",
+  "at": "2026-11-08T01:25:39.800Z",
+  "email": "leo.949@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 13206,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a1j",
+  "at": "2026-11-08T01:42:42.958Z",
+  "email": "lucas.326@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 11766,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a2k",
+  "at": "2026-11-08T01:45:45.594Z",
+  "email": "ava.133@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 4278,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a3l",
+  "at": "2026-11-08T01:55:51.894Z",
+  "email": "noah.594@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 11132,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a4m",
+  "at": "2026-11-08T02:05:48.786Z",
+  "email": "ava.549@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 5681,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a5n",
+  "at": "2026-11-08T02:12:07.915Z",
+  "email": "noah.818@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 7955,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a6o",
+  "at": "2026-11-08T02:29:52.480Z",
+  "email": "jack.624@example.com",
+  "country": "GB",
+  "postcode": "sw1a1aa",
+  "cartCents": 6554,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2a7p",
+  "at": "2026-11-08T02:43:24.749Z",
+  "email": "noah.548@example.com",
+  "country": "GB",
+  "postcode": "EC1A 1BB",
+  "cartCents": 10549,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2a8q",
+  "at": "2026-11-08T02:45:36.609Z",
+  "email": "emma.463@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 8633,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2a9r",
+  "at": "2026-11-08T02:56:19.017Z",
+  "email": "ava.918@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 6936,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2aas",
+  "at": "2026-11-08T03:10:44.477Z",
+  "email": "ava.973@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 6705,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2abt",
+  "at": "2026-11-08T03:18:24.157Z",
+  "email": "sofia.355@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 13286,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2acu",
+  "at": "2026-11-08T03:22:26.860Z",
+  "email": "lucas.849@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 12086,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2adv",
+  "at": "2026-11-08T03:30:50.525Z",
+  "email": "sofia.678@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6091,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2aew",
+  "at": "2026-11-08T03:46:35.671Z",
+  "email": "olivia.857@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9466,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2afx",
+  "at": "2026-11-08T03:58:46.889Z",
+  "email": "lucas.647@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 8609,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2agy",
+  "at": "2026-11-08T04:14:40.291Z",
+  "email": "emma.717@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 12240,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ahz",
+  "at": "2026-11-08T04:19:07.733Z",
+  "email": "olivia.727@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 11586,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2aj0",
+  "at": "2026-11-08T04:32:28.757Z",
+  "email": "mia.109@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 3116,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2ak1",
+  "at": "2026-11-08T04:49:50.789Z",
+  "email": "mia.114@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 8185,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2al2",
+  "at": "2026-11-08T04:55:10.321Z",
+  "email": "leo.832@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 3684,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2am3",
+  "at": "2026-11-08T05:13:21.470Z",
+  "email": "mia.860@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 3224,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2an4",
+  "at": "2026-11-08T05:32:38.280Z",
+  "email": "amelia.614@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 7957,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ao5",
+  "at": "2026-11-08T05:46:45.076Z",
+  "email": "liam.812@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 9815,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ap6",
+  "at": "2026-11-08T05:58:27.203Z",
+  "email": "ava.871@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 10023,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2aq7",
+  "at": "2026-11-08T06:04:00.161Z",
+  "email": "jack.684@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 8978,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ar8",
+  "at": "2026-11-08T06:15:53.313Z",
+  "email": "amelia.841@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 12937,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2as9",
+  "at": "2026-11-08T06:33:11.250Z",
+  "email": "isla.723@example.com",
+  "country": "GB",
+  "postcode": "EC1A 1BB",
+  "cartCents": 12588,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2ata",
+  "at": "2026-11-08T06:33:40.442Z",
+  "email": "olivia.135@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6666,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2aub",
+  "at": "2026-11-08T06:45:28.647Z",
+  "email": "isla.500@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 9988,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2avc",
+  "at": "2026-11-08T06:50:04.461Z",
+  "email": "oscar.932@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 6215,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2awd",
+  "at": "2026-11-08T06:54:02.244Z",
+  "email": "lucas.994@example.com",
+  "country": "GB",
+  "postcode": "BS1 4ST",
+  "cartCents": 3795,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2axe",
+  "at": "2026-11-08T07:03:00.418Z",
+  "email": "amelia.819@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10642,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ayf",
+  "at": "2026-11-08T07:11:14.000Z",
+  "email": "jack.934@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 8569,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2azg",
+  "at": "2026-11-08T07:28:54.131Z",
+  "email": "sofia.101@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 5586,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b0h",
+  "at": "2026-11-08T07:43:55.290Z",
+  "email": "isla.116@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 4002,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b1i",
+  "at": "2026-11-08T07:56:35.174Z",
+  "email": "emma.512@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 5118,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b2j",
+  "at": "2026-11-08T08:06:03.744Z",
+  "email": "isla.463@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 3530,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b3k",
+  "at": "2026-11-08T08:10:03.449Z",
+  "email": "harry.656@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 8214,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b4l",
+  "at": "2026-11-08T08:22:44.175Z",
+  "email": "emma.798@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 4822,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b5m",
+  "at": "2026-11-08T08:38:39.558Z",
+  "email": "sofia.839@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6560,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b6n",
+  "at": "2026-11-08T08:45:12.449Z",
+  "email": "liam.901@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12187,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b7o",
+  "at": "2026-11-08T08:51:42.316Z",
+  "email": "harry.108@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 13262,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2b8p",
+  "at": "2026-11-08T09:08:36.455Z",
+  "email": "isla.685@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 8626,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2b9q",
+  "at": "2026-11-08T09:24:51.277Z",
+  "email": "lucas.829@example.com",
+  "country": "GB",
+  "postcode": "G2 3AA",
+  "cartCents": 3728,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bar",
+  "at": "2026-11-08T09:44:09.825Z",
+  "email": "jack.978@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 4161,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bbs",
+  "at": "2026-11-08T09:44:28.750Z",
+  "email": "isla.729@example.com",
+  "country": "GB",
+  "postcode": "BS1 4ST",
+  "cartCents": 10010,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bct",
+  "at": "2026-11-08T09:45:30.066Z",
+  "email": "amelia.834@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 6858,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bdu",
+  "at": "2026-11-08T09:48:42.487Z",
+  "email": "noah.710@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 10153,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bev",
+  "at": "2026-11-08T10:01:09.337Z",
+  "email": "oscar.183@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 2890,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bfw",
+  "at": "2026-11-08T10:01:50.645Z",
+  "email": "amelia.663@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 6628,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bgx",
+  "at": "2026-11-08T10:05:41.556Z",
+  "email": "leo.935@example.com",
+  "country": "GB",
+  "postcode": "sw1a1aa",
+  "cartCents": 10462,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bhy",
+  "at": "2026-11-08T10:20:03.708Z",
+  "email": "amelia.453@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 11481,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2biz",
+  "at": "2026-11-08T10:24:13.347Z",
+  "email": "harry.858@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 5127,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bk0",
+  "at": "2026-11-08T10:29:41.376Z",
+  "email": "oscar.817@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 10731,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bl1",
+  "at": "2026-11-08T10:30:21.509Z",
+  "email": "emma.777@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 3148,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bm2",
+  "at": "2026-11-08T10:47:53.782Z",
+  "email": "liam.715@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 9647,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bn3",
+  "at": "2026-11-08T11:00:42.663Z",
+  "email": "liam.239@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5037,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bo4",
+  "at": "2026-11-08T11:06:38.325Z",
+  "email": "harry.361@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 3736,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bp5",
+  "at": "2026-11-08T11:21:17.040Z",
+  "email": "jack.253@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 12965,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bq6",
+  "at": "2026-11-08T11:39:14.661Z",
+  "email": "amelia.532@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 3180,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2br7",
+  "at": "2026-11-08T11:44:20.723Z",
+  "email": "jack.337@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5648,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bs8",
+  "at": "2026-11-08T11:55:17.721Z",
+  "email": "olivia.792@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 2402,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bt9",
+  "at": "2026-11-08T12:07:30.078Z",
+  "email": "oscar.305@example.com",
+  "country": "GB",
+  "postcode": "sw1a1aa",
+  "cartCents": 9763,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2bua",
+  "at": "2026-11-08T12:16:23.938Z",
+  "email": "isla.754@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 7463,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bvb",
+  "at": "2026-11-08T12:27:15.217Z",
+  "email": "olivia.730@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 13237,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bwc",
+  "at": "2026-11-08T12:44:08.735Z",
+  "email": "emma.374@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 5267,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bxd",
+  "at": "2026-11-08T13:03:37.128Z",
+  "email": "liam.662@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 2658,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bye",
+  "at": "2026-11-08T13:07:59.514Z",
+  "email": "olivia.542@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 4459,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2bzf",
+  "at": "2026-11-08T13:22:20.246Z",
+  "email": "leo.357@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 1957,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2c0g",
+  "at": "2026-11-08T13:30:25.031Z",
+  "email": "liam.445@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 5428,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c1h",
+  "at": "2026-11-08T13:46:57.500Z",
+  "email": "mia.665@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 10952,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2c2i",
+  "at": "2026-11-08T13:53:59.938Z",
+  "email": "jack.861@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 8620,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c3j",
+  "at": "2026-11-08T14:02:46.604Z",
+  "email": "amelia.551@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 13051,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c4k",
+  "at": "2026-11-08T14:20:33.909Z",
+  "email": "mia.845@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6088,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c5l",
+  "at": "2026-11-08T14:24:32.217Z",
+  "email": "noah.438@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12567,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c6m",
+  "at": "2026-11-08T14:40:26.403Z",
+  "email": "liam.648@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 11604,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2c7n",
+  "at": "2026-11-08T14:53:22.697Z",
+  "email": "isla.689@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 3542,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c8o",
+  "at": "2026-11-08T14:58:20.406Z",
+  "email": "sofia.677@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 11010,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2c9p",
+  "at": "2026-11-08T15:14:05.885Z",
+  "email": "amelia.862@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 10014,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2caq",
+  "at": "2026-11-08T15:32:25.033Z",
+  "email": "lucas.461@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 2822,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cbr",
+  "at": "2026-11-08T15:48:47.600Z",
+  "email": "isla.236@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 11336,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ccs",
+  "at": "2026-11-08T15:56:19.116Z",
+  "email": "mia.172@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 4068,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cdt",
+  "at": "2026-11-08T16:05:19.445Z",
+  "email": "leo.906@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9703,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ceu",
+  "at": "2026-11-08T16:12:43.455Z",
+  "email": "emma.628@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12218,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cfv",
+  "at": "2026-11-08T16:15:16.396Z",
+  "email": "jack.963@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 12061,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cgw",
+  "at": "2026-11-08T16:32:52.514Z",
+  "email": "ava.692@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 11821,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2chx",
+  "at": "2026-11-08T16:39:42.550Z",
+  "email": "oscar.558@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 4975,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ciy",
+  "at": "2026-11-08T16:52:45.773Z",
+  "email": "lucas.562@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 2316,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cjz",
+  "at": "2026-11-08T17:02:12.033Z",
+  "email": "ava.166@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 8836,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cl0",
+  "at": "2026-11-08T17:19:42.246Z",
+  "email": "olivia.591@example.com",
+  "country": "GB",
+  "postcode": "n1 9gu",
+  "cartCents": 7486,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2cm1",
+  "at": "2026-11-08T17:21:51.233Z",
+  "email": "amelia.726@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 8968,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cn2",
+  "at": "2026-11-08T17:38:51.890Z",
+  "email": "jack.584@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 10492,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2co3",
+  "at": "2026-11-08T17:53:58.154Z",
+  "email": "olivia.646@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 6364,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cp4",
+  "at": "2026-11-08T18:03:13.851Z",
+  "email": "noah.744@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 13265,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cq5",
+  "at": "2026-11-08T18:22:56.058Z",
+  "email": "oscar.871@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 5146,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cr6",
+  "at": "2026-11-08T18:39:17.714Z",
+  "email": "sofia.792@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6905,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cs7",
+  "at": "2026-11-08T18:58:14.155Z",
+  "email": "harry.861@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 12233,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ct8",
+  "at": "2026-11-08T18:59:57.278Z",
+  "email": "oscar.794@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 3460,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cu9",
+  "at": "2026-11-08T19:08:32.163Z",
+  "email": "noah.596@example.com",
+  "country": "GB",
+  "postcode": "G2 3AA",
+  "cartCents": 2733,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2cva",
+  "at": "2026-11-08T19:19:01.446Z",
+  "email": "sofia.397@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 8933,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cwb",
+  "at": "2026-11-08T19:33:52.508Z",
+  "email": "ava.916@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 9665,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2cxc",
+  "at": "2026-11-08T19:49:04.016Z",
+  "email": "noah.440@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 10819,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cyd",
+  "at": "2026-11-08T19:51:00.177Z",
+  "email": "isla.851@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 9844,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2cze",
+  "at": "2026-11-08T20:08:07.896Z",
+  "email": "isla.104@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 11333,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2d0f",
+  "at": "2026-11-08T20:13:05.771Z",
+  "email": "lucas.777@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 9580,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d1g",
+  "at": "2026-11-08T20:17:25.988Z",
+  "email": "lucas.531@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 1935,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d2h",
+  "at": "2026-11-08T20:29:35.213Z",
+  "email": "ava.798@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 1573,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d3i",
+  "at": "2026-11-08T20:32:55.777Z",
+  "email": "ava.318@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 10554,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2d4j",
+  "at": "2026-11-08T20:38:15.985Z",
+  "email": "isla.515@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 8036,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d5k",
+  "at": "2026-11-08T20:43:57.260Z",
+  "email": "liam.486@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 1991,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d6l",
+  "at": "2026-11-08T21:00:45.538Z",
+  "email": "noah.487@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 3676,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d7m",
+  "at": "2026-11-08T21:19:22.390Z",
+  "email": "liam.914@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 7038,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d8n",
+  "at": "2026-11-08T21:24:37.818Z",
+  "email": "lucas.586@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 13194,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2d9o",
+  "at": "2026-11-08T21:42:23.190Z",
+  "email": "mia.630@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 9183,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dap",
+  "at": "2026-11-08T21:56:56.240Z",
+  "email": "mia.692@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 1860,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dbq",
+  "at": "2026-11-08T22:03:01.565Z",
+  "email": "harry.625@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 4508,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dcr",
+  "at": "2026-11-08T22:22:47.279Z",
+  "email": "liam.786@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 7912,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dds",
+  "at": "2026-11-08T22:36:21.041Z",
+  "email": "isla.784@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 10133,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2det",
+  "at": "2026-11-08T22:54:42.490Z",
+  "email": "amelia.915@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 3287,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dfu",
+  "at": "2026-11-08T22:59:10.712Z",
+  "email": "amelia.126@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 6038,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dgv",
+  "at": "2026-11-08T23:17:24.204Z",
+  "email": "oscar.244@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 10682,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dhw",
+  "at": "2026-11-08T23:33:38.371Z",
+  "email": "liam.564@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 3390,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dix",
+  "at": "2026-11-08T23:42:03.268Z",
+  "email": "oscar.107@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 3700,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2djy",
+  "at": "2026-11-08T23:49:23.192Z",
+  "email": "isla.577@example.com",
+  "country": "GB",
+  "postcode": "n1 9gu",
+  "cartCents": 12796,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2dkz",
+  "at": "2026-11-09T00:07:17.082Z",
+  "email": "isla.423@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 6730,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dm0",
+  "at": "2026-11-09T00:11:22.034Z",
+  "email": "harry.900@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 10706,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dn1",
+  "at": "2026-11-09T00:25:40.996Z",
+  "email": "oscar.378@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 6574,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2do2",
+  "at": "2026-11-09T00:38:17.453Z",
+  "email": "leo.405@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 5554,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dp3",
+  "at": "2026-11-09T00:44:08.042Z",
+  "email": "mia.978@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 7583,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dq4",
+  "at": "2026-11-09T01:03:07.974Z",
+  "email": "jack.183@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12176,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dr5",
+  "at": "2026-11-09T01:08:36.614Z",
+  "email": "ava.169@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11147,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ds6",
+  "at": "2026-11-09T01:21:33.360Z",
+  "email": "mia.780@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11185,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dt7",
+  "at": "2026-11-09T01:23:03.623Z",
+  "email": "noah.865@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 7341,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2du8",
+  "at": "2026-11-09T01:25:14.650Z",
+  "email": "sofia.147@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 1679,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2dv9",
+  "at": "2026-11-09T01:32:10.987Z",
+  "email": "liam.979@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 7252,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2dwa",
+  "at": "2026-11-09T01:36:26.171Z",
+  "email": "ava.237@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 1741,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dxb",
+  "at": "2026-11-09T01:48:02.485Z",
+  "email": "ava.934@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 6229,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2dyc",
+  "at": "2026-11-09T02:00:25.826Z",
+  "email": "isla.896@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 6613,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2dzd",
+  "at": "2026-11-09T02:02:03.043Z",
+  "email": "emma.840@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9344,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e0e",
+  "at": "2026-11-09T02:06:17.305Z",
+  "email": "harry.176@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 9161,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2e1f",
+  "at": "2026-11-09T02:16:55.320Z",
+  "email": "olivia.923@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 2690,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e2g",
+  "at": "2026-11-09T02:32:29.186Z",
+  "email": "isla.833@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 2655,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e3h",
+  "at": "2026-11-09T02:33:16.529Z",
+  "email": "harry.307@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 5851,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e4i",
+  "at": "2026-11-09T02:39:20.131Z",
+  "email": "jack.223@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 11735,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e5j",
+  "at": "2026-11-09T02:44:11.356Z",
+  "email": "sofia.666@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 3948,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e6k",
+  "at": "2026-11-09T02:59:00.130Z",
+  "email": "liam.973@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 2576,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2e7l",
+  "at": "2026-11-09T02:59:24.149Z",
+  "email": "mia.515@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 3477,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e8m",
+  "at": "2026-11-09T03:15:50.494Z",
+  "email": "leo.879@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 12409,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2e9n",
+  "at": "2026-11-09T03:29:41.662Z",
+  "email": "harry.481@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 11673,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eao",
+  "at": "2026-11-09T03:41:12.227Z",
+  "email": "olivia.846@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 12745,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ebp",
+  "at": "2026-11-09T03:53:42.605Z",
+  "email": "isla.479@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 3047,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ecq",
+  "at": "2026-11-09T04:09:52.051Z",
+  "email": "ava.643@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 4555,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2edr",
+  "at": "2026-11-09T04:12:50.593Z",
+  "email": "oscar.192@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 5970,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ees",
+  "at": "2026-11-09T04:17:03.824Z",
+  "email": "amelia.550@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 10458,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eft",
+  "at": "2026-11-09T04:36:17.869Z",
+  "email": "ava.993@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 10391,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2egu",
+  "at": "2026-11-09T04:39:24.778Z",
+  "email": "amelia.724@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 11139,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ehv",
+  "at": "2026-11-09T04:48:55.046Z",
+  "email": "harry.847@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6153,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eiw",
+  "at": "2026-11-09T04:52:59.100Z",
+  "email": "leo.730@example.com",
+  "country": "GB",
+  "postcode": "M1 1AE",
+  "cartCents": 3292,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2ejx",
+  "at": "2026-11-09T04:56:10.363Z",
+  "email": "jack.291@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 1770,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eky",
+  "at": "2026-11-09T05:10:44.783Z",
+  "email": "ava.381@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 9740,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2elz",
+  "at": "2026-11-09T05:13:41.753Z",
+  "email": "amelia.663@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10239,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2en0",
+  "at": "2026-11-09T05:24:23.884Z",
+  "email": "emma.228@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10273,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eo1",
+  "at": "2026-11-09T05:30:46.656Z",
+  "email": "harry.185@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 1540,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ep2",
+  "at": "2026-11-09T05:36:20.552Z",
+  "email": "isla.698@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 10842,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eq3",
+  "at": "2026-11-09T05:43:19.703Z",
+  "email": "emma.297@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 3409,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2er4",
+  "at": "2026-11-09T06:00:32.886Z",
+  "email": "leo.552@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 6686,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2es5",
+  "at": "2026-11-09T06:10:37.278Z",
+  "email": "jack.266@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 11103,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2et6",
+  "at": "2026-11-09T06:25:18.922Z",
+  "email": "leo.796@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 2813,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eu7",
+  "at": "2026-11-09T06:29:16.995Z",
+  "email": "isla.265@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 8464,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2ev8",
+  "at": "2026-11-09T06:40:41.618Z",
+  "email": "liam.408@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4876,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ew9",
+  "at": "2026-11-09T06:50:56.808Z",
+  "email": "lucas.516@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 4937,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2exa",
+  "at": "2026-11-09T07:07:59.922Z",
+  "email": "leo.737@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 2432,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2eyb",
+  "at": "2026-11-09T07:27:53.616Z",
+  "email": "olivia.122@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 6674,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ezc",
+  "at": "2026-11-09T07:32:47.866Z",
+  "email": "leo.651@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 8281,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f0d",
+  "at": "2026-11-09T07:46:04.187Z",
+  "email": "oscar.472@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 11486,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2f1e",
+  "at": "2026-11-09T07:53:22.221Z",
+  "email": "liam.898@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 4938,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f2f",
+  "at": "2026-11-09T07:54:20.687Z",
+  "email": "leo.452@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 5569,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f3g",
+  "at": "2026-11-09T08:14:16.274Z",
+  "email": "olivia.803@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 2785,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2f4h",
+  "at": "2026-11-09T08:21:41.966Z",
+  "email": "sofia.367@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 13458,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f5i",
+  "at": "2026-11-09T08:26:08.397Z",
+  "email": "sofia.928@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4005,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f6j",
+  "at": "2026-11-09T08:31:26.594Z",
+  "email": "leo.360@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 4266,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f7k",
+  "at": "2026-11-09T08:34:52.142Z",
+  "email": "amelia.712@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 10048,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f8l",
+  "at": "2026-11-09T08:42:23.041Z",
+  "email": "isla.258@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 11134,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2f9m",
+  "at": "2026-11-09T08:46:25.430Z",
+  "email": "oscar.766@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 11141,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fan",
+  "at": "2026-11-09T09:00:21.647Z",
+  "email": "ava.603@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 7029,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fbo",
+  "at": "2026-11-09T09:13:34.492Z",
+  "email": "oscar.253@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 11664,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fcp",
+  "at": "2026-11-09T09:32:06.885Z",
+  "email": "olivia.565@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 2862,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fdq",
+  "at": "2026-11-09T09:34:39.818Z",
+  "email": "ava.916@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 9073,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fer",
+  "at": "2026-11-09T09:50:36.538Z",
+  "email": "emma.930@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 12765,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ffs",
+  "at": "2026-11-09T09:56:51.702Z",
+  "email": "sofia.511@example.com",
+  "country": "GB",
+  "postcode": "EH1 1YZ",
+  "cartCents": 6747,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2fgt",
+  "at": "2026-11-09T09:59:58.163Z",
+  "email": "noah.726@example.com",
+  "country": "GB",
+  "postcode": "G2 3AA",
+  "cartCents": 9564,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2fhu",
+  "at": "2026-11-09T10:03:38.632Z",
+  "email": "liam.798@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 12763,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fiv",
+  "at": "2026-11-09T10:16:12.528Z",
+  "email": "liam.382@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 13373,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fjw",
+  "at": "2026-11-09T10:25:28.389Z",
+  "email": "ava.283@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 6288,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fkx",
+  "at": "2026-11-09T10:39:04.564Z",
+  "email": "noah.902@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 7728,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fly",
+  "at": "2026-11-09T10:56:18.256Z",
+  "email": "mia.994@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 2787,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fmz",
+  "at": "2026-11-09T10:59:17.587Z",
+  "email": "mia.786@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 8844,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fo0",
+  "at": "2026-11-09T11:16:28.849Z",
+  "email": "noah.904@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 12508,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fp1",
+  "at": "2026-11-09T11:16:36.196Z",
+  "email": "liam.451@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 11367,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fq2",
+  "at": "2026-11-09T11:30:15.880Z",
+  "email": "amelia.602@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6534,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fr3",
+  "at": "2026-11-09T11:49:28.820Z",
+  "email": "emma.601@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11552,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fs4",
+  "at": "2026-11-09T11:51:22.414Z",
+  "email": "mia.123@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 11834,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ft5",
+  "at": "2026-11-09T12:06:30.488Z",
+  "email": "mia.685@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 3195,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fu6",
+  "at": "2026-11-09T12:14:19.642Z",
+  "email": "mia.336@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 12181,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fv7",
+  "at": "2026-11-09T12:20:20.108Z",
+  "email": "olivia.131@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 8464,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fw8",
+  "at": "2026-11-09T12:27:21.033Z",
+  "email": "isla.410@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 8627,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fx9",
+  "at": "2026-11-09T12:29:11.428Z",
+  "email": "isla.497@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 3142,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fya",
+  "at": "2026-11-09T12:38:48.214Z",
+  "email": "leo.278@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 7714,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2fzb",
+  "at": "2026-11-09T12:43:52.357Z",
+  "email": "sofia.225@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 1974,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g0c",
+  "at": "2026-11-09T13:01:52.987Z",
+  "email": "leo.557@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 6828,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g1d",
+  "at": "2026-11-09T13:08:39.539Z",
+  "email": "ava.447@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 9608,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g2e",
+  "at": "2026-11-09T13:19:56.571Z",
+  "email": "noah.108@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 2247,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2g3f",
+  "at": "2026-11-09T13:30:43.011Z",
+  "email": "mia.789@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 5910,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g4g",
+  "at": "2026-11-09T13:43:58.416Z",
+  "email": "noah.861@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 6818,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g5h",
+  "at": "2026-11-09T13:56:16.939Z",
+  "email": "noah.207@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 6498,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g6i",
+  "at": "2026-11-09T14:16:06.680Z",
+  "email": "jack.426@example.com",
+  "country": "GB",
+  "postcode": "SW1A 1AA",
+  "cartCents": 6920,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2g7j",
+  "at": "2026-11-09T14:21:41.885Z",
+  "email": "lucas.436@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 2373,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2g8k",
+  "at": "2026-11-09T14:29:51.693Z",
+  "email": "sofia.909@example.com",
+  "country": "GB",
+  "postcode": "B33 8TH",
+  "cartCents": 2500,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2g9l",
+  "at": "2026-11-09T14:39:42.630Z",
+  "email": "amelia.367@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 2183,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gam",
+  "at": "2026-11-09T14:54:09.295Z",
+  "email": "sofia.134@example.com",
+  "country": "GB",
+  "postcode": "CR2 6XH",
+  "cartCents": 4870,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2gbn",
+  "at": "2026-11-09T14:55:42.211Z",
+  "email": "isla.149@example.com",
+  "country": "GB",
+  "postcode": "LS1 4AP",
+  "cartCents": 10565,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2gco",
+  "at": "2026-11-09T15:07:35.905Z",
+  "email": "isla.488@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 1696,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gdp",
+  "at": "2026-11-09T15:26:11.939Z",
+  "email": "amelia.397@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 6402,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2geq",
+  "at": "2026-11-09T15:32:30.858Z",
+  "email": "amelia.136@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 8287,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gfr",
+  "at": "2026-11-09T15:45:21.517Z",
+  "email": "mia.214@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 2529,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ggs",
+  "at": "2026-11-09T15:58:08.455Z",
+  "email": "mia.832@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 10733,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2ght",
+  "at": "2026-11-09T16:16:53.508Z",
+  "email": "oscar.155@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 11039,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2giu",
+  "at": "2026-11-09T16:26:43.816Z",
+  "email": "noah.495@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9492,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gjv",
+  "at": "2026-11-09T16:30:14.415Z",
+  "email": "leo.721@example.com",
+  "country": "US",
+  "postcode": "10001",
+  "cartCents": 11179,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gkw",
+  "at": "2026-11-09T16:33:48.125Z",
+  "email": "noah.148@example.com",
+  "country": "GB",
+  "postcode": "M11AE",
+  "cartCents": 7982,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2glx",
+  "at": "2026-11-09T16:49:19.824Z",
+  "email": "isla.953@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 5555,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gmy",
+  "at": "2026-11-09T16:56:38.137Z",
+  "email": "liam.724@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 6522,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gnz",
+  "at": "2026-11-09T16:56:55.229Z",
+  "email": "olivia.763@example.com",
+  "country": "GB",
+  "postcode": "LS14AP",
+  "cartCents": 11188,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gp0",
+  "at": "2026-11-09T17:16:27.038Z",
+  "email": "jack.662@example.com",
+  "country": "GB",
+  "postcode": "EC1A1BB",
+  "cartCents": 4944,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gq1",
+  "at": "2026-11-09T17:28:18.943Z",
+  "email": "isla.474@example.com",
+  "country": "US",
+  "postcode": "60614",
+  "cartCents": 9399,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gr2",
+  "at": "2026-11-09T17:38:43.675Z",
+  "email": "oscar.103@example.com",
+  "country": "DE",
+  "postcode": "10115",
+  "cartCents": 11566,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gs3",
+  "at": "2026-11-09T17:48:38.062Z",
+  "email": "amelia.527@example.com",
+  "country": "DE",
+  "postcode": "80331",
+  "cartCents": 5783,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gt4",
+  "at": "2026-11-09T18:07:19.938Z",
+  "email": "lucas.961@example.com",
+  "country": "US",
+  "postcode": "94110",
+  "cartCents": 13168,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gu5",
+  "at": "2026-11-09T18:22:52.908Z",
+  "email": "liam.814@example.com",
+  "country": "GB",
+  "postcode": "DN55 1PT",
+  "cartCents": 13260,
+  "result": "invalid_postcode"
+ },
+ {
+  "id": "chk_2gv6",
+  "at": "2026-11-09T18:24:36.962Z",
+  "email": "liam.485@example.com",
+  "country": "GB",
+  "postcode": "SW1A1AA",
+  "cartCents": 12748,
+  "result": "rates_shown"
+ },
+ {
+  "id": "chk_2gw7",
+  "at": "2026-11-09T18:31:17.587Z",
+  "email": "leo.504@example.com",
+  "country": "GB",
+  "postcode": "B338TH",
+  "cartCents": 1801,
+  "result": "rates_shown"
+ }
+]

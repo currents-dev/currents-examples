@@ -1,0 +1,6 @@
+node_modules
+.currents-session
+.playwright-cli
+evidence
+*.webm
+requote

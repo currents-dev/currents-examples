@@ -1,0 +1,12 @@
+{
+  "name": "currents-sessions-demo-shop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "devDependencies": {
+    "@currents/cmd": "^3.0.0",
+    "@playwright/cli": "^0.1.24"
+  }
+}

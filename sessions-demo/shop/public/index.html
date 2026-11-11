@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout · Harbor &amp; Pine Coffee</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <span class="brand">Harbor &amp; Pine <em>Coffee</em></span>
+      <ol class="steps">
+        <li class="done">Cart</li>
+        <li class="current">Shipping</li>
+        <li>Payment</li>
+      </ol>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h1>Where should we send it?</h1>
+        <form id="address-form" novalidate>
+          <label>
+            Full name
+            <input name="name" autocomplete="name" value="" />
+          </label>
+          <label>
+            Street address
+            <input name="street" autocomplete="street-address" />
+          </label>
+          <div class="row">
+            <label>
+              City
+              <input name="city" autocomplete="address-level2" />
+            </label>
+            <label>
+              Postcode
+              <input name="postcode" autocomplete="postal-code" />
+            </label>
+          </div>
+          <label>
+            Country
+            <select name="country">
+              <option value="GB">United Kingdom</option>
+              <option value="US">United States</option>
+              <option value="DE">Germany</option>
+            </select>
+          </label>
+          <button type="submit" id="get-rates">Show delivery options</button>
+        </form>
+
+        <div id="rates" class="rates" hidden></div>
+        <p id="address-error" class="error" role="alert" hidden></p>
+      </section>
+
+      <aside class="card summary" aria-label="Order summary">
+        <h2>Your order</h2>
+        <ul class="items">
+          <li><span>Kurasu Ethiopia Guji, 250 g</span><span>£14.50</span></li>
+          <li><span>Hario V60 dripper</span><span>£22.00</span></li>
+          <li><span>Paper filters ×100</span><span>£5.50</span></li>
+        </ul>
+        <dl>
+          <div><dt>Subtotal</dt><dd>£42.00</dd></div>
+          <div><dt>Delivery</dt><dd id="delivery">—</dd></div>
+          <div class="total"><dt>Total</dt><dd id="total">£42.00</dd></div>
+        </dl>
+        <button id="continue" disabled>Continue to payment</button>
+      </aside>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
