@@ -22,6 +22,8 @@ const RATES = {
 export function quoteShipping({ country, postcode = "" }) {
   const format = POSTCODE_FORMATS[country];
   if (!format) return { error: "unsupported_country" };
-  if (!format.test(postcode)) return { error: "invalid_postcode", postcode };
+  // The formats match the compact upper-case form; customers type "SW1A 1AA" or "sw1a1aa".
+  const compact = postcode.replace(/\s+/g, "").toUpperCase();
+  if (!format.test(compact)) return { error: "invalid_postcode", postcode };
   return { rates: RATES[country] };
 }
