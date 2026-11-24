@@ -1,12 +1,12 @@
 # 🎭 Currents - Playwright - GitLab CI/CD
 
-This repo showcases [Playwright](https://playwright.dev/) integration with [Currents](https://currents.dev). The example is based on https://github.com/MarcusFelling/demo.playwright, the [basic](./basic) test scenarios.
+This repo showcases [Playwright](https://playwright.dev/) integration with [Currents](https://currents.dev). The example is based on https://github.com/MarcusFelling/demo.playwright, the [basic](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/tree/main/basic) test scenarios.
 
 <p align="center">
   <img width="830" src="https://static.currents.dev/currents-playwright-banner-gh.png" />
 </p>
 
-See the [`.gitlab-ci.yml`](.gitlab-ci.yml) file - it created a GitLab CI pipeline with 3 workers using 3 [Playwright Shards](https://playwright.dev/docs/test-sharding).
+See the [`.gitlab-ci.yml`](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/blob/main/.gitlab-ci.yml) file - it created a GitLab CI pipeline with 3 workers using 3 [Playwright Shards](https://playwright.dev/docs/test-sharding).
 
 Example command:
 
@@ -24,15 +24,15 @@ Additional resources:
 
 - Playwright Features on Currents: https://currents.dev/playwright
 - Integration Documentation: https://currents.dev/readme/integration-with-playwright/currents-playwright
-- CI Build ID Guide: https://currents.dev/readme/guides/cypress-ci-build-id
+- CI Build ID Guide: https://docs.currents.dev/guides/parallelization-guide/ci-build-id
 
 ## Additional examples
 
-- [`.gitlab-ci.yml`](.gitlab-ci.yml) - The basic 3 parrallel job sharded pipeline
+- [`.gitlab-ci.yml`](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/blob/main/.gitlab-ci.yml) - The basic 3 parrallel job sharded pipeline
 - Examples of running only the failed tests when retrying a CI pipeline/job
-  - For `playwright test` (with currents reporter) : [`./gitlab/ci/with-reruns-reporter.yml`](./gitlab/ci/with-reruns-reporter.yml)
-  - For `pwc` : [`./gitlab/ci/with-reruns-pwc.yml`](./gitlab/ci/with-reruns-pwc.yml) 
-  - For `pwc-p` (orchestration) : [`./gitlab/ci/with-reruns-pwcp.yml`](./gitlab/ci/with-reruns-pwcp.yml) 
+  - For `playwright test` (with currents reporter) : [`.gitlab/ci/with-reruns-reporter.yml`](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/blob/main/.gitlab/ci/with-reruns-reporter.yml)
+  - For `pwc` : [`.gitlab/ci/with-reruns-pwc.yml`](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/blob/main/.gitlab/ci/with-reruns-pwc.yml) 
+  - For `pwc-p` (orchestration) : [`.gitlab/ci/with-reruns-pwcp.yml`](https://gitlab.com/currents.dev/gitlab-playwright-currents/-/blob/main/.gitlab/ci/with-reruns-pwcp.yml) 
 
 ## GitLab CI Playwright Results
 
