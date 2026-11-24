@@ -1,3 +1,0 @@
-[submodule "gitlab/gitlab-playwright-currents"]
-	path = gitlab/gitlab-playwright-currents
-	url = https://gitlab.com/currents.dev/gitlab-playwright-currents.git
